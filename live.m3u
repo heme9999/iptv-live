@@ -7,6 +7,8 @@ https://amg00793-amg00793c6-firetv-us-4067.playouts.now.amagi.tv/playlist.m3u8
 http://198.58.104.90:8989/natgeowild/index.m3u8
 #EXTINF:-1 tvg-id="National Geographic HD (国家地理高清)" tvg-name="National Geographic" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="纪实自然",National Geographic HD (国家地理高清)
 http://198.58.104.90:8989/natgeo/index.m3u8
+#EXTINF:-1 tvg-id="Love Nature 4K (原生 4K 自然大作)" tvg-name="Love Nature 4K" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="纪实自然",Love Nature 4K (原生 4K 自然大作)
+https://pb-ehs1glsha1juy.akamaized.net/Love_Nature_4K.m3u8
 #EXTINF:-1 tvg-id="CCTV-9 纪录 (超清)" tvg-name="CCTV-9 纪录" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="纪实自然",CCTV-9 纪录 (超清)
 http://107.150.60.122/live/cctv9hd.m3u8
 
@@ -45,6 +47,10 @@ http://38.75.136.137:98/gslb/dsdqpub/fyzq.m3u8?auth=testpub
 http://198.204.228.26/live/wxtyhd.m3u8
 #EXTINF:-1 tvg-id="广东体育台 (粤语/国语高清)" tvg-name="广东体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东体育.png" group-title="体育·赛事",广东体育台 (粤语/国语高清)
 http://38.75.136.137:98/gslb/dsdqpub/gdty.m3u8?auth=testpub
+#EXTINF:-1 tvg-id="Eurosport 1 HD (欧洲体育 4K/HEVC)" tvg-name="Eurosport 1 HD" tvg-logo="https://i.imgur.com/8t9mdg9.png" group-title="体育·赛事",Eurosport 1 HD (欧洲体育 4K/HEVC)
+http://88.212.15.19/live/esp_4k_atk/playlist.m3u8
+#EXTINF:-1 tvg-id="Red Bull TV (红牛极限运动 1080P/Akamai)" tvg-name="Red Bull TV" tvg-logo="https://i.imgur.com/8t9mdg9.png" group-title="体育·赛事",Red Bull TV (红牛极限运动 1080P/Akamai)
+https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
 #EXTINF:-1 tvg-id="CCTV-5 体育 (超清)" tvg-name="CCTV-5 体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-5.png" group-title="体育·赛事",CCTV-5 体育 (超清)
 http://107.150.60.122/live/cctv5hd.m3u8
 #EXTINF:-1 tvg-id="CCTV-5+ 体育赛事 (超清)" tvg-name="CCTV-5+ 体育赛事" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-5+.png" group-title="体育·赛事",CCTV-5+ 体育赛事 (超清)
@@ -75,8 +81,8 @@ https://d1flvb4iqlercm.cloudfront.net/live/live_1080p_2nd.m3u8
 https://raw.githubusercontent.com/heme9999/iptv-live/main/sky_news.m3u8
 #EXTINF:-1 tvg-id="Fox News (LiveNOW from FOX 官方 1080P)" tvg-name="Fox News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Fox_News_Channel_logo.svg/960px-Fox_News_Channel_logo.svg.png" group-title="国际资讯",Fox News (LiveNOW from FOX 官方 1080P)
 https://pb-k5p02dtnr2162.akamaized.net/LiveNOW_from_FOX.m3u8
-#EXTINF:-1 tvg-id="Fox Business (美国 Fox 商业 1080P有声)" tvg-name="Fox Business" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Fox_News_Channel_logo.svg/960px-Fox_News_Channel_logo.svg.png" group-title="国际资讯",Fox Business (美国 Fox 商业 1080P有声)
-http://5.254.89.106/6187/index.m3u8
+#EXTINF:-1 tvg-id="Fox Business 24/7 (福克斯商业官方)" tvg-name="Fox Business" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Fox_News_Channel_logo.svg/960px-Fox_News_Channel_logo.svg.png" group-title="国际资讯",Fox Business 24/7 (福克斯商业官方)
+https://247preview.foxbusiness.com/hls/live/2020026/fbnv3preview/primary_400.m3u8
 #EXTINF:-1 tvg-id="ABC News Live (美国广播公司官方 1080P)" tvg-name="ABC News Live" tvg-logo="https://i.imgur.com/ScyTG6P.png" group-title="国际资讯",ABC News Live (美国广播公司官方 1080P)
 https://abcnews-streams.akamaized.net/hls/live/2023560/abcnewshudson1/master.m3u8
 #EXTINF:-1 tvg-id="NBC News NOW (美国国家广播公司官方 1080P)" tvg-name="NBC News NOW" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/CNBC_2025.svg/960px-CNBC_2025.svg.png" group-title="国际资讯",NBC News NOW (美国国家广播公司官方 1080P)
@@ -99,6 +105,8 @@ https://english-livebkali.cgtn.com/live/encgtn.m3u8
 https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/stream05/streamPlaylist.m3u8
 
 # === 影院轮播专区 ===
+#EXTINF:-1 tvg-id="美亚电影 HD (经典港产/海外华语大片)" tvg-name="美亚电影 HD" tvg-logo="https://i.imgur.com/Meew6eX.png" group-title="影视影院",美亚电影 HD (经典港产/海外华语大片)
+https://live2.tensila.com/pearl-v-1.pearlfm/hls/live/mystream.m3u8
 #EXTINF:-1 tvg-id="经典动作大片 24H 轮播" tvg-name="经典动作大片 24H 轮播" tvg-logo="https://i.imgur.com/Meew6eX.png" group-title="影视影院",经典动作大片 24H 轮播
 https://bca5a421a70c46ad911efd0a4767c4bf.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6075/master.m3u8
 #EXTINF:-1 tvg-id="经典电影 24H 轮播" tvg-name="经典电影 24H 轮播" tvg-logo="https://i.imgur.com/iSVnzR1.png" group-title="影视影院",经典电影 24H 轮播
