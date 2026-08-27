@@ -1,5 +1,13 @@
 #EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"
 
+# === 纪实·自然·探索专区 ===
+#EXTINF:-1 tvg-id="BBC Earth (BBC 地球高清纪实)" tvg-name="BBC Earth" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="纪实自然",BBC Earth (BBC 地球高清纪实)
+http://107.150.60.122/live/bbcearthhd.m3u8
+#EXTINF:-1 tvg-id="Love Nature 4K (爱自然 4K/HD 官方原版)" tvg-name="Love Nature" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="纪实自然",Love Nature 4K (爱自然 4K/HD 官方原版)
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=4598
+#EXTINF:-1 tvg-id="CCTV-9 纪录 (超清)" tvg-name="CCTV-9 纪录" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="纪实自然",CCTV-9 纪录 (超清)
+http://107.150.60.122/live/cctv9hd.m3u8
+
 # === 港澳中文专区 ===
 #EXTINF:-1 tvg-id="TVB 翡翠台" tvg-name="TVB 翡翠台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/翡翠台.png" group-title="港澳中文",TVB 翡翠台
 https://t.freetv.fun/live/fei-cui-1.flv
@@ -45,10 +53,10 @@ http://38.75.136.137:98/gslb/dsdqbv/cctv5p.m3u8?auth=test20251009
 http://38.75.136.137:98/gslb/dsdqbv/cctv16hd.m3u8?auth=test20251009
 
 # === 日本放送专区 (东京旗舰六大台 + NHK World) ===
+#EXTINF:-1 tvg-id="NHK World-Japan (NHK 全球英文 1080P)" tvg-name="NHK World-Japan" tvg-logo="https://i.imgur.com/u8N6uoj.png" group-title="日本放送",NHK World-Japan (NHK 全球英文 1080P)
+https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8
 #EXTINF:-1 tvg-id="NHK 综合 (NHK综合 官方日语)" tvg-name="NHK 综合" tvg-logo="https://i.imgur.com/u8N6uoj.png" group-title="日本放送",NHK 综合 (NHK综合 官方日语)
 https://nhk4.mov3.co/hls/nhk.m3u8
-#EXTINF:-1 tvg-id="NHK World-Japan (官方英文 1080P)" tvg-name="NHK World-Japan" tvg-logo="https://i.imgur.com/u8N6uoj.png" group-title="日本放送",NHK World-Japan (官方英文 1080P)
-https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8
 #EXTINF:-1 tvg-id="日本电视台 (NTV 日本テレビ)" tvg-name="日本电视台" tvg-logo="https://i.imgur.com/u8N6uoj.png" group-title="日本放送",日本电视台 (NTV 日本テレビ)
 https://ntv5.mov3.co/hls/ntv.m3u8
 #EXTINF:-1 tvg-id="富士电视台 (Fuji TV フジテレビ)" tvg-name="富士电视台" tvg-logo="https://i.imgur.com/u8N6uoj.png" group-title="日本放送",富士电视台 (Fuji TV フジテレビ)
