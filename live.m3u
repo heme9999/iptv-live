@@ -1,0 +1,145 @@
+#EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"
+
+# === 港澳中文专区 ===
+#EXTINF:-1 tvg-id="TVB 翡翠台" tvg-name="TVB 翡翠台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/翡翠台.png" group-title="港澳中文",TVB 翡翠台
+https://t.freetv.fun/live/fei-cui-1.flv
+#EXTINF:-1 tvg-id="TVB 新闻台" tvg-name="TVB 新闻台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/无线新闻.png" group-title="港澳中文",TVB 新闻台
+https://h5cdn3.kylintv.tv/live/tvbnews_iphone.m3u8
+#EXTINF:-1 tvg-id="凤凰卫视资讯台" tvg-name="凤凰卫视资讯台" tvg-logo="https://live.fanmingming.cn/tv/凤凰卫视资讯台.png" group-title="港澳中文",凤凰卫视资讯台
+http://43.152.224.209/qctv.fengshows.cn/live/0701pin72.flv
+#EXTINF:-1 tvg-id="凤凰卫视香港台" tvg-name="凤凰卫视香港台" tvg-logo="https://live.fanmingming.cn/tv/凤凰卫视香港台.png" group-title="港澳中文",凤凰卫视香港台
+http://43.152.224.209/qctv.fengshows.cn/live/0701phk72.flv
+#EXTINF:-1 tvg-id="星空卫视" tvg-name="星空卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/星空卫视.png" group-title="港澳中文",星空卫视
+https://stream1.freetv.fun/xing-kong-wei-shi-12.m3u8
+#EXTINF:-1 tvg-id="广东珠江台 (粤语)" tvg-name="广东珠江台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东珠江.png" group-title="港澳中文",广东珠江台 (粤语)
+http://38.75.136.137:98/gslb/dsdqpub/gdzj.m3u8?auth=testpub
+#EXTINF:-1 tvg-id="广东体育 (高清)" tvg-name="广东体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东体育.png" group-title="港澳中文",广东体育 (高清)
+http://38.75.136.137:98/gslb/dsdqpub/gdty.m3u8?auth=testpub
+#EXTINF:-1 tvg-id="深圳卫视 (高清)" tvg-name="深圳卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/深圳卫视.png" group-title="港澳中文",深圳卫视 (高清)
+http://107.150.60.122/live/szwshd.m3u8
+
+# === 台湾主流频道 ===
+#EXTINF:-1 tvg-id="TVBS 综合台 (台湾原版)" tvg-name="TVBS 综合台" tvg-logo="https://i.imgur.com/4S1rkhm.png" group-title="台湾主流",TVBS 综合台 (台湾原版)
+http://38.64.72.148/hls/modn/list/4005/playlist.m3u8
+#EXTINF:-1 tvg-id="东森新闻 (台湾原版)" tvg-name="东森新闻" tvg-logo="https://i.imgur.com/QFZs80p.png" group-title="台湾主流",东森新闻 (台湾原版)
+http://38.64.72.148/hls/modn/list/4012/playlist.m3u8
+#EXTINF:-1 tvg-id="民视综合 (台湾原版)" tvg-name="民视综合" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/27/WWAY_logo.png" group-title="台湾主流",民视综合 (台湾原版)
+http://38.64.72.148/hls/modn/list/4013/playlist.m3u8
+
+# === 体育·F1·赛事专区 ===
+#EXTINF:-1 tvg-id="F1 赛车官方专线 (Formula 1 HD)" tvg-name="F1 赛车专线" tvg-logo="https://i.imgur.com/8t9mdg9.png" group-title="体育·赛事",F1 赛车官方专线 (Formula 1 HD)
+https://amg12058-c15studio-amg12058c1-lg-us-5787.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="Motorvision TV (世界顶级赛车/F1专线)" tvg-name="Motorvision TV" tvg-logo="https://i.imgur.com/8t9mdg9.png" group-title="体育·赛事",Motorvision TV (世界顶级赛车/F1专线)
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=4597
+#EXTINF:-1 tvg-id="欧洲足球专线 (风云足球高清)" tvg-name="欧洲足球专线" tvg-logo="https://www.xn--rgv465a.top/tvlogo/风云足球.png" group-title="体育·赛事",欧洲足球专线 (风云足球高清)
+http://38.75.136.137:98/gslb/dsdqpub/fyzq.m3u8?auth=testpub
+#EXTINF:-1 tvg-id="五星体育台 (上海体育高清)" tvg-name="五星体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/五星体育.png" group-title="体育·赛事",五星体育台 (上海体育高清)
+http://198.204.228.26/live/wxtyhd.m3u8
+#EXTINF:-1 tvg-id="广东体育台 (粤语/国语高清)" tvg-name="广东体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东体育.png" group-title="体育·赛事",广东体育台 (粤语/国语高清)
+http://38.75.136.137:98/gslb/dsdqpub/gdty.m3u8?auth=testpub
+#EXTINF:-1 tvg-id="CCTV-5 体育 (超清)" tvg-name="CCTV-5 体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-5.png" group-title="体育·赛事",CCTV-5 体育 (超清)
+http://107.150.60.122/live/cctv5hd.m3u8
+#EXTINF:-1 tvg-id="CCTV-5+ 体育赛事 (超清)" tvg-name="CCTV-5+ 体育赛事" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-5+.png" group-title="体育·赛事",CCTV-5+ 体育赛事 (超清)
+http://38.75.136.137:98/gslb/dsdqbv/cctv5p.m3u8?auth=test20251009
+#EXTINF:-1 tvg-id="CCTV-16 奥林匹克 (超清)" tvg-name="CCTV-16 奥林匹克" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-16.png" group-title="体育·赛事",CCTV-16 奥林匹克 (超清)
+http://38.75.136.137:98/gslb/dsdqbv/cctv16hd.m3u8?auth=test20251009
+
+# === 日本放送专区 (东京旗舰六大台) ===
+#EXTINF:-1 tvg-id="NHK 综合 (NHK综合 官方日语)" tvg-name="NHK 综合" tvg-logo="https://i.imgur.com/u8N6uoj.png" group-title="日本放送",NHK 综合 (NHK综合 官方日语)
+https://nhk4.mov3.co/hls/nhk.m3u8
+#EXTINF:-1 tvg-id="日本电视台 (NTV 日本テレビ)" tvg-name="日本电视台" tvg-logo="https://i.imgur.com/u8N6uoj.png" group-title="日本放送",日本电视台 (NTV 日本テレビ)
+https://ntv5.mov3.co/hls/ntv.m3u8
+#EXTINF:-1 tvg-id="富士电视台 (Fuji TV フジテレビ)" tvg-name="富士电视台" tvg-logo="https://i.imgur.com/u8N6uoj.png" group-title="日本放送",富士电视台 (Fuji TV フジテレビ)
+https://fujitv4.mov3.co/hls/fujitv.m3u8
+#EXTINF:-1 tvg-id="朝日电视台 (TV Asahi テレビ朝日)" tvg-name="朝日电视台" tvg-logo="https://i.imgur.com/u8N6uoj.png" group-title="日本放送",朝日电视台 (TV Asahi テレビ朝日)
+https://tvasahi.mov3.co/hls/tvasahi.m3u8
+#EXTINF:-1 tvg-id="TBS 电视台 (TBS 東京放送)" tvg-name="TBS 电视台" tvg-logo="https://i.imgur.com/u8N6uoj.png" group-title="日本放送",TBS 电视台 (TBS 東京放送)
+https://tbs5.mov3.co/hls/tbs.m3u8
+#EXTINF:-1 tvg-id="东京电视台 (TV Tokyo テレビ東京)" tvg-name="东京电视台" tvg-logo="https://i.imgur.com/u8N6uoj.png" group-title="日本放送",东京电视台 (TV Tokyo テレビ東京)
+https://tvtokyo.mov3.co/hls/tvtokyo.m3u8
+#EXTINF:-1 tvg-id="QVC Japan (日本 QVC 1080P)" tvg-name="QVC Japan" tvg-logo="https://i.imgur.com/u8N6uoj.png" group-title="日本放送",QVC Japan (日本 QVC 1080P)
+https://d1flvb4iqlercm.cloudfront.net/live/live_1080p_2nd.m3u8
+
+# === 国际主流资讯 (美英官方 CDN 直连) ===
+#EXTINF:-1 tvg-id="Fox News (LiveNOW from FOX 官方 1080P)" tvg-name="Fox News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Fox_News_Channel_logo.svg/960px-Fox_News_Channel_logo.svg.png" group-title="国际资讯",Fox News (LiveNOW from FOX 官方 1080P)
+https://pb-k5p02dtnr2162.akamaized.net/LiveNOW_from_FOX.m3u8
+#EXTINF:-1 tvg-id="Fox Business (美国 Fox 商业 1080P有声)" tvg-name="Fox Business" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Fox_News_Channel_logo.svg/960px-Fox_News_Channel_logo.svg.png" group-title="国际资讯",Fox Business (美国 Fox 商业 1080P有声)
+http://5.254.89.106/6187/index.m3u8
+#EXTINF:-1 tvg-id="ABC News Live (美国广播公司官方 1080P)" tvg-name="ABC News Live" tvg-logo="https://i.imgur.com/ScyTG6P.png" group-title="国际资讯",ABC News Live (美国广播公司官方 1080P)
+https://abcnews-streams.akamaized.net/hls/live/2023560/abcnewshudson1/master.m3u8
+#EXTINF:-1 tvg-id="NBC News NOW (美国国家广播公司官方 1080P)" tvg-name="NBC News NOW" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/CNBC_2025.svg/960px-CNBC_2025.svg.png" group-title="国际资讯",NBC News NOW (美国国家广播公司官方 1080P)
+https://d1si3n1st4nkgb.cloudfront.net/10502/88896001/hls/master.m3u8?ads.xumo_channelId=88896001
+#EXTINF:-1 tvg-id="CBS News 24/7 (哥伦比亚广播公司官方 1080P)" tvg-name="CBS News 24/7" tvg-logo="https://i.imgur.com/ScyTG6P.png" group-title="国际资讯",CBS News 24/7 (哥伦比亚广播公司官方 1080P)
+https://cbsn-ny.cbsnstream.cbsnews.com/out/v1/ec3897d58a9b45129a77d67aa247d136/master.m3u8
+#EXTINF:-1 tvg-id="Sky News (英国官方英文 1080P)" tvg-name="Sky News" tvg-logo="https://i.imgur.com/ScyTG6P.png" group-title="国际资讯",Sky News (英国官方英文 1080P)
+https://jmp2.uk/plu-55b285cd2665de274553d66f.m3u8
+#EXTINF:-1 tvg-id="BBC News (英国BBC 官方英文 1080P)" tvg-name="BBC News" tvg-logo="https://i.imgur.com/ScyTG6P.png" group-title="国际资讯",BBC News (英国BBC 官方英文 1080P)
+https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8
+#EXTINF:-1 tvg-id="Bloomberg 彭博财经 (官方纯英文 1080P)" tvg-name="Bloomberg 彭博财经" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Bloomberg_Originals.png" group-title="国际资讯",Bloomberg 彭博财经 (官方纯英文 1080P)
+https://86fdc85a.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctZ2JfQmxvb21iZXJnT3JpZ2luYWxzX0hMUw/playlist.m3u8
+#EXTINF:-1 tvg-id="CNBC 财经 (官方英文)" tvg-name="CNBC 财经" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/CNBC_2025.svg/960px-CNBC_2025.svg.png" group-title="国际资讯",CNBC 财经 (官方英文)
+https://amg01079-nbcuuk-amg01079c2-samsung-gb-1258.playouts.now.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="CNA 亚洲新闻台 (新加坡 官方英文)" tvg-name="CNA 亚洲新闻台" tvg-logo="https://i.imgur.com/awIDugE.png" group-title="国际资讯",CNA 亚洲新闻台 (新加坡 官方英文)
+https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index.m3u8
+#EXTINF:-1 tvg-id="CGTN 英语新闻 (官方英文)" tvg-name="CGTN 英语新闻" tvg-logo="https://live.fanmingming.cn/tv/CGTN纪录.png" group-title="国际资讯",CGTN 英语新闻 (官方英文)
+https://english-livebkali.cgtn.com/live/encgtn.m3u8
+#EXTINF:-1 tvg-id="DW English (德国之声 官方英文)" tvg-name="DW English" tvg-logo="https://i.imgur.com/scDKOLS.png" group-title="国际资讯",DW English (德国之声 官方英文)
+https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
+
+# === 影院轮播专区 ===
+#EXTINF:-1 tvg-id="经典动作大片 24H 轮播" tvg-name="经典动作大片 24H 轮播" tvg-logo="https://i.imgur.com/Meew6eX.png" group-title="影视影院",经典动作大片 24H 轮播
+https://bca5a421a70c46ad911efd0a4767c4bf.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6075/master.m3u8
+#EXTINF:-1 tvg-id="经典电影 24H 轮播" tvg-name="经典电影 24H 轮播" tvg-logo="https://i.imgur.com/iSVnzR1.png" group-title="影视影院",经典电影 24H 轮播
+https://d1j2u714xk898n.cloudfront.net/scheduler/scheduleMaster/145.m3u8
+
+# === 央视全套超清 (CCTV 1~17) ===
+#EXTINF:-1 tvg-id="CCTV-1 综合" tvg-name="CCTV-1 综合" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-1.png" group-title="央视核心",CCTV-1 综合
+http://107.150.60.122/live/cctv1hd.m3u8
+#EXTINF:-1 tvg-id="CCTV-2 财经" tvg-name="CCTV-2 财经" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-2.png" group-title="央视核心",CCTV-2 财经
+http://198.204.228.26/live/cctv2hd.m3u8
+#EXTINF:-1 tvg-id="CCTV-3 综艺" tvg-name="CCTV-3 综艺" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-3.png" group-title="央视核心",CCTV-3 综艺
+http://38.75.136.137:98/gslb/dsdqbv/cctv3hd.m3u8?auth=test20251009
+#EXTINF:-1 tvg-id="CCTV-4 中文国际" tvg-name="CCTV-4 中文国际" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-4.png" group-title="央视核心",CCTV-4 中文国际
+http://74.91.26.218:82/live/cctv4hd.m3u8
+#EXTINF:-1 tvg-id="CCTV-5 体育" tvg-name="CCTV-5 体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-5.png" group-title="央视核心",CCTV-5 体育
+http://107.150.60.122/live/cctv5hd.m3u8
+#EXTINF:-1 tvg-id="CCTV-5+ 体育赛事" tvg-name="CCTV-5+ 体育赛事" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-5+.png" group-title="央视核心",CCTV-5+ 体育赛事
+http://38.75.136.137:98/gslb/dsdqbv/cctv5p.m3u8?auth=test20251009
+#EXTINF:-1 tvg-id="CCTV-6 电影" tvg-name="CCTV-6 电影" tvg-logo="https://i.imgur.com/rFiaef7.png" group-title="央视核心",CCTV-6 电影
+http://69.30.245.50/live/cctv6.m3u8
+#EXTINF:-1 tvg-id="CCTV-7 国防军事" tvg-name="CCTV-7 国防军事" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-7.png" group-title="央视核心",CCTV-7 国防军事
+http://107.150.60.122/live/cctv7hd.m3u8
+#EXTINF:-1 tvg-id="CCTV-8 电视剧" tvg-name="CCTV-8 电视剧" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="央视核心",CCTV-8 电视剧
+http://69.30.245.50/live/cctv8.m3u8
+#EXTINF:-1 tvg-id="CCTV-9 纪录" tvg-name="CCTV-9 纪录" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="央视核心",CCTV-9 纪录
+http://107.150.60.122/live/cctv9hd.m3u8
+#EXTINF:-1 tvg-id="CCTV-10 科教" tvg-name="CCTV-10 科教" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-10.png" group-title="央视核心",CCTV-10 科教
+http://198.204.228.26/live/cctv10hd.m3u8
+#EXTINF:-1 tvg-id="CCTV-11 戏曲" tvg-name="CCTV-11 戏曲" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-11.png" group-title="央视核心",CCTV-11 戏曲
+http://74.91.26.218:82/live/cctv11hd.m3u8
+#EXTINF:-1 tvg-id="CCTV-12 社会与法" tvg-name="CCTV-12 社会与法" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-12.png" group-title="央视核心",CCTV-12 社会与法
+http://107.150.60.122/live/cctv12hd.m3u8
+#EXTINF:-1 tvg-id="CCTV-13 新闻" tvg-name="CCTV-13 新闻" tvg-logo="https://i.imgur.com/6MTar6J.png" group-title="央视核心",CCTV-13 新闻
+http://107.150.60.122/live/cctv13hd.m3u8
+#EXTINF:-1 tvg-id="CCTV-14 少儿" tvg-name="CCTV-14 少儿" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-14.png" group-title="央视核心",CCTV-14 少儿
+http://38.75.136.137:98/gslb/dsdqbv/cctv14hd.m3u8?auth=test20251009
+#EXTINF:-1 tvg-id="CCTV-15 音乐" tvg-name="CCTV-15 音乐" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-15.png" group-title="央视核心",CCTV-15 音乐
+http://38.75.136.137:98/gslb/dsdqbv/cctv15hd.m3u8?auth=test20251009
+#EXTINF:-1 tvg-id="CCTV-16 奥林匹克" tvg-name="CCTV-16 奥林匹克" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-16.png" group-title="央视核心",CCTV-16 奥林匹克
+http://38.75.136.137:98/gslb/dsdqbv/cctv16hd.m3u8?auth=test20251009
+#EXTINF:-1 tvg-id="CCTV-17 农业农村" tvg-name="CCTV-17 农业农村" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-17.png" group-title="央视核心",CCTV-17 农业农村
+http://107.150.60.122/live/cctv17hd.m3u8
+
+# === 核心主流卫视 ===
+#EXTINF:-1 tvg-id="湖南卫视 (高清)" tvg-name="湖南卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/湖南卫视.png" group-title="核心卫视",湖南卫视 (高清)
+https://txmov2.a.kwimgs.com/bs3/video-hls/5199687338554291078_hlsb.m3u8
+#EXTINF:-1 tvg-id="浙江卫视 (高清)" tvg-name="浙江卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/浙江卫视.png" group-title="核心卫视",浙江卫视 (高清)
+http://107.150.60.122/live/zjwshd.m3u8
+#EXTINF:-1 tvg-id="江苏卫视 (高清)" tvg-name="江苏卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/江苏卫视.png" group-title="核心卫视",江苏卫视 (高清)
+http://38.75.136.137:98/gslb/dsdqbv/jswshd.m3u8?auth=test20251009
+#EXTINF:-1 tvg-id="东方卫视 (高清)" tvg-name="东方卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/东方卫视.png" group-title="核心卫视",东方卫视 (高清)
+http://38.75.136.137:98/gslb/dsdqbv/dfwshd.m3u8?auth=test20251009
+#EXTINF:-1 tvg-id="北京卫视 (高清)" tvg-name="北京卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/北京卫视.png" group-title="核心卫视",北京卫视 (高清)
+http://107.150.60.122/live/bjwshd.m3u8
+#EXTINF:-1 tvg-id="广东卫视 (高清)" tvg-name="广东卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东卫视.png" group-title="核心卫视",广东卫视 (高清)
+http://38.75.136.137:98/gslb/dsdqpub/gdws.m3u8?auth=testpub
