@@ -2,7 +2,7 @@
 
 # === 纪实·自然·探索专区 ===
 #EXTINF:-1 tvg-id="BBC Earth (BBC 地球高清纪实)" tvg-name="BBC Earth" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="纪实自然",BBC Earth (BBC 地球高清纪实)
-http://88.212.15.29/live/test_bbc_eartch_hevc/playlist.m3u8
+https://amg00793-amg00793c6-firetv-us-4067.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="National Geographic Wild HD (国家地理野生高清)" tvg-name="Nat Geo Wild" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="纪实自然",National Geographic Wild HD (野生动物纪实高清)
 http://198.58.104.90:8989/natgeowild/index.m3u8
 #EXTINF:-1 tvg-id="National Geographic HD (国家地理高清)" tvg-name="National Geographic" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="纪实自然",National Geographic HD (国家地理高清)
