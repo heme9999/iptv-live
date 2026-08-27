@@ -44,9 +44,11 @@ http://38.75.136.137:98/gslb/dsdqbv/cctv5p.m3u8?auth=test20251009
 #EXTINF:-1 tvg-id="CCTV-16 奥林匹克 (超清)" tvg-name="CCTV-16 奥林匹克" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-16.png" group-title="体育·赛事",CCTV-16 奥林匹克 (超清)
 http://38.75.136.137:98/gslb/dsdqbv/cctv16hd.m3u8?auth=test20251009
 
-# === 日本放送专区 (东京旗舰六大台) ===
+# === 日本放送专区 (东京旗舰六大台 + NHK World) ===
 #EXTINF:-1 tvg-id="NHK 综合 (NHK综合 官方日语)" tvg-name="NHK 综合" tvg-logo="https://i.imgur.com/u8N6uoj.png" group-title="日本放送",NHK 综合 (NHK综合 官方日语)
 https://nhk4.mov3.co/hls/nhk.m3u8
+#EXTINF:-1 tvg-id="NHK World-Japan (官方英文 1080P)" tvg-name="NHK World-Japan" tvg-logo="https://i.imgur.com/u8N6uoj.png" group-title="日本放送",NHK World-Japan (官方英文 1080P)
+https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8
 #EXTINF:-1 tvg-id="日本电视台 (NTV 日本テレビ)" tvg-name="日本电视台" tvg-logo="https://i.imgur.com/u8N6uoj.png" group-title="日本放送",日本电视台 (NTV 日本テレビ)
 https://ntv5.mov3.co/hls/ntv.m3u8
 #EXTINF:-1 tvg-id="富士电视台 (Fuji TV フジテレビ)" tvg-name="富士电视台" tvg-logo="https://i.imgur.com/u8N6uoj.png" group-title="日本放送",富士电视台 (Fuji TV フジテレビ)
@@ -60,7 +62,9 @@ https://tvtokyo.mov3.co/hls/tvtokyo.m3u8
 #EXTINF:-1 tvg-id="QVC Japan (日本 QVC 1080P)" tvg-name="QVC Japan" tvg-logo="https://i.imgur.com/u8N6uoj.png" group-title="日本放送",QVC Japan (日本 QVC 1080P)
 https://d1flvb4iqlercm.cloudfront.net/live/live_1080p_2nd.m3u8
 
-# === 国际主流资讯 (美英官方 CDN 直连) ===
+# === 国际主流资讯 (美英官方直连·无广告插播) ===
+#EXTINF:-1 tvg-id="Sky News (英国 Sky 官方 1080P无广告)" tvg-name="Sky News" tvg-logo="https://i.imgur.com/ScyTG6P.png" group-title="国际资讯",Sky News (英国 Sky 官方 1080P无广告)
+https://skynewsau-live.akamaized.net/hls/live/2002689/skynewsau-extra1/master.m3u8
 #EXTINF:-1 tvg-id="Fox News (LiveNOW from FOX 官方 1080P)" tvg-name="Fox News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Fox_News_Channel_logo.svg/960px-Fox_News_Channel_logo.svg.png" group-title="国际资讯",Fox News (LiveNOW from FOX 官方 1080P)
 https://pb-k5p02dtnr2162.akamaized.net/LiveNOW_from_FOX.m3u8
 #EXTINF:-1 tvg-id="Fox Business (美国 Fox 商业 1080P有声)" tvg-name="Fox Business" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Fox_News_Channel_logo.svg/960px-Fox_News_Channel_logo.svg.png" group-title="国际资讯",Fox Business (美国 Fox 商业 1080P有声)
@@ -71,12 +75,12 @@ https://abcnews-streams.akamaized.net/hls/live/2023560/abcnewshudson1/master.m3u
 https://d1si3n1st4nkgb.cloudfront.net/10502/88896001/hls/master.m3u8?ads.xumo_channelId=88896001
 #EXTINF:-1 tvg-id="CBS News 24/7 (哥伦比亚广播公司官方 1080P)" tvg-name="CBS News 24/7" tvg-logo="https://i.imgur.com/ScyTG6P.png" group-title="国际资讯",CBS News 24/7 (哥伦比亚广播公司官方 1080P)
 https://cbsn-ny.cbsnstream.cbsnews.com/out/v1/ec3897d58a9b45129a77d67aa247d136/master.m3u8
-#EXTINF:-1 tvg-id="Sky News (英国官方英文 1080P)" tvg-name="Sky News" tvg-logo="https://i.imgur.com/ScyTG6P.png" group-title="国际资讯",Sky News (英国官方英文 1080P)
-https://jmp2.uk/plu-55b285cd2665de274553d66f.m3u8
 #EXTINF:-1 tvg-id="BBC News (英国BBC 官方英文 1080P)" tvg-name="BBC News" tvg-logo="https://i.imgur.com/ScyTG6P.png" group-title="国际资讯",BBC News (英国BBC 官方英文 1080P)
 https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8
 #EXTINF:-1 tvg-id="Bloomberg 彭博财经 (官方纯英文 1080P)" tvg-name="Bloomberg 彭博财经" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Bloomberg_Originals.png" group-title="国际资讯",Bloomberg 彭博财经 (官方纯英文 1080P)
 https://86fdc85a.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctZ2JfQmxvb21iZXJnT3JpZ2luYWxzX0hMUw/playlist.m3u8
+#EXTINF:-1 tvg-id="NHK World-Japan (日本 NHK 英文 1080P)" tvg-name="NHK World-Japan" tvg-logo="https://i.imgur.com/u8N6uoj.png" group-title="国际资讯",NHK World-Japan (日本 NHK 英文 1080P)
+https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8
 #EXTINF:-1 tvg-id="CNBC 财经 (官方英文)" tvg-name="CNBC 财经" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/CNBC_2025.svg/960px-CNBC_2025.svg.png" group-title="国际资讯",CNBC 财经 (官方英文)
 https://amg01079-nbcuuk-amg01079c2-samsung-gb-1258.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="CNA 亚洲新闻台 (新加坡 官方英文)" tvg-name="CNA 亚洲新闻台" tvg-logo="https://i.imgur.com/awIDugE.png" group-title="国际资讯",CNA 亚洲新闻台 (新加坡 官方英文)
