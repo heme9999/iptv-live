@@ -1,0 +1,103 @@
+#EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"
+
+# === 影视专区 (待验证测试组) ===
+#EXTINF:-1 tvg-id="HBO HD (北美官方流)" tvg-name="HBO HD (北美官方流)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="影视专区",HBO HD (北美官方流)
+https://boliviatv.bo/envivo/BoliviaTvHD/index.m3u8
+#EXTINF:-1 tvg-id="HBO Hits (强档影院)" tvg-name="HBO Hits (强档影院)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="影视专区",HBO Hits (强档影院)
+http://15.204.246.24:8080/BoliviaTvHD/index.m3u8
+#EXTINF:-1 tvg-id="AXN HD (动作美剧)" tvg-name="AXN HD (动作美剧)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="影视专区",AXN HD (动作美剧)
+http://15.204.246.24:8080/AXNHD/index.m3u8
+#EXTINF:-1 tvg-id="AMC HD (好莱坞影院)" tvg-name="AMC HD (好莱坞影院)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="影视专区",AMC HD (好莱坞影院)
+http://190.11.225.124:5000/live/amc_hd/playlist.m3u8
+#EXTINF:-1 tvg-id="东森洋片台 HD" tvg-name="东森洋片台 HD" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="影视专区",东森洋片台 HD
+http://88.212.15.29/live/test_ebc_western_hevc/playlist.m3u8
+#EXTINF:-1 tvg-id="美亚电影 HD" tvg-name="美亚电影 HD" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="影视专区",美亚电影 HD
+https://live2.tensila.com/pearl-v-1.pearlfm/hls/live/mystream.m3u8
+#EXTINF:-1 tvg-id="Cinema World HD" tvg-name="Cinema World HD" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="影视专区",Cinema World HD
+https://d1flvb4iqlercm.cloudfront.net/live/live_1080p_2nd.m3u8
+
+# === 纪实自然 (待验证测试组) ===
+#EXTINF:-1 tvg-id="Discovery Channel HD (探索频道/北美流)" tvg-name="Discovery Channel HD (探索频道/北美流)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="纪实自然",Discovery Channel HD (探索频道/北美流)
+https://svs.itworkscdn.net/asharqdiscoverylive/asharqd.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="Discovery Turbo (探索动力/机械汽车)" tvg-name="Discovery Turbo (探索动力/机械汽车)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="纪实自然",Discovery Turbo (探索动力/机械汽车)
+http://88.212.15.29/live/test_discovery_turbo_hevc/playlist.m3u8
+#EXTINF:-1 tvg-id="The History Channel (历史频道 HD/Xumo)" tvg-name="The History Channel (历史频道 HD/Xumo)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="纪实自然",The History Channel (历史频道 HD/Xumo)
+https://linear-188.frequency.stream/dist/xumo/188/hls/master/playlist.m3u8
+#EXTINF:-1 tvg-id="NASA TV 4K (美国宇航局太空直播/Akamai)" tvg-name="NASA TV 4K (美国宇航局太空直播/Akamai)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="纪实自然",NASA TV 4K (美国宇航局太空直播/Akamai)
+https://ntv1.akamaized.net/hls/live/2014075/NASA-NTV1-HLS/master.m3u8
+#EXTINF:-1 tvg-id="NASA TV Plus (官方高清)" tvg-name="NASA TV Plus (官方高清)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="纪实自然",NASA TV Plus (官方高清)
+https://images-us.nasa.gov/live/nasa_tv_1080p.m3u8
+#EXTINF:-1 tvg-id="Love Nature 4K (原生 4K 自然大作/Akamai)" tvg-name="Love Nature 4K (原生 4K 自然大作/Akamai)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="纪实自然",Love Nature 4K (原生 4K 自然大作/Akamai)
+https://pb-ehs1glsha1juy.akamaized.net/Love_Nature_4K.m3u8
+#EXTINF:-1 tvg-id="TLC 旅游生活频道 HD" tvg-name="TLC 旅游生活频道 HD" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="纪实自然",TLC 旅游生活频道 HD
+https://7nyaler.streamhostingcdn.top/stream/65/index.m3u8
+
+# === 港澳中文 (待验证测试组) ===
+#EXTINF:-1 tvg-id="ViuTV 99台 HD (香港直连)" tvg-name="ViuTV 99台 HD (香港直连)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="港澳中文",ViuTV 99台 HD (香港直连)
+http://r.jdshipin.com/vSJvl
+#EXTINF:-1 tvg-id="TVB 星河频道 (经典剧集专线)" tvg-name="TVB 星河频道 (经典剧集专线)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="港澳中文",TVB 星河频道 (经典剧集专线)
+http://r.jdshipin.com/Voac4
+#EXTINF:-1 tvg-id="TVB 经典台 HD (金庸古装大戏)" tvg-name="TVB 经典台 HD (金庸古装大戏)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="港澳中文",TVB 经典台 HD (金庸古装大戏)
+https://txmov2.a.kwimgs.com/bs3/video-hls/5211790793651941963_hlsb.m3u8
+#EXTINF:-1 tvg-id="澳门莲花卫视 HD (官方超清)" tvg-name="澳门莲花卫视 HD (官方超清)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="港澳中文",澳门莲花卫视 HD (官方超清)
+https://cdn4.skygo.mn/live/disk1/Lotus/HLSv3-FTA/Lotus.m3u8
+#EXTINF:-1 tvg-id="香港有线新闻台 (HOY 78台)" tvg-name="香港有线新闻台 (HOY 78台)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="港澳中文",香港有线新闻台 (HOY 78台)
+https://ktismaservers.in:3412/live/joytvlive.m3u8
+#EXTINF:-1 tvg-id="香港国际财经台 (HOY 76台)" tvg-name="香港国际财经台 (HOY 76台)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="港澳中文",香港国际财经台 (HOY 76台)
+https://media.fantv.hk/m3u8/archive/channel76_stream1.m3u8
+#EXTINF:-1 tvg-id="大湾区卫视 (粤语原声高清)" tvg-name="大湾区卫视 (粤语原声高清)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="港澳中文",大湾区卫视 (粤语原声高清)
+http://38.75.136.137:98/gslb/dsdqpub/dwqws.m3u8?auth=testpub
+#EXTINF:-1 tvg-id="凤凰卫视中文台 HD (官方流)" tvg-name="凤凰卫视中文台 HD (官方流)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="港澳中文",凤凰卫视中文台 HD (官方流)
+https://7612-5516-affc-d88b.kylintv.tv/live/pxinhd_iphone.m3u8
+
+# === 台湾主流 (待验证测试组) ===
+#EXTINF:-1 tvg-id="三立新闻台 HD (台湾官方源)" tvg-name="三立新闻台 HD (台湾官方源)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="台湾主流",三立新闻台 HD (台湾官方源)
+https://raw.githubusercontent.com/ChiSheng9/iptv/master/TV32.m3u8
+#EXTINF:-1 tvg-id="TVBS 新闻台 HD (台湾 24H 官方)" tvg-name="TVBS 新闻台 HD (台湾 24H 官方)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="台湾主流",TVBS 新闻台 HD (台湾 24H 官方)
+http://38.75.136.137:98/gslb/dsdqpub/tvbsxw.m3u8?auth=testpub
+#EXTINF:-1 tvg-id="中天新闻台 HD (台湾中天 官方直播)" tvg-name="中天新闻台 HD (台湾中天 官方直播)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="台湾主流",中天新闻台 HD (台湾中天 官方直播)
+http://38.75.136.137:98/gslb/dsdqpub/ztxw.m3u8?auth=testpub
+#EXTINF:-1 tvg-id="民视新闻台 HD (台湾民视官方)" tvg-name="民视新闻台 HD (台湾民视官方)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="台湾主流",民视新闻台 HD (台湾民视官方)
+https://townnews.g-mana.live/media/a54a6409-5e91-46f0-9fee-06904c.m3u8
+#EXTINF:-1 tvg-id="寰宇新闻台 HD (全球资讯/台湾版)" tvg-name="寰宇新闻台 HD (全球资讯/台湾版)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="台湾主流",寰宇新闻台 HD (全球资讯/台湾版)
+http://38.75.136.137:98/gslb/dsdqpub/hyxw.m3u8?auth=testpub
+#EXTINF:-1 tvg-id="东森综合台 HD (综艺娱乐)" tvg-name="东森综合台 HD (综艺娱乐)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="台湾主流",东森综合台 HD (综艺娱乐)
+http://38.75.136.137:98/gslb/dsdqpub/dszh.m3u8?auth=testpub
+#EXTINF:-1 tvg-id="台视主频 HD (TTV 台湾原版)" tvg-name="台视主频 HD (TTV 台湾原版)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="台湾主流",台视主频 HD (TTV 台湾原版)
+http://38.64.72.148:80/hls/modn/list/4001/playlist.m3u8
+#EXTINF:-1 tvg-id="中视主频 HD (CTV 台湾原版)" tvg-name="中视主频 HD (CTV 台湾原版)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="台湾主流",中视主频 HD (CTV 台湾原版)
+http://38.64.72.148:80/hls/modn/list/4002/playlist.m3u8
+#EXTINF:-1 tvg-id="华视主频 HD (CTS 台湾原版)" tvg-name="华视主频 HD (CTS 台湾原版)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="台湾主流",华视主频 HD (CTS 台湾原版)
+http://38.64.72.148:80/hls/modn/list/4003/playlist.m3u8
+#EXTINF:-1 tvg-id="东森超视 HD (Super TV)" tvg-name="东森超视 HD (Super TV)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="台湾主流",东森超视 HD (Super TV)
+http://38.64.72.148:80/hls/modn/list/2013/chunklist1.m3u8
+#EXTINF:-1 tvg-id="纬来体育台 HD (体育赛事)" tvg-name="纬来体育台 HD (体育赛事)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="台湾主流",纬来体育台 HD (体育赛事)
+https://epg.pw/stream/ab6df63b64d0cc44a1f4f029ed847a26fa54a7aebd4.m3u8
+
+# === 体育赛事 (待验证测试组) ===
+#EXTINF:-1 tvg-id="NBA TV HD (Tubi/Cloudfront 北美官方流)" tvg-name="NBA TV HD (Tubi/Cloudfront 北美官方流)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="体育赛事",NBA TV HD (Tubi/Cloudfront 北美官方流)
+https://aegis-cloudfront-1.tubi.video/b32c0573-4add-4b47-b826-2445c7ad50b7/index.m3u8
+#EXTINF:-1 tvg-id="Eurosport 1 HD (欧洲体育 4K/HEVC)" tvg-name="Eurosport 1 HD (欧洲体育 4K/HEVC)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="体育赛事",Eurosport 1 HD (欧洲体育 4K/HEVC)
+http://88.212.15.19/live/esp_4k_atk/playlist.m3u8
+#EXTINF:-1 tvg-id="Sky Sports Main Event HD (天空体育)" tvg-name="Sky Sports Main Event HD (天空体育)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="体育赛事",Sky Sports Main Event HD (天空体育)
+https://7nyaler.streamhostingcdn.top/stream/10/index.m3u8
+#EXTINF:-1 tvg-id="Golf Channel HD (高尔夫官方频道)" tvg-name="Golf Channel HD (高尔夫官方频道)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="体育赛事",Golf Channel HD (高尔夫官方频道)
+http://15.204.246.24:8080/GolfChannelHD/index.m3u8
+#EXTINF:-1 tvg-id="Red Bull TV (红牛极限运动 1080P/Akamai)" tvg-name="Red Bull TV (红牛极限运动 1080P/Akamai)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="体育赛事",Red Bull TV (红牛极限运动 1080P/Akamai)
+https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
+
+# === 国际资讯 (待验证测试组) ===
+#EXTINF:-1 tvg-id="Fox Business 24/7 (福克斯商业官方)" tvg-name="Fox Business 24/7 (福克斯商业官方)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="国际资讯",Fox Business 24/7 (福克斯商业官方)
+https://247preview.foxbusiness.com/hls/live/2020026/fbnv3preview/primary_400.m3u8
+#EXTINF:-1 tvg-id="Bloomberg TV US (彭博美国本土全高清)" tvg-name="Bloomberg TV US (彭博美国本土全高清)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="国际资讯",Bloomberg TV US (彭博美国本土全高清)
+https://www.bloomberg.com/media-manifest/streams/us.m3u8
+#EXTINF:-1 tvg-id="Bloomberg TV Asia (彭博亚太全高清)" tvg-name="Bloomberg TV Asia (彭博亚太全高清)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="国际资讯",Bloomberg TV Asia (彭博亚太全高清)
+https://bloomberg.com/media-manifest/streams/asia.m3u8
+#EXTINF:-1 tvg-id="Al Jazeera English HD (半岛英文台)" tvg-name="Al Jazeera English HD (半岛英文台)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="国际资讯",Al Jazeera English HD (半岛英文台)
+http://stream.mcquack.net/131/index.m3u8
+#EXTINF:-1 tvg-id="France 24 English HD (法国国际新闻)" tvg-name="France 24 English HD (法国国际新闻)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="国际资讯",France 24 English HD (法国国际新闻)
+https://live.france24.com/hls/live/2037220-b/F24_ES_HI_HLS/master.m3u8
+#EXTINF:-1 tvg-id="DW Español HD (德国之声 西语 1080P/Akamai)" tvg-name="DW Español HD (德国之声 西语 1080P/Akamai)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="国际资讯",DW Español HD (德国之声 西语 1080P/Akamai)
+https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/stream05/streamPlaylist.m3u8
+#EXTINF:-1 tvg-id="RTVE 24H (西班牙国家广播 24小时新闻/西语)" tvg-name="RTVE 24H (西班牙国家广播 24小时新闻/西语)" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="国际资讯",RTVE 24H (西班牙国家广播 24小时新闻/西语)
+https://ztnr.rtve.es/ztnr/1694255.m3u8
