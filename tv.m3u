@@ -71,8 +71,8 @@ https://tvtokyo.mov3.co/hls/tvtokyo.m3u8
 https://d1flvb4iqlercm.cloudfront.net/live/live_1080p_2nd.m3u8
 
 # === 国际主流资讯 (美英官方直连·无广告插播) ===
-#EXTINF:-1 tvg-id="Sky News (英国 Sky 官方 1080P无广告)" tvg-name="Sky News" tvg-logo="https://i.imgur.com/ScyTG6P.png" group-title="国际资讯",Sky News (英国 Sky 官方 1080P无广告)
-https://skynewsau-live.akamaized.net/hls/live/2002689/skynewsau-extra1/master.m3u8
+#EXTINF:-1 tvg-id="Sky News (英国 Sky 伦敦总部 24H直播)" tvg-name="Sky News" tvg-logo="https://i.imgur.com/ScyTG6P.png" group-title="国际资讯",Sky News (英国 Sky 伦敦总部 24H直播)
+https://stream1.freetv.fun/sky-news.m3u8
 #EXTINF:-1 tvg-id="Fox News (LiveNOW from FOX 官方 1080P)" tvg-name="Fox News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Fox_News_Channel_logo.svg/960px-Fox_News_Channel_logo.svg.png" group-title="国际资讯",Fox News (LiveNOW from FOX 官方 1080P)
 https://pb-k5p02dtnr2162.akamaized.net/LiveNOW_from_FOX.m3u8
 #EXTINF:-1 tvg-id="Fox Business (美国 Fox 商业 1080P有声)" tvg-name="Fox Business" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Fox_News_Channel_logo.svg/960px-Fox_News_Channel_logo.svg.png" group-title="国际资讯",Fox Business (美国 Fox 商业 1080P有声)
