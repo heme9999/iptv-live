@@ -1,0 +1,78 @@
+#EXTM3U name="港澳与台湾精选频道" x-tvg-url="https://live.fanmingming.com/e.xml"
+
+# ==================== 🇭🇰 港澳中文 / 粤语精选 ====================
+#EXTINF:-1 tvg-name="翡翠台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/logo/tvb.png" group-title="港澳中文",TVB 翡翠台 HD
+http://php.jdshipin.com:8880/TVOD/iptv.php?id=fct3
+
+#EXTINF:-1 tvg-name="TVB Plus" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/logo/j2.png" group-title="港澳中文",TVB Plus (J2) HD
+http://php.jdshipin.com/TVOD/iptv.php?id=j2
+
+#EXTINF:-1 tvg-name="明珠台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/logo/pearl.png" group-title="港澳中文",TVB 明珠台 HD
+http://php.jdshipin.com/TVOD/iptv.php?id=mzt2
+
+#EXTINF:-1 tvg-name="无线新闻" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/logo/tvbnews.png" group-title="港澳中文",TVB 无线新闻台 HD
+http://php.jdshipin.com/TVOD/iptv.php?id=wxxw
+
+#EXTINF:-1 tvg-name="TVB娱乐新闻" group-title="港澳中文",TVB 娱乐新闻台 HD
+http://php.jdshipin.com/TVOD/iptv.php?id=tvbylxw
+
+#EXTINF:-1 tvg-name="华丽翡翠台" group-title="港澳中文",华丽翡翠台 HD
+http://php.jdshipin.com/TVOD/iptv.php?id=huali2
+
+#EXTINF:-1 tvg-name="TVB星河" group-title="港澳中文",TVB 星河频道 HD
+http://r.jdshipin.com/sXuuD
+
+#EXTINF:-1 tvg-name="ViuTV" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/logo/viutv.png" group-title="港澳中文",ViuTV 99台 HD
+http://php.jdshipin.com/TVOD/iptv.php?id=viutv
+
+#EXTINF:-1 tvg-name="HOY TV" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/logo/hoytv.png" group-title="港澳中文",HOY TV 77台 HD
+http://r.jdshipin.com/sFw4S
+
+#EXTINF:-1 tvg-name="港台电视31" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/logo/rthk31.png" group-title="港澳中文",香港电台 RTHK 31 HD
+http://php.jdshipin.com:8880/TVOD/iptv.php?id=rthk31
+
+#EXTINF:-1 tvg-name="港台电视32" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/logo/rthk32.png" group-title="港澳中文",香港电台 RTHK 32 HD
+http://php.jdshipin.com:8880/TVOD/iptv.php?id=rthk32
+
+#EXTINF:-1 tvg-name="凤凰中文" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/logo/fhzw.png" group-title="港澳中文",凤凰卫视中文台 HD
+http://221.7.175.154:85/tsfile/live/1020_1.m3u8?key=txiptv&playlive=1&authid=0
+
+#EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/logo/fhzx.png" group-title="港澳中文",凤凰卫视资讯台 HD
+http://221.7.175.154:85/tsfile/live/1021_1.m3u8?key=txiptv&playlive=1&authid=0
+
+#EXTINF:-1 tvg-name="凤凰香港" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/logo/fhhk.png" group-title="港澳中文",凤凰卫视香港台 HD
+http://php.jdshipin.com/TVOD/iptv.php?id=fhhk
+
+#EXTINF:-1 tvg-name="凤凰电影" group-title="港澳中文",凤凰卫视电影台 HD
+http://221.7.175.154:85/tsfile/live/1022_1.m3u8?key=txiptv&playlive=1&authid=0
+
+#EXTINF:-1 tvg-name="香港卫视" group-title="港澳中文",香港卫视综合 HD
+http://webcast.hkstv.tv/livestream/mutfysrq/playlist.m3u8
+
+#EXTINF:-1 tvg-name="澳视澳门" group-title="港澳中文",澳视澳门 HD
+http://php.jdshipin.com:8880/TVOD/iptv.php?id=asam
+
+#EXTINF:-1 tvg-name="澳门卫视" group-title="港澳中文",澳门卫视 HD
+http://php.jdshipin.com:8880/TVOD/iptv.php?id=as
+
+# ==================== 🇹🇼 台湾主流 / 综艺新闻 ====================
+#EXTINF:-1 tvg-name="TVBS新闻" group-title="台湾主流",TVBS 新闻台 HD
+http://61.221.215.25:8800/hls/9/index.m3u8
+
+#EXTINF:-1 tvg-name="TVBS Asia" group-title="台湾主流",TVBS 亚洲台 HD
+http://38.64.72.148/hls/modn/list/4005/playlist.m3u8
+
+#EXTINF:-1 tvg-name="台视新闻" group-title="台湾主流",台视新闻台 HD
+http://38.64.72.148/hls/modn/list/4013/chunklist1.m3u8
+
+#EXTINF:-1 tvg-name="三立戏剧" group-title="台湾主流",三立戏剧台 HD
+http://61.221.215.25:8800/hls/41/index.m3u8
+
+#EXTINF:-1 tvg-name="八大戏剧" group-title="台湾主流",八大戏剧台 HD
+http://61.221.215.25:8800/hls/39/index.m3u8
+
+#EXTINF:-1 tvg-name="纬来精采" group-title="台湾主流",纬来精采台 HD
+http://61.221.215.25:8800/hls/48/index.m3u8
+
+#EXTINF:-1 tvg-name="MOMO综合" group-title="台湾主流",MOMO 综合台 1080P
+http://nmk.ioapk.com:5050/4gtv-live107/index.m3u8
