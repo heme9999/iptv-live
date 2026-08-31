@@ -57,8 +57,6 @@ https://d1flvb4iqlercm.cloudfront.net/live/live_1080p_2nd.m3u8
 https://raw.githubusercontent.com/heme9999/iptv-live/main/sky_news.m3u8
 #EXTINF:-1 tvg-id="Fox News (LiveNOW from FOX 官方 1080P)" tvg-name="Fox News" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Fox_News_Channel_logo.svg/960px-Fox_News_Channel_logo.svg.png" group-title="国际资讯",Fox News (LiveNOW from FOX 官方 1080P)
 https://pb-k5p02dtnr2162.akamaized.net/LiveNOW_from_FOX.m3u8
-#EXTINF:-1 tvg-id="Fox Business 24/7 (福克斯商业官方)" tvg-name="Fox Business" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Fox_News_Channel_logo.svg/960px-Fox_News_Channel_logo.svg.png" group-title="国际资讯",Fox Business 24/7 (福克斯商业官方)
-https://247preview.foxbusiness.com/hls/live/2020026/fbnv3preview/primary_400.m3u8
 #EXTINF:-1 tvg-id="ABC News Live (美国广播公司官方 1080P)" tvg-name="ABC News Live" tvg-logo="https://i.imgur.com/ScyTG6P.png" group-title="国际资讯",ABC News Live (美国广播公司官方 1080P)
 https://abcnews-streams.akamaized.net/hls/live/2023560/abcnewshudson1/master.m3u8
 #EXTINF:-1 tvg-id="NBC News NOW (美国国家广播公司官方 1080P)" tvg-name="NBC News NOW" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/CNBC_2025.svg/960px-CNBC_2025.svg.png" group-title="国际资讯",NBC News NOW (美国国家广播公司官方 1080P)
