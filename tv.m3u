@@ -181,10 +181,11 @@ http://107.150.60.122/live/szwshd.m3u8
 
 
 
+
 # === 台湾主流频道 ===
 #EXTINF:-1 tvg-id="TVBS 综合台" tvg-name="TVBS 综合台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/logo/tvbs.png" group-title="台湾主流",TVBS 综合台 HD
 http://38.64.72.148/hls/modn/list/4005/playlist.m3u8
-#EXTINF:-1 tvg-id="民视新闻台" tvg-name="民视新闻台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/logo/ftv.png" group-title="台湾主流",民视新闻台 HD
+#EXTINF:-1 tvg-id="东森新闻" tvg-name="东森新闻" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/logo/ettvnews.png" group-title="台湾主流",东森新闻台 HD
 http://38.64.72.148/hls/modn/list/4012/playlist.m3u8
 #EXTINF:-1 tvg-id="台视新闻台" tvg-name="台视新闻台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/logo/ttvnews.png" group-title="台湾主流",台视新闻台 HD
 http://38.64.72.148/hls/modn/list/4013/chunklist1.m3u8
