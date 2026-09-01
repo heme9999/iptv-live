@@ -12,7 +12,15 @@ https://pb-ehs1glsha1juy.akamaized.net/Love_Nature_4K.m3u8
 #EXTINF:-1 tvg-id="CCTV-9 纪录 (超清)" tvg-name="CCTV-9 纪录" tvg-logo="https://i.imgur.com/3tivvMm.png" group-title="纪实自然",CCTV-9 纪录 (超清)
 http://107.150.60.122/live/cctv9hd.m3u8
 
-# === 体育·F1·赛事专区 ===
+# === 体育·网球·F1赛事专区 ===
+#EXTINF:-1 tvg-id="Tennis Channel (官方国际台 1080P)" tvg-name="Tennis Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Tennis_Channel_2016_logo.svg/800px-Tennis_Channel_2016_logo.svg.png" group-title="体育·赛事",Tennis Channel (官方国际台 1080P)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischnlintl-lggb/playlist.m3u8
+#EXTINF:-1 tvg-id="Tennis Channel USA (美国原版 1080P)" tvg-name="Tennis Channel USA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Tennis_Channel_2016_logo.svg/800px-Tennis_Channel_2016_logo.svg.png" group-title="体育·赛事",Tennis Channel USA (美国原版 1080P)
+http://23.237.104.106:8080/USA_TENNIS/index.m3u8
+#EXTINF:-1 tvg-id="ESPN 体育赛事 (大满贯/美网 720P)" tvg-name="ESPN" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/800px-ESPN_wordmark.svg.png" group-title="体育·赛事",ESPN 体育赛事 (大满贯/美网 720P)
+http://23.237.104.106:8080/USA_ESPNU/index.m3u8
+#EXTINF:-1 tvg-id="beIN SPORTS XTRA (全球赛事 1080P)" tvg-name="beIN SPORTS" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Bein_sports_logo.svg/800px-Bein_sports_logo.svg.png" group-title="体育·赛事",beIN SPORTS XTRA (全球赛事 1080P)
+https://bein-xtra-bein.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="F1 赛车官方专线 (Formula 1 HD)" tvg-name="F1 赛车专线" tvg-logo="https://i.imgur.com/8t9mdg9.png" group-title="体育·赛事",F1 赛车官方专线 (Formula 1 HD)
 https://amg12058-c15studio-amg12058c1-lg-us-5787.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="Motorvision TV (世界顶级赛车/F1专线)" tvg-name="Motorvision TV" tvg-logo="https://i.imgur.com/8t9mdg9.png" group-title="体育·赛事",Motorvision TV (世界顶级赛车/F1专线)
