@@ -1,6 +1,10 @@
 #EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"
 
 # === 体育·网球·F1赛事专区 ===
+#EXTINF:-1 tvg-id="ESPN 1 HD (美网官方阿瑟阿什球场正赛直播)" tvg-name="ESPN 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/800px-ESPN_wordmark.svg.png" group-title="体育·赛事",ESPN 1 HD (美网官方阿瑟阿什球场正赛直播)
+http://85.237.89.160:9590/usa-s/ESPN-HD/index.m3u8
+#EXTINF:-1 tvg-id="ESPN 2 HD (美网官方分球场正赛直播)" tvg-name="ESPN 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/800px-ESPN_wordmark.svg.png" group-title="体育·赛事",ESPN 2 HD (美网官方分球场正赛直播)
+http://85.237.89.160:9590/usa-s/ESPN-2-HD/index.m3u8
 #EXTINF:-1 tvg-id="CCTV 高尔夫·网球 HD (央视美网官方中文名嘴解说)" tvg-name="CCTV 高尔夫·网球" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-高尔夫网球.png" group-title="体育·赛事",CCTV 高尔夫·网球 HD (央视美网官方中文名嘴解说)
 http://38.75.136.137:98/gslb/dsdqpub/gefwq.m3u8?auth=testpub
 #EXTINF:-1 tvg-id="TSN Sports 体育专线 (北美美网持权转播/1080P)" tvg-name="TSN Sports" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/The_Sports_Network_Logo.svg/800px-The_Sports_Network_Logo.svg.png" group-title="体育·赛事",TSN Sports 体育专线 (北美美网持权转播/1080P)
@@ -16,7 +20,7 @@ https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischannel
 #EXTINF:-1 tvg-id="NBC Sports NOW (美国国家体育台 1080P)" tvg-name="NBC Sports NOW" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/NBC_Sports_logo_2023.svg/800px-NBC_Sports_logo_2023.svg.png" group-title="体育·赛事",NBC Sports NOW (美国国家体育台 1080P)
 https://d4whmvwm0rdvi.cloudfront.net/10007/99993008/hls/master.m3u8?ads.xumo_channelId=99993008
 #EXTINF:-1 tvg-id="ESPNU 体育台 HD (美式足球/综合赛事)" tvg-name="ESPNU" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/800px-ESPN_wordmark.svg.png" group-title="体育·赛事",ESPNU 体育台 HD (美式足球/综合赛事)
-http://23.237.104.106:8080/USA_ESPNU/index.m3u8
+http://85.237.89.160:9590/usa-s/ESPN-U-HD/index.m3u8
 #EXTINF:-1 tvg-id="beIN SPORTS XTRA (全球赛事 1080P)" tvg-name="beIN SPORTS" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Bein_sports_logo.svg/800px-Bein_sports_logo.svg.png" group-title="体育·赛事",beIN SPORTS XTRA (全球赛事 1080P)
 https://bein-xtra-bein.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="五星体育台 (F1 蒙扎正赛/中文李兵解说)" tvg-name="五星体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/五星体育.png" group-title="体育·赛事",五星体育台 (F1 蒙扎正赛/中文李兵解说)
