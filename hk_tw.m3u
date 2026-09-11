@@ -17,8 +17,8 @@ https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischnlint
 https://ttc-tennischannelus-firetv.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="Tennis Channel USA (美国原版 1080P)" tvg-name="Tennis Channel USA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Tennis_Channel_2016_logo.svg/800px-Tennis_Channel_2016_logo.svg.png" group-title="体育·赛事",Tennis Channel USA (美国原版 1080P)
 http://23.237.104.106:8080/USA_TENNIS/index.m3u8
-#EXTINF:-1 tvg-id="SuperTennis HD (欧洲顶级网球台 1080P)" tvg-name="SuperTennis" tvg-logo="https://upload.wikimedia.org/wikipedia/it/thumb/6/6a/SuperTennis_-_Logo_2016.svg/960px-SuperTennis_-_Logo_2016.svg.png" group-title="体育·赛事",SuperTennis HD (欧洲顶级网球台 1080P)
-https://live-embed.supertennix.hiway.media/restreamer/supertennix_client/gpu-a-c0-16/restreamer/outgest/aa3673f1-e178-44a9-a947-ef41db73211a/manifest.m3u8
+#EXTINF:-1 tvg-id="Tennis Channel 欧洲台 (官方 1080P/WTA赛事)" tvg-name="Tennis Channel EU" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Tennis_Channel_2016_logo.svg/800px-Tennis_Channel_2016_logo.svg.png" group-title="体育·赛事",Tennis Channel 欧洲台 (官方 1080P/WTA赛事)
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischannelnl-samsungnl/playlist.m3u8
 #EXTINF:-1 tvg-id="ESPNU 体育台 HD (美式足球/综合赛事)" tvg-name="ESPNU" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/800px-ESPN_wordmark.svg.png" group-title="体育·赛事",ESPNU 体育台 HD (美式足球/综合赛事)
 http://23.237.104.106:8080/USA_ESPNU/index.m3u8
 #EXTINF:-1 tvg-id="beIN SPORTS XTRA (全球赛事 1080P)" tvg-name="beIN SPORTS" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Bein_sports_logo.svg/800px-Bein_sports_logo.svg.png" group-title="体育·赛事",beIN SPORTS XTRA (全球赛事 1080P)
