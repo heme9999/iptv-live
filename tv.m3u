@@ -1,25 +1,25 @@
 #EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"
 
 # === 体育·网球·F1赛事专区 ===
-#EXTINF:-1 tvg-id="ESPN 1 HD (美网官方阿瑟阿什球场正赛直播)" tvg-name="ESPN 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/800px-ESPN_wordmark.svg.png" group-title="体育·赛事",ESPN 1 HD (美网官方阿瑟阿什球场正赛直播)
-http://181.78.197.59:8000/play/a07z/index.m3u8
-#EXTINF:-1 tvg-id="ESPN 2 HD (美网官方分球场正赛直播)" tvg-name="ESPN 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/800px-ESPN_wordmark.svg.png" group-title="体育·赛事",ESPN 2 HD (美网官方分球场正赛直播)
-http://181.78.197.59:8000/play/a080/index.m3u8
-#EXTINF:-1 tvg-id="CCTV 高尔夫·网球 HD (央视美网官方中文名嘴解说)" tvg-name="CCTV 高尔夫·网球" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-高尔夫网球.png" group-title="体育·赛事",CCTV 高尔夫·网球 HD (央视美网官方中文名嘴解说)
-http://38.75.136.137:98/gslb/dsdqpub/gefwq.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="TSN Sports 体育专线 (北美美网持权转播/1080P)" tvg-name="TSN Sports" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/The_Sports_Network_Logo.svg/800px-The_Sports_Network_Logo.svg.png" group-title="体育·赛事",TSN Sports 体育专线 (北美美网持权转播/1080P)
-https://d3pnbvng3bx2nj.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-rds8g35qfqrnv/TSN_The_Ocho.m3u8
-#EXTINF:-1 tvg-id="Tennis Channel (官方国际台 1080P)" tvg-name="Tennis Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Tennis_Channel_2016_logo.svg/800px-Tennis_Channel_2016_logo.svg.png" group-title="体育·赛事",Tennis Channel (官方国际台 1080P)
-https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischnlintl-lggb/playlist.m3u8
-#EXTINF:-1 tvg-id="T2 Tennis Channel (官方专业二台 1080P)" tvg-name="T2 Tennis" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Tennis_Channel_2016_logo.svg/800px-Tennis_Channel_2016_logo.svg.png" group-title="体育·赛事",T2 Tennis Channel (官方专业二台 1080P)
-https://ttc-tennischannelus-firetv.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="Tennis Channel USA (美国原版 1080P)" tvg-name="Tennis Channel USA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Tennis_Channel_2016_logo.svg/800px-Tennis_Channel_2016_logo.svg.png" group-title="体育·赛事",Tennis Channel USA (美国原版 1080P)
+#EXTINF:-1 tvg-id="Tennis Channel USA (美国原版 1080P/网球大满贯·纯正英语)" tvg-name="Tennis Channel USA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Tennis_Channel_2016_logo.svg/800px-Tennis_Channel_2016_logo.svg.png" group-title="体育·赛事",Tennis Channel USA (美国原版 1080P/网球大满贯·纯正英语)
 http://23.237.104.106:8080/USA_TENNIS/index.m3u8
-#EXTINF:-1 tvg-id="Tennis Channel 欧洲台 (官方 1080P/WTA赛事)" tvg-name="Tennis Channel EU" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Tennis_Channel_2016_logo.svg/800px-Tennis_Channel_2016_logo.svg.png" group-title="体育·赛事",Tennis Channel 欧洲台 (官方 1080P/WTA赛事)
+#EXTINF:-1 tvg-id="T2 Tennis Channel (官方专业二台 1080P/网球现场·纯正英语)" tvg-name="T2 Tennis" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Tennis_Channel_2016_logo.svg/800px-Tennis_Channel_2016_logo.svg.png" group-title="体育·赛事",T2 Tennis Channel (官方专业二台 1080P/网球现场·纯正英语)
+https://ttc-tennischannelus-firetv.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="Tennis Channel (官方国际台 1080P/纯正英语)" tvg-name="Tennis Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Tennis_Channel_2016_logo.svg/800px-Tennis_Channel_2016_logo.svg.png" group-title="体育·赛事",Tennis Channel (官方国际台 1080P/纯正英语)
 https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischannelnl-samsungnl/playlist.m3u8
-#EXTINF:-1 tvg-id="NBC Sports NOW (美国国家体育台 1080P)" tvg-name="NBC Sports NOW" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/NBC_Sports_logo_2023.svg/800px-NBC_Sports_logo_2023.svg.png" group-title="体育·赛事",NBC Sports NOW (美国国家体育台 1080P)
+#EXTINF:-1 tvg-id="TSN Sports 体育专线 (北美美网持权 1080P/纯正英语)" tvg-name="TSN Sports" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/The_Sports_Network_Logo.svg/800px-The_Sports_Network_Logo.svg.png" group-title="体育·赛事",TSN Sports 体育专线 (北美美网持权 1080P/纯正英语)
+https://d3pnbvng3bx2nj.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-rds8g35qfqrnv/TSN_The_Ocho.m3u8
+#EXTINF:-1 tvg-id="CCTV 高尔夫·网球 HD (央视美网官方正赛/名嘴中文解说)" tvg-name="CCTV 高尔夫·网球" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-高尔夫网球.png" group-title="体育·赛事",CCTV 高尔夫·网球 HD (央视美网官方正赛/名嘴中文解说)
+http://38.75.136.137:98/gslb/dsdqpub/gefwq.m3u8?auth=testpub
+#EXTINF:-1 tvg-id="NBC Sports NOW (美国国家体育台 1080P/纯正英语)" tvg-name="NBC Sports NOW" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/NBC_Sports_logo_2023.svg/800px-NBC_Sports_logo_2023.svg.png" group-title="体育·赛事",NBC Sports NOW (美国国家体育台 1080P/纯正英语)
 https://d4whmvwm0rdvi.cloudfront.net/10007/99993008/hls/master.m3u8?ads.xumo_channelId=99993008
-#EXTINF:-1 tvg-id="ESPN 3 HD (综合赛事/大满贯分球场 1080P)" tvg-name="ESPN 3" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/800px-ESPN_wordmark.svg.png" group-title="体育·赛事",ESPN 3 HD (综合赛事/大满贯分球场 1080P)
+#EXTINF:-1 tvg-id="ESPN 8 The Ocho (ESPN 官方 1080P/纯正英语)" tvg-name="ESPN 8 The Ocho" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/800px-ESPN_wordmark.svg.png" group-title="体育·赛事",ESPN 8 The Ocho (ESPN 官方 1080P/纯正英语)
+https://d3b6q2ou5kp8ke.cloudfront.net/ESPNTheOcho.m3u8
+#EXTINF:-1 tvg-id="ESPN 拉美台 HD (西语/综合体育 1080P)" tvg-name="ESPN 拉美" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/800px-ESPN_wordmark.svg.png" group-title="体育·赛事",ESPN 拉美台 HD (西语/综合体育 1080P)
+http://181.78.197.59:8000/play/a07z/index.m3u8
+#EXTINF:-1 tvg-id="ESPN 2 拉美台 HD (西语/综合体育 1080P)" tvg-name="ESPN 2 拉美" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/800px-ESPN_wordmark.svg.png" group-title="体育·赛事",ESPN 2 拉美台 HD (西语/综合体育 1080P)
+http://181.78.197.59:8000/play/a080/index.m3u8
+#EXTINF:-1 tvg-id="ESPN 3 拉美台 HD (西语/综合体育 1080P)" tvg-name="ESPN 3 拉美" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/800px-ESPN_wordmark.svg.png" group-title="体育·赛事",ESPN 3 拉美台 HD (西语/综合体育 1080P)
 http://181.78.197.59:8000/play/a081/index.m3u8
 #EXTINF:-1 tvg-id="beIN SPORTS XTRA (全球赛事 1080P)" tvg-name="beIN SPORTS" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Bein_sports_logo.svg/800px-Bein_sports_logo.svg.png" group-title="体育·赛事",beIN SPORTS XTRA (全球赛事 1080P)
 https://bein-xtra-bein.amagi.tv/playlist.m3u8
