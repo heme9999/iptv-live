@@ -15,10 +15,22 @@ https://d3pnbvng3bx2nj.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68
 http://38.75.136.137:98/gslb/dsdqpub/gefwq.m3u8?auth=testpub
 #EXTINF:-1 tvg-id="NBC Sports NOW (美国国家体育台 1080P/纯正英语)" tvg-name="NBC Sports NOW" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/NBC_Sports_logo_2023.svg/800px-NBC_Sports_logo_2023.svg.png" group-title="体育·赛事",NBC Sports NOW (美国国家体育台 1080P/纯正英语)
 https://d4whmvwm0rdvi.cloudfront.net/10007/99993008/hls/master.m3u8?ads.xumo_channelId=99993008
-#EXTINF:-1 tvg-id="ESPN 1 HD (北美卫星原版英语·待中继上线)" tvg-name="ESPN 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/800px-ESPN_wordmark.svg.png" group-title="体育·赛事",ESPN 1 HD (北美卫星原版英语·待中继上线)
+#EXTINF:-1 tvg-id="ESPN 1 HD (北美原版英语/待中继上线)" tvg-name="ESPN 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/800px-ESPN_wordmark.svg.png" group-title="体育·赛事",ESPN 1 HD (北美原版英语/待中继上线)
 http://85.237.89.160:9590/usa-s/ESPN-HD/index.m3u8
-#EXTINF:-1 tvg-id="ESPN 2 HD (北美卫星原版英语·待中继上线)" tvg-name="ESPN 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/800px-ESPN_wordmark.svg.png" group-title="体育·赛事",ESPN 2 HD (北美卫星原版英语·待中继上线)
+#EXTINF:-1 tvg-id="ESPN 2 HD (北美原版英语/待中继上线)" tvg-name="ESPN 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/800px-ESPN_wordmark.svg.png" group-title="体育·赛事",ESPN 2 HD (北美原版英语/待中继上线)
 http://85.237.89.160:9590/usa-s/ESPN-2-HD/index.m3u8
+#EXTINF:-1 tvg-id="ESPN 1 HD 西语台 (拉美原声 1080P)" tvg-name="ESPN 1 西语" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/800px-ESPN_wordmark.svg.png" group-title="体育·赛事",ESPN 1 HD 西语台 (拉美原声 1080P)
+http://181.78.197.59:8000/play/a07z/index.m3u8
+#EXTINF:-1 tvg-id="ESPN 2 HD 西语台 (拉美原声 1080P)" tvg-name="ESPN 2 西语" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/800px-ESPN_wordmark.svg.png" group-title="体育·赛事",ESPN 2 HD 西语台 (拉美原声 1080P)
+http://181.78.197.59:8000/play/a080/index.m3u8
+#EXTINF:-1 tvg-id="ESPN 3 HD 西语台 (拉美原声 1080P)" tvg-name="ESPN 3 西语" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/800px-ESPN_wordmark.svg.png" group-title="体育·赛事",ESPN 3 HD 西语台 (拉美原声 1080P)
+http://181.78.197.59:8000/play/a081/index.m3u8
+#EXTINF:-1 tvg-id="ESPN 4 HD 西语台 (拉美原声 1080P)" tvg-name="ESPN 4 西语" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/800px-ESPN_wordmark.svg.png" group-title="体育·赛事",ESPN 4 HD 西语台 (拉美原声 1080P)
+http://181.78.197.59:8000/play/a07n/index.m3u8
+#EXTINF:-1 tvg-id="ESPN 8 The Ocho (ESPN 官方 1080P/纯正英语)" tvg-name="ESPN 8 The Ocho" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/800px-ESPN_wordmark.svg.png" group-title="体育·赛事",ESPN 8 The Ocho (ESPN 官方 1080P/纯正英语)
+https://d3b6q2ou5kp8ke.cloudfront.net/ESPNTheOcho.m3u8
+#EXTINF:-1 tvg-id="ESPNU 体育台 HD (美式足球/综合赛事)" tvg-name="ESPNU" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/800px-ESPN_wordmark.svg.png" group-title="体育·赛事",ESPNU 体育台 HD (美式足球/综合赛事)
+http://85.237.89.160:9590/usa-s/ESPN-U-HD/index.m3u8
 #EXTINF:-1 tvg-id="beIN SPORTS XTRA (全球赛事 1080P)" tvg-name="beIN SPORTS" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Bein_sports_logo.svg/800px-Bein_sports_logo.svg.png" group-title="体育·赛事",beIN SPORTS XTRA (全球赛事 1080P)
 https://bein-xtra-bein.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="五星体育台 (F1 蒙扎正赛/中文李兵解说)" tvg-name="五星体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/五星体育.png" group-title="体育·赛事",五星体育台 (F1 蒙扎正赛/中文李兵解说)
