@@ -33,9 +33,9 @@ https://d3b6q2ou5kp8ke.cloudfront.net/ESPNTheOcho.m3u8
 http://85.237.89.160:9590/usa-s/ESPN-U-HD/index.m3u8
 #EXTINF:-1 tvg-id="beIN SPORTS XTRA (全球赛事 1080P)" tvg-name="beIN SPORTS" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Bein_sports_logo.svg/800px-Bein_sports_logo.svg.png" group-title="体育·赛事",beIN SPORTS XTRA (全球赛事 1080P)
 https://bein-xtra-bein.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="五星体育台 (F1 蒙扎正赛/中文李兵解说)" tvg-name="五星体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/五星体育.png" group-title="体育·赛事",五星体育台 (F1 蒙扎正赛/中文李兵解说)
-http://198.204.228.26/live/wxtyhd.m3u8
-#EXTINF:-1 tvg-id="广东体育台 (F1 意大利正赛直播/高清)" tvg-name="广东体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东体育.png" group-title="体育·赛事",广东体育台 (F1 意大利正赛直播/高清)
+#EXTINF:-1 tvg-id="五星体育" tvg-name="五星体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/五星体育.png" group-title="体育·赛事",五星体育
+http://38.75.136.137:98/gslb/dsdqpub/wxtyhd.m3u8?auth=testpub
+#EXTINF:-1 tvg-id="广东体育" tvg-name="广东体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东体育.png" group-title="体育·赛事",广东体育
 http://38.75.136.137:98/gslb/dsdqpub/gdty.m3u8?auth=testpub
 #EXTINF:-1 tvg-id="Motorvision TV (世界顶级赛车/超跑专线 720P)" tvg-name="Motorvision TV" tvg-logo="https://i.imgur.com/8t9mdg9.png" group-title="体育·赛事",Motorvision TV (世界顶级赛车/超跑专线 720P)
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=535
@@ -205,7 +205,7 @@ http://php.jdshipin.com:8880/TVOD/iptv.php?id=asam
 http://php.jdshipin.com:8880/TVOD/iptv.php?id=as
 #EXTINF:-1 tvg-id="广东珠江台 (粤语)" tvg-name="广东珠江台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东珠江.png" group-title="港澳中文",广东珠江台 (粤语)
 http://38.75.136.137:98/gslb/dsdqpub/gdzj.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="广东体育 (高清)" tvg-name="广东体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东体育.png" group-title="港澳中文",广东体育 (高清)
+#EXTINF:-1 tvg-id="广东体育" tvg-name="广东体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东体育.png" group-title="港澳中文",广东体育
 http://38.75.136.137:98/gslb/dsdqpub/gdty.m3u8?auth=testpub
 #EXTINF:-1 tvg-id="深圳卫视 (高清)" tvg-name="深圳卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/深圳卫视.png" group-title="港澳中文",深圳卫视 (高清)
 http://107.150.60.122/live/szwshd.m3u8
