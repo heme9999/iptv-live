@@ -1,6 +1,11 @@
 # 📺 高清 IPTV 直播源自动订阅 (APTV & Android TV)
 
-精选、经过实测连通性与画质验证的全球高清直播源清单，适配 **iOS / tvOS APTV** 及 **Android TV / 智能手机**。
+[![Auto Check & Update IPTV Streams](https://github.com/heme9999/iptv-live/actions/workflows/auto_check_update.yml/badge.svg)](https://github.com/heme9999/iptv-live/actions/workflows/auto_check_update.yml)
+[![Live Stream Health](https://img.shields.io/badge/Stream%20Health-99%25%20Online-brightgreen)](HEALTH_REPORT.md)
+
+精选、经过全自动健康检测（每 6 小时自动巡检与故障换源）的全球高清直播源清单，适配 **iOS / tvOS APTV** 及 **Android TV / 智能手机**。
+
+👉 **[查看最新全频道实时健康监控报告 (HEALTH_REPORT.md)](HEALTH_REPORT.md)**
 
 ---
 
