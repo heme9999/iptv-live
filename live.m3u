@@ -2,7 +2,7 @@
 
 # === 体育·网球·F1赛事专区 ===
 #EXTINF:-1 tvg-id="Tennis Channel USA (美国原版 1080P/美网正赛·纯正英语)" tvg-name="Tennis Channel USA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Tennis_Channel_2016_logo.svg/800px-Tennis_Channel_2016_logo.svg.png" group-title="体育·赛事",Tennis Channel USA (美国原版 1080P/美网正赛·纯正英语)
-https://ttc-tennischannelus-firetv.amagi.tv/playlist.m3u8
+http://23.237.104.106:8080/USA_TENNIS/index.m3u8
 #EXTINF:-1 tvg-id="T2 Tennis Channel (官方专业二台 1080P/美网现场·纯正英语)" tvg-name="T2 Tennis" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Tennis_Channel_2016_logo.svg/800px-Tennis_Channel_2016_logo.svg.png" group-title="体育·赛事",T2 Tennis Channel (官方专业二台 1080P/美网现场·纯正英语)
 https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischannelnl-samsungnl/playlist.m3u8
 #EXTINF:-1 tvg-id="Tennis Channel HD (北美网球专线 720P/纯正英语)" tvg-name="Tennis Channel HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Tennis_Channel_2016_logo.svg/800px-Tennis_Channel_2016_logo.svg.png" group-title="体育·赛事",Tennis Channel HD (北美网球专线 720P/纯正英语)
