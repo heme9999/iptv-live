@@ -206,7 +206,7 @@ http://php.jdshipin.com/TVOD/iptv.php?id=fhzw
 #EXTINF:-1 tvg-id="凤凰卫视资讯台" tvg-name="凤凰卫视资讯台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/logo/fhzx.png" group-title="港澳中文",凤凰卫视资讯台 HD
 http://php.jdshipin.com/TVOD/iptv.php?id=fhzx
 #EXTINF:-1 tvg-id="凤凰卫视香港台" tvg-name="凤凰卫视香港台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/logo/fhhk.png" group-title="港澳中文",凤凰卫视香港台 HD
-http://php.jdshipin.com/TVOD/iptv.php?id=fhhk
+http://php.jdshipin.com:8880/TVOD/iptv.php?id=fhhk
 #EXTINF:-1 tvg-id="凤凰卫视电影台" tvg-name="凤凰卫视电影台" group-title="港澳中文",凤凰卫视电影台 HD
 http://221.7.175.154:85/tsfile/live/1022_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-id="澳视澳门" tvg-name="澳视澳门" group-title="港澳中文",澳视澳门 HD
