@@ -37,6 +37,13 @@ TIMEOUT_SECONDS = 4.0
 MAX_WORKERS = 12
 
 
+HIJACK_BLOCKLIST = [
+    "dsdqpub",
+    "from=zbdq",
+    "a=zbdq",
+    "400-788-3916",
+]
+
 def check_stream(url: str, timeout: float = TIMEOUT_SECONDS) -> tuple[bool, float, str]:
     """
     Test an HLS stream URL.
@@ -57,7 +64,14 @@ def check_stream(url: str, timeout: float = TIMEOUT_SECONDS) -> tuple[bool, floa
             if status != 200:
                 return False, 0.0, f"HTTP status {status}"
 
-            content_bytes = response.read(65536)
+            final_url = response.geturl()
+            if any(b in final_url for b in HIJACK_BLOCKLIST) or any(b in url for b in HIJACK_BLOCKLIST):
+                return False, 0.0, "Blocked (Ad Hijacked / Pirate Relay Detected)"
+
+            try:
+                content_bytes = response.read(65536)
+            except Exception:
+                content_bytes = b""
             latency = (time.time() - start_t) * 1000.0
 
             try:

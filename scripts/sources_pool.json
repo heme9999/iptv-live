@@ -2,7 +2,6 @@
   "CCTV-1 综合": [
     "http://107.150.60.122/live/cctv1hd.m3u8",
     "http://38.75.136.137:98/gslb/dsdqbv/cctv1hd.m3u8?auth=test20251009",
-    "http://38.75.136.137:98/gslb/dsdqpub/cctv1.m3u8?auth=testpub",
     "http://198.204.228.26/live/cctv1hd.m3u8",
     "http://74.91.26.218:82/live/cctv1hd.m3u8"
   ],
@@ -27,7 +26,6 @@
   "CCTV-5 体育": [
     "http://107.150.60.122/live/cctv5hd.m3u8",
     "http://38.75.136.137:98/gslb/dsdqbv/cctv5hd.m3u8?auth=test20251009",
-    "http://38.75.136.137:98/gslb/dsdqpub/cctv5.m3u8?auth=testpub",
     "http://198.204.228.26/live/cctv5hd.m3u8",
     "http://74.91.26.218:82/live/cctv5hd.m3u8"
   ],
@@ -106,22 +104,18 @@
   ],
   "CCTV 高尔夫·网球": [
     "http://107.150.60.122/live/gefwq.m3u8",
-    "http://38.75.136.137:98/gslb/dsdqpub/gefwq.m3u8?auth=testpub",
     "http://38.75.136.137:98/gslb/dsdqbv/gefwq.m3u8?auth=test20251009"
   ],
   "五星体育": [
     "http://107.150.60.122/live/wxtyhd.m3u8",
-    "http://38.75.136.137:98/gslb/dsdqpub/wxtyhd.m3u8?auth=testpub",
     "http://38.75.136.137:98/gslb/dsdqbv/wxtyhd.m3u8?auth=test20251009"
   ],
   "广东体育": [
     "http://107.150.60.122/live/gdty.m3u8",
-    "http://38.75.136.137:98/gslb/dsdqpub/gdty.m3u8?auth=testpub",
     "https://2.fast.hidns.vip/163189/gdty"
   ],
   "欧洲足球专线": [
     "http://107.150.60.122/live/fyzq.m3u8",
-    "http://38.75.136.137:98/gslb/dsdqpub/fyzq.m3u8?auth=testpub",
     "http://38.75.136.137:98/gslb/dsdqbv/fyzq.m3u8?auth=test20251009"
   ],
   "湖南卫视": [
@@ -150,16 +144,13 @@
     "http://198.204.228.26/live/bjwshd.m3u8"
   ],
   "重庆卫视": [
-    "http://107.150.60.122/live/cqwshd.m3u8",
-    "http://38.75.136.137:98/gslb/dsdqpub/cqws.m3u8?auth=testpub"
+    "http://107.150.60.122/live/cqwshd.m3u8"
   ],
   "广东卫视": [
-    "http://107.150.60.122/live/gdwshd.m3u8",
-    "http://38.75.136.137:98/gslb/dsdqpub/gdws.m3u8?auth=testpub"
+    "http://107.150.60.122/live/gdwshd.m3u8"
   ],
   "深圳卫视": [
-    "http://107.150.60.122/live/szwshd.m3u8",
-    "http://38.75.136.137:98/gslb/dsdqpub/szws.m3u8?auth=testpub"
+    "http://107.150.60.122/live/szwshd.m3u8"
   ],
   "Tennis Channel USA": [
     "http://23.237.104.106:8080/USA_TENNIS/index.m3u8",
@@ -299,7 +290,6 @@
   ],
   "重庆新闻": [
     "http://107.150.60.122/live/cqxw.m3u8",
-    "http://38.75.136.137:98/gslb/dsdqpub/cqds.m3u8?auth=testpub",
     "http://107.150.60.122/live/cqwshd.m3u8"
   ],
   "TVBS 综合台": [
@@ -312,17 +302,14 @@
     "http://38.64.72.148/hls/modn/list/4013/chunklist1.m3u8"
   ],
   "重庆都市": [
-    "http://107.150.60.122/live/cqds.m3u8",
-    "http://38.75.136.137:98/gslb/dsdqpub/cqds.m3u8?auth=testpub"
+    "http://107.150.60.122/live/cqds.m3u8"
   ],
   "广东珠江台": [
-    "http://107.150.60.122/live/gdzj.m3u8",
-    "http://38.75.136.137:98/gslb/dsdqpub/gdzj.m3u8?auth=testpub"
+    "http://107.150.60.122/live/gdzj.m3u8"
   ],
   "大湾区卫视": [
     "http://107.150.60.122/live/nfws.m3u8",
-    "http://107.150.60.122/live/dwqws.m3u8",
-    "http://38.75.136.137:98/gslb/dsdqpub/nfws.m3u8?auth=testpub"
+    "http://107.150.60.122/live/dwqws.m3u8"
   ],
   "经典动作大片 24H 轮播": [
     "https://54045f0c40fd442c8b06df076aaf1e85.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6065/master.m3u8",
@@ -333,5 +320,14 @@
   ],
   "EuroNews": [
     "https://2f6c5bf4.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmxheHhUVi1ldV9FdXJvbmV3c0ZyYW5jYWlzX0hMUw/playlist.m3u8"
+  ],
+  "WeatherNews Japan (WNI 气象新闻 1080P)": [
+    "https://rch01e-alive-hls.akamaized.net/38fb45b25cdb05a1/out/v1/4e907bfabc684a1dae10df8431a84d21/index.m3u8"
+  ],
+  "Shop Channel Japan (日本购物综合 1080P)": [
+    "https://stream3.shopch.jp/HLS/master.m3u8"
+  ],
+  "QVC Japan (日本 QVC 1080P)": [
+    "https://d1flvb4iqlercm.cloudfront.net/live/live_1080p_2nd.m3u8"
   ]
 }
