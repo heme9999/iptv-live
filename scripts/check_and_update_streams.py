@@ -5,6 +5,10 @@ IPTV Live Stream Health Checker & Auto-Updater
 ----------------------------------------------
 - Checks reachability, response time, and stream integrity of live.m3u.
 - Automatically fails over to backup candidate streams in sources_pool.json if a channel is down.
+- Automatically fails back (restores) the primary backbone stream (candidates[0]) for Line 1 when it recovers,
+  while preserving distinct backup URLs on secondary lines (Line 2+) of the same channel.
+- Updates M3U files by exact line number instead of global substring replacement.
+- Synchronizes legacy playlists (tv.m3u, hk_tw.m3u) when matching channel URLs are updated.
 - Generates HEALTH_REPORT.md and purges CDN caches.
 """
 
@@ -21,6 +25,10 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LIVE_M3U_PATH = os.path.join(BASE_DIR, "live.m3u")
+LEGACY_M3U_PATHS = [
+    os.path.join(BASE_DIR, "tv.m3u"),
+    os.path.join(BASE_DIR, "hk_tw.m3u"),
+]
 POOL_JSON_PATH = os.path.join(BASE_DIR, "scripts", "sources_pool.json")
 REPORT_MD_PATH = os.path.join(BASE_DIR, "HEALTH_REPORT.md")
 
@@ -61,11 +69,15 @@ def check_stream(url: str, timeout: float = TIMEOUT_SECONDS) -> tuple[bool, floa
                 if "#EXT-X-STREAM-INF" in content_str or "#EXTINF" in content_str or ".ts" in content_str or ".m3u8" in content_str or ".m4s" in content_str:
                     return True, round(latency, 1), "OK (HLS Verified)"
                 return True, round(latency, 1), "OK (M3U8 Header Present)"
-            
+
             # Check if direct TS / media stream
             content_type = response.headers.get("Content-Type", "")
             if "video" in content_type or "mpegurl" in content_type or "octet-stream" in content_type:
                 return True, round(latency, 1), f"OK ({content_type})"
+
+            # Reject JSON/HTML error payloads masquerading as 200 OK
+            if content_str.strip().startswith("{") and "error" in content_str.lower():
+                return False, round(latency, 1), "JSON error payload"
 
             if len(content_bytes) > 500:
                 return True, round(latency, 1), "OK (Stream Data Received)"
@@ -85,7 +97,7 @@ def check_stream(url: str, timeout: float = TIMEOUT_SECONDS) -> tuple[bool, floa
 
 def parse_m3u(file_path: str):
     """
-    Parses M3U file into structured list of channels and comments.
+    Parses M3U file into structured list of channels with exact line numbers and multi-line rank.
     """
     if not os.path.exists(file_path):
         return []
@@ -95,33 +107,45 @@ def parse_m3u(file_path: str):
 
     channels = []
     current_extinf = None
+    extinf_line_idx = None
+    seen_counts = {}
 
-    for line in lines:
+    for line_idx, line in enumerate(lines):
         line_clean = line.strip()
         if not line_clean:
             continue
         if line_clean.startswith("#EXTINF:"):
             current_extinf = line_clean
-        elif not line_clean.startswith("#") and current_extinf:
+            extinf_line_idx = line_idx
+        elif not line_clean.startswith("#") and current_extinf is not None:
             # Extract attributes
             name_match = re.search(r'tvg-name="([^"]+)"', current_extinf)
             name = name_match.group(1) if name_match else ""
+            parts = current_extinf.split(",", 1)
+            display_name = parts[1].strip() if len(parts) > 1 else "Unknown"
             if not name:
-                # Fallback to display name after comma
-                parts = current_extinf.split(",", 1)
-                name = parts[1].strip() if len(parts) > 1 else "Unknown"
+                name = display_name
 
             group_match = re.search(r'group-title="([^"]+)"', current_extinf)
             group = group_match.group(1) if group_match else "默认"
 
+            group_ch_key = (group, name)
+            line_rank = seen_counts.get(group_ch_key, 0)
+            seen_counts[group_ch_key] = line_rank + 1
+
             channels.append({
                 "extinf": current_extinf,
+                "extinf_line_idx": extinf_line_idx,
                 "url": line_clean,
+                "url_line_idx": line_idx,
                 "name": name,
+                "display_name": display_name,
                 "group": group,
+                "line_rank": line_rank,  # 0 for Line 1 (primary), 1 for Line 2 (backup), etc.
                 "raw_lines": (current_extinf, line_clean)
             })
             current_extinf = None
+            extinf_line_idx = None
 
     return channels
 
@@ -134,6 +158,80 @@ def load_pool():
         except Exception as e:
             print(f"Failed to load sources pool: {e}")
     return {}
+
+
+def get_candidates_for_channel(pool: dict, name: str) -> list[str]:
+    candidates = pool.get(name, [])
+    if not candidates:
+        for pool_k, pool_v in pool.items():
+            if pool_k in name or name in pool_k:
+                candidates = pool_v
+                break
+    return candidates
+
+
+def apply_line_updates_to_m3u(file_path: str, line_updates: dict[int, str]):
+    """
+    Replaces URL lines by exact 0-based line index, avoiding global string replacement collisions.
+    """
+    if not line_updates or not os.path.exists(file_path):
+        return False
+
+    with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
+        lines = f.readlines()
+
+    for line_idx, new_url in line_updates.items():
+        if 0 <= line_idx < len(lines):
+            lines[line_idx] = new_url + "\n"
+
+    with open(file_path, "w", encoding="utf-8") as f:
+        f.writelines(lines)
+    return True
+
+
+def sync_legacy_playlists(pool: dict, probe_cache: dict[str, tuple[bool, float, str]]):
+    """
+    Also checks and updates legacy playlists (tv.m3u, hk_tw.m3u) using the already-probed
+    stream results and pool candidates so they do not drift behind live.m3u.
+    """
+    for legacy_path in LEGACY_M3U_PATHS:
+        if not os.path.exists(legacy_path):
+            continue
+        legacy_channels = parse_m3u(legacy_path)
+        line_updates = {}
+        for ch in legacy_channels:
+            u = ch["url"]
+            name = ch["name"]
+            line_rank = ch["line_rank"]
+            candidates = get_candidates_for_channel(pool, name)
+
+            if u not in probe_cache:
+                probe_cache[u] = check_stream(u, timeout=3.5)
+            is_valid, _, _ = probe_cache[u]
+
+            # Primary line failback to backbone candidates[0] if healthy
+            if line_rank == 0 and candidates and u != candidates[0]:
+                pref_u = candidates[0]
+                if pref_u not in probe_cache:
+                    probe_cache[pref_u] = check_stream(pref_u, timeout=3.5)
+                if probe_cache[pref_u][0]:
+                    line_updates[ch["url_line_idx"]] = pref_u
+                    continue
+
+            # Failover if dead
+            if not is_valid and candidates:
+                for cand_url in candidates:
+                    if cand_url == u:
+                        continue
+                    if cand_url not in probe_cache:
+                        probe_cache[cand_url] = check_stream(cand_url, timeout=3.5)
+                    if probe_cache[cand_url][0]:
+                        line_updates[ch["url_line_idx"]] = cand_url
+                        break
+
+        if line_updates:
+            apply_line_updates_to_m3u(legacy_path, line_updates)
+            print(f"Synchronized {len(line_updates)} stream updates to {legacy_path}.")
 
 
 def purge_cdn_caches():
@@ -163,6 +261,7 @@ def main():
 
     # Check primary streams concurrently
     results = {}
+    probe_cache = {}
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         future_to_ch = {
             executor.submit(check_stream, ch["url"]): idx
@@ -172,6 +271,7 @@ def main():
             idx = future_to_ch[future]
             ch = channels[idx]
             is_valid, latency, reason = future.result()
+            probe_cache[ch["url"]] = (is_valid, latency, reason)
             results[idx] = {
                 "channel": ch,
                 "is_valid": is_valid,
@@ -182,60 +282,101 @@ def main():
                 "active_url": ch["url"]
             }
 
-    # Process failovers for failed channels
+    # Track active URLs already assigned per (group, name) to avoid duplicate multi-line URLs
+    assigned_urls_per_channel = {}
     updated_count = 0
+    line_updates = {}
+
     for idx in sorted(results.keys()):
         res = results[idx]
         ch = res["channel"]
         name = ch["name"]
+        group = ch["group"]
+        line_rank = ch["line_rank"]
+        group_ch_key = (group, name)
+        used_urls = assigned_urls_per_channel.setdefault(group_ch_key, set())
+        candidates = get_candidates_for_channel(pool, name)
 
-        # Only failover if current stream is dead / invalid
-        if not res["is_valid"]:
-            print(f"[FAILOVER NEEDED] {name} ({res['reason']}) URL: {ch['url']}")
-            # Find candidate in pool
-            candidates = pool.get(name, [])
-            if not candidates:
-                # Try partial matching in pool
-                for pool_k, pool_v in pool.items():
-                    if pool_k in name or name in pool_k:
-                        candidates = pool_v
-                        break
+        # 1. Failback logic: if this is Line 1 (line_rank == 0) and candidates[0] is the preferred
+        # backbone stream, restore candidates[0] when it is healthy even if the current relay is alive.
+        if line_rank == 0 and candidates and res["active_url"] != candidates[0]:
+            preferred_url = candidates[0]
+            if preferred_url not in probe_cache:
+                probe_cache[preferred_url] = check_stream(preferred_url, timeout=3.5)
+            pref_valid, pref_lat, pref_reason = probe_cache[preferred_url]
+            if pref_valid:
+                print(f"[FAILBACK TO BACKBONE] {name} Line 1 restored to preferred source: {preferred_url} ({pref_lat}ms)")
+                res["active_url"] = preferred_url
+                res["is_valid"] = True
+                res["latency"] = pref_lat
+                res["reason"] = f"Restored primary: {pref_reason}"
+                res["swapped"] = True
+                line_updates[ch["url_line_idx"]] = preferred_url
+                updated_count += 1
+                used_urls.add(preferred_url)
+                continue
 
-            # Test candidates
-            swapped = False
+        # 2. Deduplication logic for Line 2+ (line_rank > 0): if a secondary line has the exact same URL
+        # as Line 1 (e.g. from previous global replace bug), switch it to the next healthy distinct backup.
+        if line_rank > 0 and res["active_url"] in used_urls and candidates:
             for cand_url in candidates:
-                if cand_url == ch["url"]:
+                if cand_url in used_urls:
                     continue
-                cand_valid, cand_lat, cand_reason = check_stream(cand_url, timeout=3.5)
+                if cand_url not in probe_cache:
+                    probe_cache[cand_url] = check_stream(cand_url, timeout=3.5)
+                cand_valid, cand_lat, cand_reason = probe_cache[cand_url]
                 if cand_valid:
-                    print(f"  -> Successfully switched {name} to working backup: {cand_url} ({cand_lat}ms)")
+                    print(f"[DEDUP MULTI-LINE] {name} Line {line_rank + 1} switched to distinct backup: {cand_url} ({cand_lat}ms)")
                     res["active_url"] = cand_url
                     res["is_valid"] = True
                     res["latency"] = cand_lat
-                    res["reason"] = f"Swapped to backup: {cand_reason}"
+                    res["reason"] = f"Distinct backup: {cand_reason}"
                     res["swapped"] = True
-                    swapped = True
+                    line_updates[ch["url_line_idx"]] = cand_url
                     updated_count += 1
                     break
+
+        # 3. Failover logic: if current stream is dead / invalid, switch to first working candidate
+        if not res["is_valid"]:
+            print(f"[FAILOVER NEEDED] {name} ({res['reason']}) URL: {ch['url']}")
+            swapped = False
+            # Prefer a candidate not already used on another line of the same channel, fallback to any working candidate
+            for allow_duplicate in (False, True):
+                if swapped:
+                    break
+                for cand_url in candidates:
+                    if cand_url == ch["url"]:
+                        continue
+                    if not allow_duplicate and cand_url in used_urls:
+                        continue
+                    if cand_url not in probe_cache:
+                        probe_cache[cand_url] = check_stream(cand_url, timeout=3.5)
+                    cand_valid, cand_lat, cand_reason = probe_cache[cand_url]
+                    if cand_valid:
+                        print(f"  -> Successfully switched {name} to working backup: {cand_url} ({cand_lat}ms)")
+                        res["active_url"] = cand_url
+                        res["is_valid"] = True
+                        res["latency"] = cand_lat
+                        res["reason"] = f"Swapped to backup: {cand_reason}"
+                        res["swapped"] = True
+                        line_updates[ch["url_line_idx"]] = cand_url
+                        swapped = True
+                        updated_count += 1
+                        break
 
             if not swapped:
                 print(f"  -> No working backup found for {name}")
 
-    # Regenerate live.m3u if any URLs swapped
-    if updated_count > 0:
-        print(f"Applying {updated_count} stream updates to {LIVE_M3U_PATH}...")
-        with open(LIVE_M3U_PATH, "r", encoding="utf-8", errors="ignore") as f:
-            full_content = f.read()
+        used_urls.add(res["active_url"])
 
-        for idx, res in results.items():
-            if res["swapped"]:
-                orig = res["original_url"]
-                new_u = res["active_url"]
-                full_content = full_content.replace(orig, new_u)
-
-        with open(LIVE_M3U_PATH, "w", encoding="utf-8") as f:
-            f.write(full_content)
+    # Regenerate live.m3u by exact line index if any URLs swapped
+    if line_updates:
+        print(f"Applying {len(line_updates)} line-indexed stream updates to {LIVE_M3U_PATH}...")
+        apply_line_updates_to_m3u(LIVE_M3U_PATH, line_updates)
         print("Updated live.m3u saved.")
+
+    # Also synchronize legacy playlists (tv.m3u, hk_tw.m3u)
+    sync_legacy_playlists(pool, probe_cache)
 
     # Calculate statistics
     total = len(results)
