@@ -324,9 +324,6 @@
   "WeatherNews Japan (WNI 气象新闻 1080P)": [
     "https://rch01e-alive-hls.akamaized.net/38fb45b25cdb05a1/out/v1/4e907bfabc684a1dae10df8431a84d21/index.m3u8"
   ],
-  "Shop Channel Japan (日本购物综合 1080P)": [
-    "https://stream3.shopch.jp/HLS/master.m3u8"
-  ],
   "QVC Japan (日本 QVC 1080P)": [
     "https://d1flvb4iqlercm.cloudfront.net/live/live_1080p_2nd.m3u8"
   ]
