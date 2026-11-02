@@ -58,7 +58,7 @@ http://38.75.136.137:98/gslb/dsdqbv/cctv5p.m3u8?auth=test20251009
 #EXTINF:-1 tvg-id="CCTV-16 奥林匹克 (超清)" tvg-name="CCTV-16 奥林匹克 (超清)" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-16.png" group-title="体育·赛事",CCTV-16 奥林匹克 (超清)
 http://38.75.136.137:98/gslb/dsdqbv/cctv16hd.m3u8?auth=test20251009
 #EXTINF:-1 tvg-id="CCTV-16 奥林匹克 (超清)" tvg-name="CCTV-16 奥林匹克 (超清)" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-16.png" group-title="体育·赛事",CCTV-16 奥林匹克 (超清)
-http://198.204.228.26/live/cctv16hd.m3u8
+http://38.75.136.137:98/gslb/dsdqbv/cctv16hd.m3u8?auth=test20251009
 
 # === 日本放送专区 (东京六大台 + WNI + NHK World + 购物精选) ===
 #EXTINF:-1 tvg-id="NHK World-Japan (NHK 全球英文 1080P)" tvg-name="NHK World-Japan" tvg-logo="https://www.xn--rgv465a.top/tvlogo/NHKWorld.png" group-title="日本放送",NHK World-Japan (NHK 全球英文 1080P)
