@@ -49,8 +49,6 @@ http://38.75.136.137:98/gslb/dsdqbv/cctv16hd.m3u8?auth=test20251009
 https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8
 #EXTINF:-1 tvg-id="WeatherNews Japan (WNI 气象新闻 1080P)" tvg-name="WeatherNews Japan" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Weathernews_logo.svg/800px-Weathernews_logo.svg.png" group-title="日本放送",WeatherNews Japan (WNI 气象新闻 1080P)
 https://rch01e-alive-hls.akamaized.net/38fb45b25cdb05a1/out/v1/4e907bfabc684a1dae10df8431a84d21/index.m3u8
-#EXTINF:-1 tvg-id="Shop Channel Japan (日本购物综合 1080P)" tvg-name="Shop Channel Japan" tvg-logo="https://www.shopch.jp/common/img/header_logo.png" group-title="日本放送",Shop Channel Japan (日本购物综合 1080P)
-https://stream3.shopch.jp/HLS/master.m3u8
 #EXTINF:-1 tvg-id="NHK 综合 (NHK综合 官方日语)" tvg-name="NHK 综合" tvg-logo="https://www.xn--rgv465a.top/tvlogo/NHK综合.png" group-title="日本放送" referer="https://mov3.co/" http-referrer="https://mov3.co/",NHK 综合 (NHK综合 官方日语)
 #EXTVLCOPT:http-referrer=https://mov3.co/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
