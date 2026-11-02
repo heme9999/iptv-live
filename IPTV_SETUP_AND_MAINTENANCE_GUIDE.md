@@ -74,7 +74,7 @@ flowchart TD
 | :--- | :---: | :--- | :--- |
 | **体育·赛事** | 16+ | CCTV-5、CCTV-5+、CCTV-16、五星体育、广东体育、F1 官方专线、欧洲足球、Eurosport 1 4K、ESPN 1/2、Red Bull TV | 满足网球大师赛/大满贯、西甲、英超、F1、NBA 全场景赛事需求 |
 | **日本放送** | 7 | NHK 综合、日本电视台 (NTV)、富士电视台 (Fuji TV)、朝日电视台 (TV Asahi)、TBS 电视台、东京电视台 (TV Tokyo)、NHK World 英文 1080P | 完整覆盖**东京旗舰商业六大台**，原画无压缩原生音频 |
-| **国际·资讯** | 14+ | BBC News、CNN International、Bloomberg TV、Sky News、EuroNews、DW、France 24、经典动作大片 24H 轮播 | 全球顶级财经、即时新闻、纪录片与 24 小时影视专线 |
+| **国际资讯** | 14 | BBC News、Fox News、ABC News Live、NBC News NOW、CBS News 24/7、Bloomberg、Sky News、CNBC、CNA、CGTN、DW、France 24、EuroNews | 全球顶级财经与即时新闻官方直连专线 |
 | **央视核心** | 18 | CCTV-1 综合至 CCTV-17 农业农村、CCTV-5+ 体育赛事高清 | 完整央视高清矩阵，全频带台标与超清 1080P 信号 |
 | **主流卫视** | 20+ | 湖南卫视、浙江卫视、东方卫视、江苏卫视、北京卫视、广东卫视等 | 覆盖各省头部卫星电视综合频道，全国热播综艺/剧集首播 |
 | **港澳中文** | 8+ | 凤凰卫视中文台、凤凰资讯台、凤凰香港台、TVB 翡翠台、大湾区卫视、广东珠江台 (粤语) | 高清华语优质台，原汁原味粤语及两岸三地综合节目 |
@@ -149,15 +149,15 @@ graph LR
 >   http://38.75.136.137:98/gslb/dsdqbv/cctv5hd.m3u8?auth=test20251009
 >   ```
 
-#### 3. 视觉 OCR 辅助检测
-编写了基于 macOS Vision 深度学习框架的自动化审查脚本，定期截图并检测画面中是否存在 “400-”、“热线”、“中医” 等敏感特征词，自动触发拉黑报警。
+#### 3. 视觉 OCR 辅助检测（本地维护侧执行）
+在 macOS 本地维护节点上使用基于 Vision 框架的抽帧审查工具（或 Linux 维护节点上的 `ffmpeg` + 开源 OCR），定期对二级中继源截图并检测画面中是否存在 “400-”、“热线”、“中医” 等敏感特征词（注：GitHub Actions 使用 `ubuntu-latest` Runner，仅运行 `scripts/check_and_update_streams.py` 进行协议探活与主备切换，不直接调用 macOS Vision 框架）。
 
 ---
 
 ## 5. GitHub Actions 全天候自动化监控与自动换源
 
 ### 5.1 工作流触发与调度
-- **定时调度**: 每 6 小时自动运行一次 (`cron: '0 */6 * * *'`)。
+- **定时调度**: 配置为每 6 小时自动运行 (`cron: '0 */6 * * *'`)；受 GitHub Actions 公共 Runner 队列调度影响，实际触发间隔通常在 4～10 小时浮动。
 - **手动调度**: 支持通过 GitHub Actions 控制台随时点击 `Run workflow` 触发。
 - **并发互斥保护**:
   ```yaml
