@@ -47,6 +47,8 @@ def check_stream(url: str, timeout: float = TIMEOUT_SECONDS) -> tuple[bool, floa
 
     start_t = time.time()
     headers = {"User-Agent": USER_AGENT, "Accept": "*/*"}
+    if "mov3.co" in url:
+        headers["Referer"] = "https://mov3.co/"
 
     try:
         req = urllib.request.Request(url, headers=headers)

@@ -4,9 +4,9 @@
 #EXTINF:-1 tvg-id="Tennis Channel USA (美国原版 1080P/美网正赛·纯正英语)" tvg-name="Tennis Channel USA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Tennis_Channel_2016_logo.svg/800px-Tennis_Channel_2016_logo.svg.png" group-title="体育·赛事",Tennis Channel USA (美国原版 1080P/美网正赛·纯正英语)
 http://23.237.104.106:8080/USA_TENNIS/index.m3u8
 #EXTINF:-1 tvg-id="T2 Tennis Channel (官方专业二台 1080P/美网现场·纯正英语)" tvg-name="T2 Tennis" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Tennis_Channel_2016_logo.svg/800px-Tennis_Channel_2016_logo.svg.png" group-title="体育·赛事",T2 Tennis Channel (官方专业二台 1080P/美网现场·纯正英语)
-https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischannelnl-samsungnl/playlist.m3u8
+https://ttc-tennischannelus-firetv.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="Tennis Channel HD (北美网球专线 720P/纯正英语)" tvg-name="Tennis Channel HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Tennis_Channel_2016_logo.svg/800px-Tennis_Channel_2016_logo.svg.png" group-title="体育·赛事",Tennis Channel HD (北美网球专线 720P/纯正英语)
-https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischannelnl-samsungnl/playlist.m3u8
+https://ttc-tennischannelus-firetv.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="Tennis Channel (官方国际台 1080P/纯正英语)" tvg-name="Tennis Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Tennis_Channel_2016_logo.svg/800px-Tennis_Channel_2016_logo.svg.png" group-title="体育·赛事",Tennis Channel (官方国际台 1080P/纯正英语)
 http://23.237.104.106:8080/USA_TENNIS/index.m3u8
 #EXTINF:-1 tvg-id="TSN Sports 体育专线 (北美美网持权 1080P/纯正英语)" tvg-name="TSN Sports" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/The_Sports_Network_Logo.svg/800px-The_Sports_Network_Logo.svg.png" group-title="体育·赛事",TSN Sports 体育专线 (北美美网持权 1080P/纯正英语)
@@ -36,7 +36,7 @@ https://bein-xtra-bein.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="五星体育" tvg-name="五星体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/五星体育.png" group-title="体育·赛事",五星体育
 http://107.150.60.122/live/wxtyhd.m3u8
 #EXTINF:-1 tvg-id="广东体育" tvg-name="广东体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东体育.png" group-title="体育·赛事",广东体育
-http://107.150.60.122/live/gdty.m3u8
+http://38.75.136.137:98/gslb/dsdqpub/gdty.m3u8?auth=testpub
 #EXTINF:-1 tvg-id="Motorvision TV (世界顶级赛车/超跑专线 720P)" tvg-name="Motorvision TV" tvg-logo="https://i.imgur.com/8t9mdg9.png" group-title="体育·赛事",Motorvision TV (世界顶级赛车/超跑专线 720P)
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=535
 #EXTINF:-1 tvg-id="Formula 1 官方 24H 专线 (赛事回顾/集锦/分析)" tvg-name="Formula 1" tvg-logo="https://i.imgur.com/8t9mdg9.png" group-title="体育·赛事",Formula 1 官方 24H 专线 (赛事回顾/集锦/分析)
@@ -60,20 +60,42 @@ http://107.150.60.122/live/cctv16hd.m3u8
 #EXTINF:-1 tvg-id="CCTV-16 奥林匹克 (超清)" tvg-name="CCTV-16 奥林匹克 (超清)" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-16.png" group-title="体育·赛事",CCTV-16 奥林匹克 (超清)
 http://198.204.228.26/live/cctv16hd.m3u8
 
-# === 日本放送专区 (东京旗舰六大台 + NHK World) ===
+# === 日本放送专区 (东京旗舰六大台 + TOKYO MX + NHK World) ===
 #EXTINF:-1 tvg-id="NHK World-Japan (NHK 全球英文 1080P)" tvg-name="NHK World-Japan" tvg-logo="https://www.xn--rgv465a.top/tvlogo/NHKWorld.png" group-title="日本放送",NHK World-Japan (NHK 全球英文 1080P)
 https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8
-#EXTINF:-1 tvg-id="NHK 综合 (NHK综合 官方日语)" tvg-name="NHK 综合" tvg-logo="https://www.xn--rgv465a.top/tvlogo/NHK综合.png" group-title="日本放送",NHK 综合 (NHK综合 官方日语)
+#EXTINF:-1 tvg-id="TOKYO MX (东京大都会电视台 官方1080P)" tvg-name="TOKYO MX" tvg-logo="https://i.imgur.com/u8N6uoj.png" group-title="日本放送",TOKYO MX (东京大都会电视台 官方1080P)
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01287-rakutentvjapan-tokyomx-cmaf-rakutenjp/playlist.m3u8
+#EXTINF:-1 tvg-id="日テレNEWS24 (日本电视台 24H新闻 1080P)" tvg-name="日テレNEWS24" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Nippon_TV_%282013_with_Wordmark%29.svg/960px-Nippon_TV_%282013_with_Wordmark%29.svg.png" group-title="日本放送",日テレNEWS24 (日本电视台 24H新闻 1080P)
+https://cdn-apne1.tsv2.amagi.tv/linear/amg01287-rakutentvjapan-news1hlscmaf-rakutenjp/playlist.m3u8
+#EXTINF:-1 tvg-id="NHK 综合 (NHK综合 官方日语)" tvg-name="NHK 综合" tvg-logo="https://www.xn--rgv465a.top/tvlogo/NHK综合.png" group-title="日本放送" referer="https://mov3.co/" http-referrer="https://mov3.co/",NHK 综合 (NHK综合 官方日语)
+#EXTVLCOPT:http-referrer=https://mov3.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
+#EXTHTTP:{"Referer":"https://mov3.co/","User-Agent":"Mozilla/5.0"}
 https://nhk4.mov3.co/hls/nhk.m3u8
-#EXTINF:-1 tvg-id="日本电视台 (NTV 日本テレビ)" tvg-name="日本电视台" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Nippon_TV_%282013_with_Wordmark%29.svg/960px-Nippon_TV_%282013_with_Wordmark%29.svg.png" group-title="日本放送",日本电视台 (NTV 日本テレビ)
+#EXTINF:-1 tvg-id="日本电视台 (NTV 日本テレビ)" tvg-name="日本电视台" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Nippon_TV_%282013_with_Wordmark%29.svg/960px-Nippon_TV_%282013_with_Wordmark%29.svg.png" group-title="日本放送" referer="https://mov3.co/" http-referrer="https://mov3.co/",日本电视台 (NTV 日本テレビ)
+#EXTVLCOPT:http-referrer=https://mov3.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
+#EXTHTTP:{"Referer":"https://mov3.co/","User-Agent":"Mozilla/5.0"}
 https://ntv5.mov3.co/hls/ntv.m3u8
-#EXTINF:-1 tvg-id="富士电视台 (Fuji TV フジテレビ)" tvg-name="富士电视台" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Fuji_TV_logotype.svg/960px-Fuji_TV_logotype.svg.png" group-title="日本放送",富士电视台 (Fuji TV フジテレビ)
+#EXTINF:-1 tvg-id="富士电视台 (Fuji TV フジテレビ)" tvg-name="富士电视台" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Fuji_TV_logotype.svg/960px-Fuji_TV_logotype.svg.png" group-title="日本放送" referer="https://mov3.co/" http-referrer="https://mov3.co/",富士电视台 (Fuji TV フジテレビ)
+#EXTVLCOPT:http-referrer=https://mov3.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
+#EXTHTTP:{"Referer":"https://mov3.co/","User-Agent":"Mozilla/5.0"}
 https://fujitv4.mov3.co/hls/fujitv.m3u8
-#EXTINF:-1 tvg-id="朝日电视台 (TV Asahi テレビ朝日)" tvg-name="朝日电视台" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/TV_Asahi_Logo.svg/960px-TV_Asahi_Logo.svg.png" group-title="日本放送",朝日电视台 (TV Asahi テレビ朝日)
+#EXTINF:-1 tvg-id="朝日电视台 (TV Asahi テレビ朝日)" tvg-name="朝日电视台" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/TV_Asahi_Logo.svg/960px-TV_Asahi_Logo.svg.png" group-title="日本放送" referer="https://mov3.co/" http-referrer="https://mov3.co/",朝日电视台 (TV Asahi テレビ朝日)
+#EXTVLCOPT:http-referrer=https://mov3.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
+#EXTHTTP:{"Referer":"https://mov3.co/","User-Agent":"Mozilla/5.0"}
 https://tvasahi.mov3.co/hls/tvasahi.m3u8
-#EXTINF:-1 tvg-id="TBS 电视台 (TBS 東京放送)" tvg-name="TBS 电视台" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Tokyo_Broadcasting_System_logo_2020.svg/960px-Tokyo_Broadcasting_System_logo_2020.svg.png" group-title="日本放送",TBS 电视台 (TBS 東京放送)
+#EXTINF:-1 tvg-id="TBS 电视台 (TBS 東京放送)" tvg-name="TBS 电视台" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Tokyo_Broadcasting_System_logo_2020.svg/960px-Tokyo_Broadcasting_System_logo_2020.svg.png" group-title="日本放送" referer="https://mov3.co/" http-referrer="https://mov3.co/",TBS 电视台 (TBS 東京放送)
+#EXTVLCOPT:http-referrer=https://mov3.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
+#EXTHTTP:{"Referer":"https://mov3.co/","User-Agent":"Mozilla/5.0"}
 https://tbs5.mov3.co/hls/tbs.m3u8
-#EXTINF:-1 tvg-id="东京电视台 (TV Tokyo テレビ東京)" tvg-name="东京电视台" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/TV_Tokyo_logo_2023.svg/960px-TV_Tokyo_logo_2023.svg.png" group-title="日本放送",东京电视台 (TV Tokyo テレビ東京)
+#EXTINF:-1 tvg-id="东京电视台 (TV Tokyo テレビ東京)" tvg-name="东京电视台" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/TV_Tokyo_logo_2023.svg/960px-TV_Tokyo_logo_2023.svg.png" group-title="日本放送" referer="https://mov3.co/" http-referrer="https://mov3.co/",东京电视台 (TV Tokyo テレビ東京)
+#EXTVLCOPT:http-referrer=https://mov3.co/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
+#EXTHTTP:{"Referer":"https://mov3.co/","User-Agent":"Mozilla/5.0"}
 https://tvtokyo.mov3.co/hls/tvtokyo.m3u8
 #EXTINF:-1 tvg-id="QVC Japan (日本 QVC 1080P)" tvg-name="QVC Japan" tvg-logo="https://www.xn--rgv465a.top/tvlogo/QVCJapan.png" group-title="日本放送",QVC Japan (日本 QVC 1080P)
 https://d1flvb4iqlercm.cloudfront.net/live/live_1080p_2nd.m3u8
