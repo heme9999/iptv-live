@@ -42,7 +42,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add live.m3u HEALTH_REPORT.md
+          git add live.m3u tv.m3u hk_tw.m3u HEALTH_REPORT.md
           if git diff --staged --quiet; then
             echo "No changes detected. Playlist is healthy and up-to-date."
           else
