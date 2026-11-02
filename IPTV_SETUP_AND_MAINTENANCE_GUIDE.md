@@ -1,6 +1,6 @@
 # IPTV 直播源搭建与全自动化运维完整手册
 
-> **文档版本**: v2.1  
+> **文档版本**: v2.2  
 > **维护仓库**: [heme9999/iptv-live](https://github.com/heme9999/iptv-live)  
 > **更新时间**: 2026年11月2日  
 > **订阅地址**:
@@ -200,8 +200,9 @@ graph LR
 
 | 平台 / 系统 | 推荐客户端 | 特点与优势 |
 | :--- | :--- | :--- |
+| **Android (Sony 索尼电视 / TCL 电视 / Pixel 手机)** | **My IPTV (自研客户端)** | 专为 Sony / TCL 电视及 Pixel 手机深度定制，内置 Google Media3 ExoPlayer 硬件加速，v6.0.26+ 原生内置防盗链 Referer，支持遥控器导航与 DLNA 投屏 |
 | **iOS / iPadOS / Apple TV / macOS** | **APTV** (App Store) | 界面极具苹果原生设计感，完美支持多线路聚合、EPG 节目单、画中画与 iCloud 多端同步 |
-| **Android TV / 电视机顶盒** | **TiviMate** / **DIYP 影音** | 专为遥控器打造的交互界面，开机自启、换台零延迟、硬件解码性能出众 |
+| **Android TV / 电视机顶盒 (第三方)** | **TiviMate** / **DIYP 影音** | 专为遥控器打造的交互界面，开机自启、换台零延迟、硬件解码性能出众 |
 | **Windows / PC** | **PotPlayer** / **VLC** | 老牌专业播放器，支持丰富滤镜与音轨同步手动微调 |
 
 ---
@@ -221,6 +222,17 @@ graph LR
    - 进入 `CCTV-5 体育 (超清)` 播放界面；
    - 观察右上角或进度条上方的线路标记是否为 `1/2 线路`；
    - 默认第一线路即为骨干原厂纯净 1080P；若遇到网络抖动，轻点线路标记即可快速切换至备用线路。
+
+### 6.3 Android 自研客户端 (Sony 索尼电视 / TCL 电视 / Pixel 手机)
+
+项目在 [heme9999/iptv-live-android](https://github.com/heme9999/iptv-live-android) 维护专属 Android 原生客户端，提供 3 款针对性 APK：
+* **`IPTV-Live-Sony.apk`**：索尼 Android TV 专版，深度优化遥控器焦点穿透与硬件解码。
+* **`IPTV-Live-TCL.apk`**：TCL 智能电视专版，适配各类 TCL 机型与电视盒子。
+* **`IPTV-Live-Pixel.apk`**：手机触屏专版，集成 DLNA / UPnP 一键无损投屏到客厅电视。
+
+> [!TIP]
+> **日本台开箱即播 (v6.0.26+)**：
+> 自 `v6.0.26` 起，应用内已在 `DefaultHttpDataSource` 与 `LatencyTester` 核心底层深度注入 `Referer: https://mov3.co/`。在索尼电视、TCL 或手机上打开应用无需进行任何复杂设置，直接点击日本电视台即可极速解码播放。直接在 App 内点击“检查更新”或在 Releases 页面下载安装即可。
 
 ---
 
@@ -263,3 +275,14 @@ graph LR
 > 2. APTV 设置 → 播放设置 → 解码核心，由 AVPlayer 切换为 **KSPlayer**（能稳定保持 Referer）。
 >
 > 另：此前卡在 0% 的日テレ NEWS24 CMAF（fMP4）流因内嵌动态广告信标（`/beacon?streamId=...`）与 AVPlayer 不兼容，已从订阅中移除，不要再加回。
+
+---
+
+### Q5: 为什么安卓电视（Sony / TCL）或安卓手机上日本电视台此前提示“超时”？
+> **原因分析**：
+> 安卓端使用 Google Media3 ExoPlayer 内核及原生 `HttpURLConnection` 测速。日本六大台（NHK 综合、日本电视台、TBS、富士、朝日、东电）的服务端要求请求头必须携带 `Referer: https://mov3.co/`。早期版本因缺少此请求头，测速时被服务端返回 HTTP 403 导致判定为超时，播放时拉取视频切片被拒绝。
+>
+> **解决办法（v6.0.26 原生修复）**：
+> 1. 已在自研 Android 客户端 `v6.0.26` 中，将 `Referer: https://mov3.co/` 全面硬编码注入到测速模块（`LatencyTester`）、主解析器（`M3uParser`）以及播放器内核（`DefaultHttpDataSource.Factory`）中；
+> 2. 安卓电视用户无需手动敲键盘输入任何配置，只需在旧版 App 设置中点击**“检查更新”**，更新升级至 `v6.0.26`；或在 GitHub Releases 下载对应机型的 `IPTV-Live-Sony.apk` / `IPTV-Live-TCL.apk` 覆盖安装即可畅快收看。
+
