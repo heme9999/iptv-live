@@ -200,7 +200,7 @@ graph LR
 
 | 平台 / 系统 | 推荐客户端 | 特点与优势 |
 | :--- | :--- | :--- |
-| **Android (Sony 索尼电视 / TCL 电视 / Pixel 手机)** | **My IPTV (自研客户端)** | 专为 Sony / TCL 电视及 Pixel 手机深度定制，内置 Google Media3 ExoPlayer 硬件加速，v6.0.26+ 原生内置防盗链 Referer，支持遥控器导航与 DLNA 投屏 |
+| **Android (Sony 索尼电视 / TCL 电视 / Pixel 手机)** | **My IPTV (自研客户端)** | 专为 Sony / TCL 电视及 Pixel 手机深度定制，内置 Google Media3 ExoPlayer 硬件加速，v6.0.27+ 原生内置防盗链 Referer，支持遥控器导航与 DLNA 投屏 |
 | **iOS / iPadOS / Apple TV / macOS** | **APTV** (App Store) | 界面极具苹果原生设计感，完美支持多线路聚合、EPG 节目单、画中画与 iCloud 多端同步 |
 | **Android TV / 电视机顶盒 (第三方)** | **TiviMate** / **DIYP 影音** | 专为遥控器打造的交互界面，开机自启、换台零延迟、硬件解码性能出众 |
 | **Windows / PC** | **PotPlayer** / **VLC** | 老牌专业播放器，支持丰富滤镜与音轨同步手动微调 |
@@ -231,8 +231,8 @@ graph LR
 * **`IPTV-Live-Pixel.apk`**：手机触屏专版，集成 DLNA / UPnP 一键无损投屏到客厅电视。
 
 > [!TIP]
-> **日本台开箱即播 (v6.0.26+)**：
-> 自 `v6.0.26` 起，应用内已在 `DefaultHttpDataSource` 与 `LatencyTester` 核心底层深度注入 `Referer: https://mov3.co/`。在索尼电视、TCL 或手机上打开应用无需进行任何复杂设置，直接点击日本电视台即可极速解码播放。直接在 App 内点击“检查更新”或在 Releases 页面下载安装即可。
+> **日本台开箱即播 (v6.0.27+)**：
+> 自 `v6.0.27` 起，应用内已在 `DefaultHttpDataSource` 与 `LatencyTester` 核心底层深度注入 `Referer: https://mov3.co/`。在索尼电视、TCL 或手机上打开应用无需进行任何复杂设置，直接点击日本电视台即可极速解码播放。直接在 App 内点击“检查更新”或在 Releases 页面下载安装即可。
 
 ---
 
@@ -282,7 +282,7 @@ graph LR
 > **原因分析**：
 > 安卓端使用 Google Media3 ExoPlayer 内核及原生 `HttpURLConnection` 测速。日本六大台（NHK 综合、日本电视台、TBS、富士、朝日、东电）的服务端要求请求头必须携带 `Referer: https://mov3.co/`。早期版本因缺少此请求头，测速时被服务端返回 HTTP 403 导致判定为超时，播放时拉取视频切片被拒绝。
 >
-> **解决办法（v6.0.26 原生修复）**：
-> 1. 已在自研 Android 客户端 `v6.0.26` 中，将 `Referer: https://mov3.co/` 全面硬编码注入到测速模块（`LatencyTester`）、主解析器（`M3uParser`）以及播放器内核（`DefaultHttpDataSource.Factory`）中；
-> 2. 安卓电视用户无需手动敲键盘输入任何配置，只需在旧版 App 设置中点击**“检查更新”**，更新升级至 `v6.0.26`；或在 GitHub Releases 下载对应机型的 `IPTV-Live-Sony.apk` / `IPTV-Live-TCL.apk` 覆盖安装即可畅快收看。
+> **解决办法（v6.0.27 原生修复）**：
+> 1. 已在自研 Android 客户端 `v6.0.27` 中，将 `Referer: https://mov3.co/` 全面硬编码注入到测速模块（`LatencyTester`）、主解析器（`M3uParser`）以及播放器内核（`DefaultHttpDataSource.Factory`）中；
+> 2. 安卓电视用户无需手动敲键盘输入任何配置，只需在旧版 App 设置中点击**“检查更新”**，更新升级至 `v6.0.27`；或在 GitHub Releases 下载对应机型的 `IPTV-Live-Sony.apk` / `IPTV-Live-TCL.apk` / `IPTV-Live-Pixel.apk` 覆盖安装即可畅快收看。
 
