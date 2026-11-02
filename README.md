@@ -1,7 +1,7 @@
 # 📺 高清 IPTV 直播源自动订阅 (APTV & Android TV)
 
 [![Auto Check & Update IPTV Streams](https://github.com/heme9999/iptv-live/actions/workflows/auto_check_update.yml/badge.svg)](https://github.com/heme9999/iptv-live/actions/workflows/auto_check_update.yml)
-[![Live Stream Health](https://img.shields.io/badge/Stream%20Health-99%25%20Online-brightgreen)](HEALTH_REPORT.md)
+[![Live Stream Health](https://img.shields.io/badge/Stream%20Health-90.7%25%20Index%20%7C%2088.8%25%20Segment-yellowgreen)](HEALTH_REPORT.md)
 
 精选、经过全自动健康检测（每 6 小时自动巡检与故障换源）的全球高清直播源清单，适配 **iOS / tvOS APTV** 及 **Android TV / 智能手机**。
 
@@ -29,10 +29,10 @@ https://cdn.jsdelivr.net/gh/heme9999/iptv-live@main/live.m3u
 
 ## 📋 包含频道分组与特色
 
-- 🇭🇰 🇲🇴 **港澳中文**：TVB 翡翠台、TVB 新闻台、凤凰卫视资讯台、凤凰卫视香港台、星空卫视、广东珠江台 (粤语) 等；
-- 🇹🇼 **台湾主流**：TVBS 综合台、东森新闻、民视综合台；
+- 🇭🇰 🇲🇴 **港澳中文**：TVB 翡翠台、TVB 无线新闻台、凤凰卫视中文台/资讯台/香港台、大湾区卫视、广东珠江台 (粤语)、HOY TV 77、RTHK 31/32、澳视澳门 等；
+- 🇹🇼 **台湾主流**：TVBS 综合台、民视新闻台、台视新闻台、纬来精采台；
 - 🇯🇵 **日本放送 (东京旗舰商业六大台)**：NHK 综合、日本电视台 (NTV)、富士电视台 (Fuji TV)、朝日电视台 (TV Asahi)、TBS 电视台、东京电视台 (TV Tokyo)、QVC Japan 1080P；
-- 🇺🇸 🇬🇧 **国际主流资讯 (1080P 官方直连)**：Fox News (LiveNOW 1080P)、Fox Business 1080P、ABC News Live、NBC News NOW、CBS News 24/7、Sky News 1080P、BBC News 1080P、Bloomberg 彭博财经 1080P；
+- 🇺🇸 🇬🇧 **国际主流资讯 (1080P 官方直连)**：Fox News、ABC News Live、NBC News NOW、CBS News 24/7、Sky News、BBC News、Bloomberg 彭博财经、CNBC 财经、CNA 亚洲新闻台、DW English、France 24、EuroNews、CGTN；
 - 🏎️ **体育·赛事**：F1 赛车官方专线 (Formula 1 HD)、Motorvision TV、欧洲足球专线、五星体育台、广东体育台；
 - 🇨🇳 **央视全套超清 (CCTV 1~17)**：CCTV-1 至 CCTV-17 全频道超清 + 央视体育赛事；
 - 🇨🇳 **核心主流卫视**：湖南卫视、浙江卫视、江苏卫视、东方卫视、北京卫视、广东卫视；
