@@ -1,8 +1,8 @@
 # IPTV 直播源搭建与全自动化运维完整手册
 
-> **文档版本**: v2.0  
+> **文档版本**: v2.1  
 > **维护仓库**: [heme9999/iptv-live](https://github.com/heme9999/iptv-live)  
-> **更新时间**: 2026年11月  
+> **更新时间**: 2026年11月2日  
 > **订阅地址**:
 > - **GitHub 原生直链**: `https://raw.githubusercontent.com/heme9999/iptv-live/main/live.m3u`
 > - **jsDelivr 全球 CDN 加速**: `https://cdn.jsdelivr.net/gh/heme9999/iptv-live@main/live.m3u`
@@ -68,12 +68,12 @@ flowchart TD
 
 ## 2. 直播源精选与全分类体系
 
-整个订阅包含 100+ 精选高码率电视频道，全面覆盖体育、日韩、欧美、央视、卫视与港澳华语区：
+整个订阅包含 111 个频道（2026年11月2日 live.m3u 实测数），全面覆盖体育、日韩、欧美、央视、卫视与港澳华语区，全面覆盖体育、日韩、欧美、央视、卫视与港澳华语区：
 
 | 分类分组 (`group-title`) | 频道数量 | 代表性核心频道 | 特色说明 |
 | :--- | :---: | :--- | :--- |
 | **体育·赛事** | 16+ | CCTV-5、CCTV-5+、CCTV-16、五星体育、广东体育、F1 官方专线、欧洲足球、Eurosport 1 4K、ESPN 1/2、Red Bull TV | 满足网球大师赛/大满贯、西甲、英超、F1、NBA 全场景赛事需求 |
-| **日本放送** | 7 | NHK 综合、日本电视台 (NTV)、富士电视台 (Fuji TV)、朝日电视台 (TV Asahi)、TBS 电视台、东京电视台 (TV Tokyo)、NHK World 英文 1080P | 完整覆盖**东京旗舰商业六大台**，原画无压缩原生音频 |
+| **日本放送** | 9 | NHK 综合、日本电视台 (NTV)、富士电视台 (Fuji TV)、朝日电视台 (TV Asahi)、TBS 电视台、东京电视台 (TV Tokyo)、NHK World 英文 1080P、WeatherNews Japan、QVC Japan | 完整覆盖**东京旗舰商业六大台**（六大台为 mov3.co 源，见 §7 Q4 的 Referer 说明）；Shop Channel Japan 已于 2026年11月2日从订阅中删除，不再列入 |
 | **国际资讯** | 14 | BBC News、Fox News、ABC News Live、NBC News NOW、CBS News 24/7、Bloomberg、Sky News、CNBC、CNA、CGTN、DW、France 24、EuroNews | 全球顶级财经与即时新闻官方直连专线 |
 | **央视核心** | 18 | CCTV-1 综合至 CCTV-17 农业农村、CCTV-5+ 体育赛事高清 | 完整央视高清矩阵，全频带台标与超清 1080P 信号 |
 | **主流卫视** | 20+ | 湖南卫视、浙江卫视、东方卫视、江苏卫视、北京卫视、广东卫视等 | 覆盖各省头部卫星电视综合频道，全国热播综艺/剧集首播 |
@@ -154,6 +154,14 @@ graph LR
 
 ---
 
+#### 4. 巡检脚本反劫持拦截器（HIJACK_BLOCKLIST）
+`scripts/check_and_update_streams.py` 内置拦截表，命中即判定为死链并触发备用切换，不再把该源写回播放列表：
+- `dsdqpub`
+- `from=zbdq` / `a=zbdq`
+- `400-788-3916`
+
+注意：拦截器只拦“未来新出现”的命中源；截至 2026年11月2日，`38.75.136.137` 的 `dsdqbv` 路径仍在 live.m3u 与候选池中存在（35 / 26 处），并未全量清库。
+
 ## 5. GitHub Actions 全天候自动化监控与自动换源
 
 ### 5.1 工作流触发与调度
@@ -171,16 +179,17 @@ graph LR
 1. **多线程并发探活 (`ThreadPoolExecutor`)**:
    - 对 100+ 频道并发发起 HTTP HEAD / GET 请求（限定读取前 64KB 握手包）。
    - 验证 HLS `#EXTM3U` 格式头、TS 切片是否存在，区分 200 OK 真实流与伪装报错 HTML。
-2. **智能备用源容灾切换**:
+2. **提交前批量暂存与防冲突**：工作流在提交前统一 `git add live.m3u tv.m3u hk_tw.m3u HEALTH_REPORT.md`，再执行 `git pull --rebase origin main || true`，避免“脚本改了 tv/hk_tw 但工作流只暂存 live.m3u”导致的未暂存冲突（`cannot pull with rebase: You have unstaged changes`）。
+3. **智能备用源容灾切换**:
    - 当主线路超时、出现 HTTP 403/404/503 或返回非视频流时，自动从 `sources_pool.json` 候选队列中逐一探测可用节点。
    - 挑选出延迟最低且格式合规的备用源就地替换。
-3. **CDN 边缘即时 Purge**:
+4. **CDN 边缘即时 Purge**:
    - 更新完成后，自动向 jsDelivr Purge API 发送刷新指令：
      ```bash
      curl -s "https://purge.jsdelivr.net/gh/heme9999/iptv-live@main/live.m3u"
      ```
    - 确保 Cloudflare 与 Fastly 全球节点在 30 秒内完成换新，客户端不再读取陈旧失效缓存。
-4. **动态生成健康状态看板**:
+5. **动态生成健康状态看板**:
    - 自动生成 [HEALTH_REPORT.md](https://github.com/heme9999/iptv-live/blob/main/HEALTH_REPORT.md)，展示各频道实时在线率、平均延迟与最近更换记录。
 
 ---
@@ -243,3 +252,14 @@ graph LR
 > **解决办法**：
 > 1. 打开播放界面的线路选择器，手动切换至 `线路 2`（备用集群服务器）；
 > 2. 检查播放器解码器设置：在 APTV 设置中将“解码核心”由 `AVPlayer` 切换为 `KSPlayer`（或硬件解码），能大幅提升高码率 60fps 流的吞吐缓冲速度。
+
+### Q4: 日本六大台在 APTV 里显示“超时”，但在别处能播，怎么办？
+> **原因分析**：
+> 1. 六大台（NHK 综合、NTV、富士、朝日、TBS、东京电视台）现用 mov3.co 源，服务端要求携带 `Referer: https://mov3.co/`，无 Referer 直接返回 HTTP 403，APTV 显示为超时。
+> 2. APTV 默认用 AVPlayer，且在请求媒体 `.ts` 片段时会丢弃自定义 Referer，只靠订阅级请求头测速不够。
+>
+> **解决办法（APTV，约 30 秒）**：
+> 1. 在订阅的**自定义请求头（Headers / Referer）**处填入 `https://mov3.co/`（实测不影响央视、卫视、欧美体育等其他频道）；
+> 2. APTV 设置 → 播放设置 → 解码核心，由 AVPlayer 切换为 **KSPlayer**（能稳定保持 Referer）。
+>
+> 另：此前卡在 0% 的日テレ NEWS24 CMAF（fMP4）流因内嵌动态广告信标（`/beacon?streamId=...`）与 AVPlayer 不兼容，已从订阅中移除，不要再加回。
