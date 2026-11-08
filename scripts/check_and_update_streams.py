@@ -38,10 +38,33 @@ MAX_WORKERS = 12
 
 
 HIJACK_BLOCKLIST = [
+    "38.75.136.137",
     "dsdqpub",
+    "dsdqbv",
+    "207.56.13.146",
+    "173.208.146.10",
     "from=zbdq",
     "a=zbdq",
+    "a=zjstream",
+    "a=cdnhk",
     "400-788-3916",
+    "appadhw",
+    "applive/mkt",
+    "applive/102",
+    "applive/yss",
+    "/mkt/",
+    "mkt.m3u8",
+    "/102.m3u8",
+]
+
+HIJACK_BODY_BLOCKLIST = [
+    "mkt/segment",
+    "mkt.m3u8",
+    "/102/",
+    "102/12",
+    "400-788-3916",
+    "appadhw",
+    "the content is not available in your area",
 ]
 
 def check_stream(url: str, timeout: float = TIMEOUT_SECONDS) -> tuple[bool, float, str]:
@@ -78,6 +101,9 @@ def check_stream(url: str, timeout: float = TIMEOUT_SECONDS) -> tuple[bool, floa
                 content_str = content_bytes.decode("utf-8", errors="ignore")
             except Exception:
                 content_str = ""
+
+            if any(b in content_str for b in HIJACK_BODY_BLOCKLIST):
+                return False, 0.0, "Blocked (Ad Content Detected in Body)"
 
             # Check if it is a valid M3U8 HLS playlist
             if "#EXTM3U" in content_str:
