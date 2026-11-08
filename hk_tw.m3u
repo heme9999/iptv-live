@@ -6,7 +6,7 @@ http://85.237.89.160:9590/usa-s/ESPN-HD/index.m3u8
 #EXTINF:-1 tvg-id="ESPN 2 HD (美网官方分球场正赛直播)" tvg-name="ESPN 2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/800px-ESPN_wordmark.svg.png" group-title="体育·赛事",ESPN 2 HD (美网官方分球场正赛直播)
 http://138.121.15.230:9002/ESPN-2/index.m3u8
 #EXTINF:-1 tvg-id="CCTV 高尔夫·网球 HD (央视美网官方中文名嘴解说)" tvg-name="CCTV 高尔夫·网球" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-高尔夫网球.png" group-title="体育·赛事",CCTV 高尔夫·网球 HD (央视美网官方中文名嘴解说)
-http://38.75.136.137:98/gslb/dsdqbv/gefwq.m3u8?auth=test20251009
+http://107.150.60.122/live/gefwq.m3u8
 #EXTINF:-1 tvg-id="TSN Sports 体育专线 (北美美网持权转播/1080P)" tvg-name="TSN Sports" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/The_Sports_Network_Logo.svg/800px-The_Sports_Network_Logo.svg.png" group-title="体育·赛事",TSN Sports 体育专线 (北美美网持权转播/1080P)
 https://d3pnbvng3bx2nj.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-rds8g35qfqrnv/TSN_The_Ocho.m3u8
 #EXTINF:-1 tvg-id="Tennis Channel (官方国际台 1080P)" tvg-name="Tennis Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Tennis_Channel_2016_logo.svg/800px-Tennis_Channel_2016_logo.svg.png" group-title="体育·赛事",Tennis Channel (官方国际台 1080P)
@@ -24,7 +24,7 @@ http://85.237.89.160:9590/usa-s/ESPN-U-HD/index.m3u8
 #EXTINF:-1 tvg-id="beIN SPORTS XTRA (全球赛事 1080P)" tvg-name="beIN SPORTS" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Bein_sports_logo.svg/800px-Bein_sports_logo.svg.png" group-title="体育·赛事",beIN SPORTS XTRA (全球赛事 1080P)
 https://bein-xtra-bein.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="五星体育台 (F1 蒙扎正赛/中文李兵解说)" tvg-name="五星体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/五星体育.png" group-title="体育·赛事",五星体育台 (F1 蒙扎正赛/中文李兵解说)
-http://38.75.136.137:98/gslb/dsdqbv/wxtyhd.m3u8?auth=test20251009
+http://107.150.60.122/live/wxtyhd.m3u8
 #EXTINF:-1 tvg-id="广东体育台 (F1 意大利正赛直播/高清)" tvg-name="广东体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东体育.png" group-title="体育·赛事",广东体育台 (F1 意大利正赛直播/高清)
 https://2.fast.hidns.vip/163189/gdty
 #EXTINF:-1 tvg-id="Motorvision TV (世界顶级赛车/超跑专线 720P)" tvg-name="Motorvision TV" tvg-logo="https://i.imgur.com/8t9mdg9.png" group-title="体育·赛事",Motorvision TV (世界顶级赛车/超跑专线 720P)
@@ -32,15 +32,15 @@ https://stream.ads.ottera.tv/playlist.m3u8?network_id=535
 #EXTINF:-1 tvg-id="Formula 1 官方 24H 专线 (赛事回顾/集锦/分析)" tvg-name="Formula 1" tvg-logo="https://i.imgur.com/8t9mdg9.png" group-title="体育·赛事",Formula 1 官方 24H 专线 (赛事回顾/集锦/分析)
 https://amg12058-c15studio-amg12058c1-lg-us-5787.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="欧洲足球专线 (风云足球高清)" tvg-name="欧洲足球专线" tvg-logo="https://www.xn--rgv465a.top/tvlogo/风云足球.png" group-title="体育·赛事",欧洲足球专线 (风云足球高清)
-http://38.75.136.137:98/gslb/dsdqbv/fyzq.m3u8?auth=test20251009
+http://107.150.60.122/live/fyzq.m3u8
 #EXTINF:-1 tvg-id="Eurosport 1 HD (欧洲体育 4K/HEVC)" tvg-name="Eurosport 1 HD" tvg-logo="https://i.imgur.com/8t9mdg9.png" group-title="体育·赛事",Eurosport 1 HD (欧洲体育 4K/HEVC)
 http://88.212.15.19/live/esp_4k_atk/playlist.m3u8
 #EXTINF:-1 tvg-id="Red Bull TV (红牛极限运动 1080P/Akamai)" tvg-name="Red Bull TV" tvg-logo="https://i.imgur.com/8t9mdg9.png" group-title="体育·赛事",Red Bull TV (红牛极限运动 1080P/Akamai)
 https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
 #EXTINF:-1 tvg-id="CCTV-5 体育 (超清)" tvg-name="CCTV-5 体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-5.png" group-title="体育·赛事",CCTV-5 体育 (超清)
-http://183.129.255.66:8480/hls/5/index.m3u8
+http://107.150.60.122/live/cctv5hd.m3u8
 #EXTINF:-1 tvg-id="CCTV-5+ 体育赛事 (超清)" tvg-name="CCTV-5+ 体育赛事" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-5+.png" group-title="体育·赛事",CCTV-5+ 体育赛事 (超清)
-http://183.129.255.66:8480/hls/6/index.m3u8
+http://107.150.60.122/live/cctv5p.m3u8
 #EXTINF:-1 tvg-id="CCTV-16 奥林匹克 (超清)" tvg-name="CCTV-16 奥林匹克" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-16.png" group-title="体育·赛事",CCTV-16 奥林匹克 (超清)
 http://fuxin.yunjifei.top:999/tsfile/live/0016_1.m3u8?key=txiptv
 
@@ -140,9 +140,9 @@ http://222.223.41.27:8888/hls/3/index.m3u8
 #EXTINF:-1 tvg-id="CCTV-4 中文国际" tvg-name="CCTV-4 中文国际" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-4.png" group-title="央视核心",CCTV-4 中文国际
 http://222.223.41.27:8888/hls/4/index.m3u8
 #EXTINF:-1 tvg-id="CCTV-5 体育" tvg-name="CCTV-5 体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-5.png" group-title="央视核心",CCTV-5 体育
-http://183.129.255.66:8480/hls/5/index.m3u8
+http://107.150.60.122/live/cctv5hd.m3u8
 #EXTINF:-1 tvg-id="CCTV-5+ 体育赛事" tvg-name="CCTV-5+ 体育赛事" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-5+.png" group-title="央视核心",CCTV-5+ 体育赛事
-http://183.129.255.66:8480/hls/6/index.m3u8
+http://107.150.60.122/live/cctv5p.m3u8
 #EXTINF:-1 tvg-id="CCTV-6 电影" tvg-name="CCTV-6 电影" tvg-logo="https://i.imgur.com/rFiaef7.png" group-title="央视核心",CCTV-6 电影
 http://222.223.41.27:8888/hls/6/index.m3u8
 #EXTINF:-1 tvg-id="CCTV-7 国防军事" tvg-name="CCTV-7 国防军事" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-7.png" group-title="央视核心",CCTV-7 国防军事
@@ -182,7 +182,7 @@ http://124.90.45.52:9901/tsfile/live/0127_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-id="重庆卫视 (高清)" tvg-name="重庆卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆卫视.png" group-title="核心卫视",重庆卫视 (高清)
 http://107.150.60.122/live/cqwshd.m3u8
 #EXTINF:-1 tvg-id="重庆新闻频道 (天天630 直播)" tvg-name="重庆新闻" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆新闻.png" group-title="核心卫视",重庆新闻频道 (天天630 直播)
-http://107.150.60.122/live/cqwshd.m3u8
+http://107.150.60.122/live/cqxw.m3u8
 #EXTINF:-1 tvg-id="重庆都市频道 (天天630 重庆广电)" tvg-name="重庆都市" tvg-logo="https://www.xn--rgv465a.top/tvlogo/重庆都市.png" group-title="核心卫视",重庆都市频道 (天天630 重庆广电)
 http://107.150.60.122/live/cqds.m3u8
 #EXTINF:-1 tvg-id="广东卫视 (高清)" tvg-name="广东卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东卫视.png" group-title="核心卫视",广东卫视 (高清)

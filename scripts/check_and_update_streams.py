@@ -43,8 +43,6 @@ HIJACK_BLOCKLIST = [
     "dsdqbv",
     "207.56.13.146",
     "173.208.146.10",
-    "from=zbdq",
-    "a=zbdq",
     "a=zjstream",
     "a=cdnhk",
     "400-788-3916",
