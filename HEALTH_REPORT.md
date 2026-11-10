@@ -1,134 +1,134 @@
 # 📡 IPTV 直播源全天候健康监控与可用性报告
 
-> **最后检测时间**: `2026-11-09 23:18:48 CST (UTC+8)`  
+> **最后检测时间**: `2026-11-10 09:13:05 CST (UTC+8)`  
 > **检测状态**: `🟡 部分源已自动切换/维护中`  
-> **在线率**: `96.4%` (107/111) | **平均延迟**: `376.3ms` | **自动切换成功**: `4` 路
+> **在线率**: `87.4%` (97/111) | **平均延迟**: `398.2ms` | **自动切换成功**: `8` 路
 
 ## 📊 核心指标概览
 
 | 指标项 | 数值 | 状态 |
 | :--- | :--- | :--- |
 | **总频道数** | `111` | 涵盖央视/卫视/体育/港澳/国际 |
-| **有效在线频道** | `107` | 🟢 正常播放 |
-| **失效/维护中** | `4` | 🔴 待补充新源 |
-| **平均首包延迟** | `376.3ms` | 🟢 极速 (<500ms) |
-| **自动更新触发** | `4` 条新源已写入 | 自动同步 CDN |
+| **有效在线频道** | `97` | 🟢 正常播放 |
+| **失效/维护中** | `14` | 🔴 待补充新源 |
+| **平均首包延迟** | `398.2ms` | 🟢 极速 (<500ms) |
+| **自动更新触发** | `8` 条新源已写入 | 自动同步 CDN |
 
 ## 📺 全频道实时健康度明细表
 
 | 频道名称 | 分类分组 | 运行状态 | 响应延迟 | 检测结果 / 备注 |
 | :--- | :--- | :---: | :---: | :--- |
-| Tennis Channel USA | 体育·赛事 | 🟢 在线 | 120ms | OK (HLS Verified) |
-| T2 Tennis | 体育·赛事 | 🟢 在线 | 164ms | OK (HLS Verified) |
-| Tennis Channel HD | 体育·赛事 | 🟢 在线 | 161ms | OK (HLS Verified) |
-| Tennis Channel | 体育·赛事 | 🟢 在线 | 109ms | OK (HLS Verified) |
-| TSN Sports | 体育·赛事 | 🟢 在线 | 155ms | OK (HLS Verified) |
-| CCTV 高尔夫·网球 | 体育·赛事 | 🟢 在线 | 80ms | OK (HLS Verified) |
-| NBC Sports NOW | 体育·赛事 | 🟢 在线 | 156ms | OK (HLS Verified) |
-| ESPN 1 | 体育·赛事 | 🟢 在线 | 224ms | OK (HLS Verified) |
-| ESPN 2 | 体育·赛事 | 🟢 在线 | 194ms | OK (HLS Verified) |
-| ESPN 1 西语 | 体育·赛事 | 🟢 在线 | 203ms | OK (HLS Verified) |
-| ESPN 2 西语 | 体育·赛事 | 🟢 在线 | 193ms | OK (HLS Verified) |
-| ESPN 3 西语 | 体育·赛事 | 🟢 在线 | 225ms | OK (HLS Verified) |
-| ESPN 4 西语 | 体育·赛事 | 🟢 在线 | 198ms | OK (HLS Verified) |
-| ESPN 8 The Ocho | 体育·赛事 | 🟢 在线 | 365ms | OK (HLS Verified) |
-| ESPNU | 体育·赛事 | 🟢 在线 | 213ms | OK (HLS Verified) |
-| beIN SPORTS | 体育·赛事 | 🟢 在线 | 200ms | OK (HLS Verified) |
-| 五星体育 | 体育·赛事 | 🟢 在线 | 69ms | OK (HLS Verified) |
-| 广东体育 | 体育·赛事 | 🟡 已自动换源 | 67ms | Restored primary: OK (HLS Verified) |
-| Motorvision TV | 体育·赛事 | 🟢 在线 | 229ms | OK (HLS Verified) |
-| Formula 1 | 体育·赛事 | 🟢 在线 | 289ms | OK (HLS Verified) |
-| 欧洲足球专线 | 体育·赛事 | 🟢 在线 | 65ms | OK (HLS Verified) |
-| Eurosport 1 HD | 体育·赛事 | 🔴 失效 | 264ms | HTTP Error 503 |
-| Red Bull TV | 体育·赛事 | 🟢 在线 | 179ms | OK (HLS Verified) |
-| CCTV-5 体育 (超清) | 体育·赛事 | 🟢 在线 | 60ms | OK (HLS Verified) |
-| CCTV-5 体育 (超清) | 体育·赛事 | 🟢 在线 | 588ms | OK (HLS Verified) |
-| CCTV-5+ 体育赛事 (超清) | 体育·赛事 | 🟡 已自动换源 | 588ms | Swapped to backup: OK (HLS Verified) |
-| CCTV-5+ 体育赛事 (超清) | 体育·赛事 | 🟢 在线 | 372ms | OK (HLS Verified) |
-| CCTV-16 奥林匹克 (超清) | 体育·赛事 | 🟢 在线 | 1032ms | OK (HLS Verified) |
-| CCTV-16 奥林匹克 (超清) | 体育·赛事 | 🟢 在线 | 1044ms | OK (HLS Verified) |
-| NHK World-Japan | 日本放送 | 🟢 在线 | 810ms | OK (HLS Verified) |
-| WeatherNews Japan | 日本放送 | 🟢 在线 | 300ms | OK (HLS Verified) |
-| NHK 综合 | 日本放送 | 🟢 在线 | 146ms | OK (HLS Verified) |
-| 日本电视台 | 日本放送 | 🟢 在线 | 241ms | OK (HLS Verified) |
-| 富士电视台 | 日本放送 | 🟢 在线 | 105ms | OK (HLS Verified) |
-| 朝日电视台 | 日本放送 | 🟢 在线 | 301ms | OK (HLS Verified) |
-| TBS 电视台 | 日本放送 | 🟢 在线 | 594ms | OK (HLS Verified) |
-| 东京电视台 | 日本放送 | 🟢 在线 | 130ms | OK (HLS Verified) |
-| QVC Japan | 日本放送 | 🟢 在线 | 785ms | OK (HLS Verified) |
-| Sky News | 国际资讯 | 🟢 在线 | 132ms | OK (HLS Verified) |
-| Fox News | 国际资讯 | 🟢 在线 | 202ms | OK (HLS Verified) |
-| ABC News Live | 国际资讯 | 🟢 在线 | 358ms | OK (HLS Verified) |
-| NBC News NOW | 国际资讯 | 🟢 在线 | 181ms | OK (HLS Verified) |
-| CBS News 24/7 | 国际资讯 | 🟢 在线 | 228ms | OK (HLS Verified) |
-| BBC News | 国际资讯 | 🟢 在线 | 169ms | OK (HLS Verified) |
-| Bloomberg 彭博财经 | 国际资讯 | 🟢 在线 | 207ms | OK (HLS Verified) |
-| NHK World-Japan | 国际资讯 | 🟢 在线 | 191ms | OK (HLS Verified) |
-| CNBC 财经 | 国际资讯 | 🟢 在线 | 276ms | OK (HLS Verified) |
-| CNA 亚洲新闻台 | 国际资讯 | 🟢 在线 | 281ms | OK (HLS Verified) |
-| CGTN 英语新闻 | 国际资讯 | 🟢 在线 | 743ms | OK (HLS Verified) |
-| DW English | 国际资讯 | 🟢 在线 | 72ms | OK (HLS Verified) |
-| France 24 | 国际资讯 | 🟢 在线 | 719ms | OK (HLS Verified) |
-| EuroNews | 国际资讯 | 🟢 在线 | 149ms | OK (HLS Verified) |
-| BBC Earth | 纪实自然 | 🟢 在线 | 156ms | OK (HLS Verified) |
-| Nat Geo Wild | 纪实自然 | 🔴 失效 | 4002ms | Network Error: timed out |
+| Tennis Channel USA | 体育·赛事 | 🟢 在线 | 137ms | OK (HLS Verified) |
+| T2 Tennis | 体育·赛事 | 🟢 在线 | 289ms | OK (HLS Verified) |
+| Tennis Channel HD | 体育·赛事 | 🟢 在线 | 290ms | OK (HLS Verified) |
+| Tennis Channel | 体育·赛事 | 🟢 在线 | 132ms | OK (HLS Verified) |
+| TSN Sports | 体育·赛事 | 🟢 在线 | 320ms | OK (HLS Verified) |
+| CCTV 高尔夫·网球 | 体育·赛事 | 🔴 失效 | - | Blocked (Ad Hijacked / Pirate Relay Detected) |
+| NBC Sports NOW | 体育·赛事 | 🟢 在线 | 129ms | OK (HLS Verified) |
+| ESPN 1 | 体育·赛事 | 🟢 在线 | 274ms | OK (HLS Verified) |
+| ESPN 2 | 体育·赛事 | 🟢 在线 | 210ms | OK (HLS Verified) |
+| ESPN 1 西语 | 体育·赛事 | 🟢 在线 | 221ms | OK (HLS Verified) |
+| ESPN 2 西语 | 体育·赛事 | 🟢 在线 | 218ms | OK (HLS Verified) |
+| ESPN 3 西语 | 体育·赛事 | 🟢 在线 | 221ms | OK (HLS Verified) |
+| ESPN 4 西语 | 体育·赛事 | 🟢 在线 | 218ms | OK (HLS Verified) |
+| ESPN 8 The Ocho | 体育·赛事 | 🟢 在线 | 136ms | OK (HLS Verified) |
+| ESPNU | 体育·赛事 | 🟢 在线 | 274ms | OK (HLS Verified) |
+| beIN SPORTS | 体育·赛事 | 🟢 在线 | 162ms | OK (HLS Verified) |
+| 五星体育 | 体育·赛事 | 🔴 失效 | - | Blocked (Ad Hijacked / Pirate Relay Detected) |
+| 广东体育 | 体育·赛事 | 🟡 已自动换源 | 1140ms | Swapped to backup: OK (HLS Verified) |
+| Motorvision TV | 体育·赛事 | 🟢 在线 | 394ms | OK (HLS Verified) |
+| Formula 1 | 体育·赛事 | 🟢 在线 | 210ms | OK (HLS Verified) |
+| 欧洲足球专线 | 体育·赛事 | 🔴 失效 | - | Blocked (Ad Hijacked / Pirate Relay Detected) |
+| Eurosport 1 HD | 体育·赛事 | 🔴 失效 | 299ms | HTTP Error 503 |
+| Red Bull TV | 体育·赛事 | 🟢 在线 | 734ms | OK (HLS Verified) |
+| CCTV-5 体育 (超清) | 体育·赛事 | 🟡 已自动换源 | 584ms | Swapped to backup: OK (HLS Verified) |
+| CCTV-5 体育 (超清) | 体育·赛事 | 🟡 已自动换源 | 567ms | Distinct backup: OK (HLS Verified) |
+| CCTV-5+ 体育赛事 (超清) | 体育·赛事 | 🟢 在线 | 633ms | OK (HLS Verified) |
+| CCTV-5+ 体育赛事 (超清) | 体育·赛事 | 🟢 在线 | 588ms | OK (HLS Verified) |
+| CCTV-16 奥林匹克 (超清) | 体育·赛事 | 🟢 在线 | 660ms | OK (HLS Verified) |
+| CCTV-16 奥林匹克 (超清) | 体育·赛事 | 🟢 在线 | 618ms | OK (HLS Verified) |
+| NHK World-Japan | 日本放送 | 🟢 在线 | 571ms | OK (HLS Verified) |
+| WeatherNews Japan | 日本放送 | 🟢 在线 | 800ms | OK (HLS Verified) |
+| NHK 综合 | 日本放送 | 🟢 在线 | 154ms | OK (HLS Verified) |
+| 日本电视台 | 日本放送 | 🟢 在线 | 77ms | OK (HLS Verified) |
+| 富士电视台 | 日本放送 | 🟢 在线 | 298ms | OK (HLS Verified) |
+| 朝日电视台 | 日本放送 | 🟢 在线 | 76ms | OK (HLS Verified) |
+| TBS 电视台 | 日本放送 | 🟢 在线 | 693ms | OK (HLS Verified) |
+| 东京电视台 | 日本放送 | 🟢 在线 | 285ms | OK (HLS Verified) |
+| QVC Japan | 日本放送 | 🟢 在线 | 534ms | OK (HLS Verified) |
+| Sky News | 国际资讯 | 🟢 在线 | 148ms | OK (HLS Verified) |
+| Fox News | 国际资讯 | 🟢 在线 | 214ms | OK (HLS Verified) |
+| ABC News Live | 国际资讯 | 🟢 在线 | 147ms | OK (HLS Verified) |
+| NBC News NOW | 国际资讯 | 🟢 在线 | 253ms | OK (HLS Verified) |
+| CBS News 24/7 | 国际资讯 | 🟢 在线 | 347ms | OK (HLS Verified) |
+| BBC News | 国际资讯 | 🟢 在线 | 149ms | OK (HLS Verified) |
+| Bloomberg 彭博财经 | 国际资讯 | 🟢 在线 | 312ms | OK (HLS Verified) |
+| NHK World-Japan | 国际资讯 | 🟢 在线 | 55ms | OK (HLS Verified) |
+| CNBC 财经 | 国际资讯 | 🟢 在线 | 476ms | OK (HLS Verified) |
+| CNA 亚洲新闻台 | 国际资讯 | 🟢 在线 | 245ms | OK (HLS Verified) |
+| CGTN 英语新闻 | 国际资讯 | 🟢 在线 | 652ms | OK (HLS Verified) |
+| DW English | 国际资讯 | 🟢 在线 | 226ms | OK (HLS Verified) |
+| France 24 | 国际资讯 | 🟢 在线 | 297ms | OK (HLS Verified) |
+| EuroNews | 国际资讯 | 🟢 在线 | 442ms | OK (HLS Verified) |
+| BBC Earth | 纪实自然 | 🟢 在线 | 503ms | OK (HLS Verified) |
+| Nat Geo Wild | 纪实自然 | 🔴 失效 | 4004ms | Network Error: timed out |
 | National Geographic | 纪实自然 | 🔴 失效 | 4004ms | Network Error: timed out |
-| Love Nature 4K | 纪实自然 | 🟢 在线 | 215ms | OK (HLS Verified) |
-| Nature Escape | 纪实自然 | 🟢 在线 | 187ms | OK (HLS Verified) |
-| CCTV-9 纪录 | 纪实自然 | 🟢 在线 | 1555ms | OK (HLS Verified) |
-| 美亚电影 HD | 影视影院 | 🟢 在线 | 187ms | OK (HLS Verified) |
-| 经典动作大片 24H 轮播 | 影视影院 | 🟢 在线 | 345ms | OK (HLS Verified) |
-| 经典电影 24H 轮播 | 影视影院 | 🟢 在线 | 143ms | OK (HLS Verified) |
-| CCTV-1 综合 | 央视核心 | 🟢 在线 | 543ms | OK (HLS Verified) |
-| CCTV-2 财经 | 央视核心 | 🟢 在线 | 1342ms | OK (HLS Verified) |
-| CCTV-3 综艺 | 央视核心 | 🟢 在线 | 540ms | OK (HLS Verified) |
-| CCTV-4 中文国际 | 央视核心 | 🟢 在线 | 528ms | OK (HLS Verified) |
-| CCTV-5 体育 | 央视核心 | 🟢 在线 | 81ms | OK (HLS Verified) |
-| CCTV-5 体育 | 央视核心 | 🟢 在线 | 559ms | OK (HLS Verified) |
-| CCTV-5+ 体育赛事 | 央视核心 | 🟢 在线 | 64ms | OK (HLS Verified) |
-| CCTV-5+ 体育赛事 | 央视核心 | 🟢 在线 | 182ms | OK (HLS Verified) |
-| CCTV-6 电影 | 央视核心 | 🟢 在线 | 584ms | OK (HLS Verified) |
-| CCTV-7 国防军事 | 央视核心 | 🟢 在线 | 573ms | OK (HLS Verified) |
-| CCTV-8 电视剧 | 央视核心 | 🟢 在线 | 575ms | OK (HLS Verified) |
-| CCTV-9 纪录 | 央视核心 | 🟢 在线 | 593ms | OK (HLS Verified) |
-| CCTV-10 科教 | 央视核心 | 🟢 在线 | 564ms | OK (HLS Verified) |
-| CCTV-11 戏曲 | 央视核心 | 🟢 在线 | 606ms | OK (HLS Verified) |
-| CCTV-12 社会与法 | 央视核心 | 🟢 在线 | 543ms | OK (HLS Verified) |
-| CCTV-13 新闻 | 央视核心 | 🟢 在线 | 1366ms | OK (HLS Verified) |
-| CCTV-14 少儿 | 央视核心 | 🟢 在线 | 538ms | OK (HLS Verified) |
-| CCTV-15 音乐 | 央视核心 | 🟢 在线 | 489ms | OK (HLS Verified) |
-| CCTV-16 奥林匹克 | 央视核心 | 🟢 在线 | 783ms | OK (HLS Verified) |
-| CCTV-16 奥林匹克 | 央视核心 | 🟢 在线 | 63ms | OK (HLS Verified) |
-| CCTV-17 农业农村 | 央视核心 | 🟢 在线 | 487ms | OK (HLS Verified) |
-| 湖南卫视 | 核心卫视 | 🟢 在线 | 464ms | OK (HLS Verified) |
-| 浙江卫视 | 核心卫视 | 🟢 在线 | 2146ms | OK (HLS Verified) |
-| 江苏卫视 | 核心卫视 | 🟢 在线 | 456ms | OK (HLS Verified) |
-| 东方卫视 | 核心卫视 | 🟢 在线 | 462ms | OK (HLS Verified) |
-| 北京卫视 | 核心卫视 | 🟢 在线 | 462ms | OK (HLS Verified) |
-| 重庆卫视 | 核心卫视 | 🟢 在线 | 72ms | OK (HLS Verified) |
-| 重庆新闻 | 核心卫视 | 🟡 已自动换源 | 69ms | Restored primary: OK (HLS Verified) |
-| 重庆都市 | 核心卫视 | 🟢 在线 | 73ms | OK (HLS Verified) |
-| 广东卫视 | 核心卫视 | 🟢 在线 | 66ms | OK (HLS Verified) |
-| TVB 翡翠台 | 港澳中文 | 🟢 在线 | 1463ms | OK (HLS Verified) |
-| TVB 无线新闻台 | 港澳中文 | 🟢 在线 | 340ms | OK (HLS Verified) |
-| TVB 娱乐新闻台 | 港澳中文 | 🟢 在线 | 694ms | OK (HLS Verified) |
-| HOY TV 77 | 港澳中文 | 🟢 在线 | 476ms | OK (HLS Verified) |
-| 香港电台 RTHK 31 | 港澳中文 | 🟢 在线 | 742ms | OK (HLS Verified) |
-| 香港电台 RTHK 32 | 港澳中文 | 🟢 在线 | 244ms | OK (HLS Verified) |
-| 凤凰卫视中文台 | 港澳中文 | 🟢 在线 | 626ms | OK (HLS Verified) |
-| 凤凰卫视资讯台 | 港澳中文 | 🟢 在线 | 305ms | OK (HLS Verified) |
-| 凤凰卫视香港台 | 港澳中文 | 🟢 在线 | 248ms | OK (HLS Verified) |
-| 凤凰卫视电影台 | 港澳中文 | 🔴 失效 | 238ms | Network Error: [Errno 111] Connection refused |
-| 澳视澳门 | 港澳中文 | 🟢 在线 | 350ms | OK (HLS Verified) |
-| 澳门卫视 | 港澳中文 | 🟢 在线 | 310ms | OK (HLS Verified) |
-| 广东珠江台 | 港澳中文 | 🟢 在线 | 68ms | OK (HLS Verified) |
-| 广东体育 | 港澳中文 | 🟡 已自动换源 | 67ms | Restored primary: OK (HLS Verified) |
-| 大湾区卫视 | 港澳中文 | 🟢 在线 | 65ms | OK (HLS Verified) |
-| 深圳卫视 | 港澳中文 | 🟢 在线 | 60ms | OK (HLS Verified) |
-| TVBS 综合台 | 台湾主流 | 🟢 在线 | 108ms | OK (HLS Verified) |
-| 民视新闻台 | 台湾主流 | 🟢 在线 | 101ms | OK (HLS Verified) |
-| 台视新闻台 | 台湾主流 | 🟢 在线 | 107ms | OK (HLS Verified) |
-| 纬来精采台 | 台湾主流 | 🟢 在线 | 364ms | OK (HLS Verified) |
+| Love Nature 4K | 纪实自然 | 🟢 在线 | 110ms | OK (HLS Verified) |
+| Nature Escape | 纪实自然 | 🟢 在线 | 289ms | OK (HLS Verified) |
+| CCTV-9 纪录 | 纪实自然 | 🟢 在线 | 450ms | OK (HLS Verified) |
+| 美亚电影 HD | 影视影院 | 🟢 在线 | 357ms | OK (HLS Verified) |
+| 经典动作大片 24H 轮播 | 影视影院 | 🟢 在线 | 561ms | OK (HLS Verified) |
+| 经典电影 24H 轮播 | 影视影院 | 🟢 在线 | 83ms | OK (HLS Verified) |
+| CCTV-1 综合 | 央视核心 | 🟢 在线 | 491ms | OK (HLS Verified) |
+| CCTV-2 财经 | 央视核心 | 🟢 在线 | 2509ms | OK (HLS Verified) |
+| CCTV-3 综艺 | 央视核心 | 🟢 在线 | 460ms | OK (HLS Verified) |
+| CCTV-4 中文国际 | 央视核心 | 🟢 在线 | 447ms | OK (HLS Verified) |
+| CCTV-5 体育 | 央视核心 | 🟡 已自动换源 | 584ms | Swapped to backup: OK (HLS Verified) |
+| CCTV-5 体育 | 央视核心 | 🟡 已自动换源 | 567ms | Distinct backup: OK (HLS Verified) |
+| CCTV-5+ 体育赛事 | 央视核心 | 🟡 已自动换源 | 633ms | Swapped to backup: OK (HLS Verified) |
+| CCTV-5+ 体育赛事 | 央视核心 | 🟢 在线 | 434ms | OK (HLS Verified) |
+| CCTV-6 电影 | 央视核心 | 🟢 在线 | 420ms | OK (HLS Verified) |
+| CCTV-7 国防军事 | 央视核心 | 🟢 在线 | 455ms | OK (HLS Verified) |
+| CCTV-8 电视剧 | 央视核心 | 🟢 在线 | 454ms | OK (HLS Verified) |
+| CCTV-9 纪录 | 央视核心 | 🟢 在线 | 458ms | OK (HLS Verified) |
+| CCTV-10 科教 | 央视核心 | 🟢 在线 | 436ms | OK (HLS Verified) |
+| CCTV-11 戏曲 | 央视核心 | 🟢 在线 | 440ms | OK (HLS Verified) |
+| CCTV-12 社会与法 | 央视核心 | 🟢 在线 | 477ms | OK (HLS Verified) |
+| CCTV-13 新闻 | 央视核心 | 🟢 在线 | 459ms | OK (HLS Verified) |
+| CCTV-14 少儿 | 央视核心 | 🟢 在线 | 461ms | OK (HLS Verified) |
+| CCTV-15 音乐 | 央视核心 | 🟢 在线 | 1074ms | OK (HLS Verified) |
+| CCTV-16 奥林匹克 | 央视核心 | 🟢 在线 | 948ms | OK (HLS Verified) |
+| CCTV-16 奥林匹克 | 央视核心 | 🟡 已自动换源 | 948ms | Swapped to backup: OK (HLS Verified) |
+| CCTV-17 农业农村 | 央视核心 | 🟢 在线 | 469ms | OK (HLS Verified) |
+| 湖南卫视 | 核心卫视 | 🟢 在线 | 401ms | OK (HLS Verified) |
+| 浙江卫视 | 核心卫视 | 🟢 在线 | 470ms | OK (HLS Verified) |
+| 江苏卫视 | 核心卫视 | 🟢 在线 | 406ms | OK (HLS Verified) |
+| 东方卫视 | 核心卫视 | 🟢 在线 | 404ms | OK (HLS Verified) |
+| 北京卫视 | 核心卫视 | 🟢 在线 | 402ms | OK (HLS Verified) |
+| 重庆卫视 | 核心卫视 | 🔴 失效 | - | Blocked (Ad Hijacked / Pirate Relay Detected) |
+| 重庆新闻 | 核心卫视 | 🔴 失效 | - | Blocked (Ad Hijacked / Pirate Relay Detected) |
+| 重庆都市 | 核心卫视 | 🔴 失效 | - | Blocked (Ad Hijacked / Pirate Relay Detected) |
+| 广东卫视 | 核心卫视 | 🔴 失效 | - | Blocked (Ad Hijacked / Pirate Relay Detected) |
+| TVB 翡翠台 | 港澳中文 | 🟢 在线 | 360ms | OK (HLS Verified) |
+| TVB 无线新闻台 | 港澳中文 | 🟢 在线 | 303ms | OK (HLS Verified) |
+| TVB 娱乐新闻台 | 港澳中文 | 🟢 在线 | 217ms | OK (HLS Verified) |
+| HOY TV 77 | 港澳中文 | 🟢 在线 | 158ms | OK (HLS Verified) |
+| 香港电台 RTHK 31 | 港澳中文 | 🟢 在线 | 170ms | OK (HLS Verified) |
+| 香港电台 RTHK 32 | 港澳中文 | 🟢 在线 | 188ms | OK (HLS Verified) |
+| 凤凰卫视中文台 | 港澳中文 | 🟢 在线 | 189ms | OK (HLS Verified) |
+| 凤凰卫视资讯台 | 港澳中文 | 🟢 在线 | 190ms | OK (HLS Verified) |
+| 凤凰卫视香港台 | 港澳中文 | 🟢 在线 | 169ms | OK (HLS Verified) |
+| 凤凰卫视电影台 | 港澳中文 | 🔴 失效 | 203ms | Network Error: [Errno 111] Connection refused |
+| 澳视澳门 | 港澳中文 | 🟢 在线 | 140ms | OK (HLS Verified) |
+| 澳门卫视 | 港澳中文 | 🟢 在线 | 175ms | OK (HLS Verified) |
+| 广东珠江台 | 港澳中文 | 🔴 失效 | - | Blocked (Ad Hijacked / Pirate Relay Detected) |
+| 广东体育 | 港澳中文 | 🟡 已自动换源 | 1140ms | Swapped to backup: OK (HLS Verified) |
+| 大湾区卫视 | 港澳中文 | 🔴 失效 | - | Blocked (Ad Hijacked / Pirate Relay Detected) |
+| 深圳卫视 | 港澳中文 | 🔴 失效 | - | Blocked (Ad Hijacked / Pirate Relay Detected) |
+| TVBS 综合台 | 台湾主流 | 🟢 在线 | 22ms | OK (HLS Verified) |
+| 民视新闻台 | 台湾主流 | 🟢 在线 | 22ms | OK (HLS Verified) |
+| 台视新闻台 | 台湾主流 | 🟢 在线 | 21ms | OK (HLS Verified) |
+| 纬来精采台 | 台湾主流 | 🟢 在线 | 300ms | OK (HLS Verified) |
 
 ---
 💡 *本报告由 GitHub Actions 自动化流水线定期（每6小时）巡检并自动更新发布。*
