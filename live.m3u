@@ -160,7 +160,7 @@ http://222.223.41.27:8888/hls/3/index.m3u8
 #EXTINF:-1 tvg-id="CCTV-4 中文国际" tvg-name="CCTV-4 中文国际" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-4.png" group-title="央视核心",CCTV-4 中文国际
 http://222.223.41.27:8888/hls/4/index.m3u8
 #EXTINF:-1 tvg-id="CCTV-5 体育" tvg-name="CCTV-5 体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-5.png" group-title="央视核心",CCTV-5 体育
-http://107.150.60.122/live/cctv5hd.m3u8
+http://219.147.245.238:25480/newlive/live/hls/5/live.m3u8
 #EXTINF:-1 tvg-id="CCTV-5 体育" tvg-name="CCTV-5 体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-5.png" group-title="央视核心",CCTV-5 体育
 http://104.152.209.49:8181/720p/cctv5.m3u8
 #EXTINF:-1 tvg-id="CCTV-5+ 体育赛事" tvg-name="CCTV-5+ 体育赛事" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-5+.png" group-title="央视核心",CCTV-5+ 体育赛事
