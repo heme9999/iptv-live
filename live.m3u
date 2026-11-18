@@ -52,7 +52,7 @@ http://107.150.60.122/live/cctv5hd.m3u8
 #EXTINF:-1 tvg-id="CCTV-5 体育 (超清)" tvg-name="CCTV-5 体育 (超清)" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-5.png" group-title="体育·赛事",CCTV-5 体育 (超清)
 http://104.152.209.49:8181/720p/cctv5.m3u8
 #EXTINF:-1 tvg-id="CCTV-5+ 体育赛事 (超清)" tvg-name="CCTV-5+ 体育赛事 (超清)" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-5+.png" group-title="体育·赛事",CCTV-5+ 体育赛事 (超清)
-http://107.150.60.122/live/cctv5p.m3u8
+http://219.147.245.238:25480/newlive/live/hls/6/live.m3u8
 #EXTINF:-1 tvg-id="CCTV-5+ 体育赛事 (超清)" tvg-name="CCTV-5+ 体育赛事 (超清)" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-5+.png" group-title="体育·赛事",CCTV-5+ 体育赛事 (超清)
 http://104.152.209.49:8181/720p/cctv5p.m3u8
 #EXTINF:-1 tvg-id="CCTV-16 奥林匹克 (超清)" tvg-name="CCTV-16 奥林匹克 (超清)" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-16.png" group-title="体育·赛事",CCTV-16 奥林匹克 (超清)
@@ -228,7 +228,7 @@ http://php.jdshipin.com:8880/TVOD/iptv.php?id=rthk31
 #EXTINF:-1 tvg-id="香港电台 RTHK 32" tvg-name="香港电台 RTHK 32" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/logo/rthk32.png" group-title="港澳中文",香港电台 RTHK 32 HD
 http://php.jdshipin.com:8880/TVOD/iptv.php?id=rthk32
 #EXTINF:-1 tvg-id="凤凰卫视中文台" tvg-name="凤凰卫视中文台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/logo/fhzw.png" group-title="港澳中文",凤凰卫视中文台 HD
-http://php.jdshipin.com/TVOD/iptv.php?id=fhzw
+http://107.150.60.122/live/fhzw.m3u8
 #EXTINF:-1 tvg-id="凤凰卫视资讯台" tvg-name="凤凰卫视资讯台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/logo/fhzx.png" group-title="港澳中文",凤凰卫视资讯台 HD
 http://php.jdshipin.com/TVOD/iptv.php?id=fhzx
 #EXTINF:-1 tvg-id="凤凰卫视香港台" tvg-name="凤凰卫视香港台" tvg-logo="https://raw.githubusercontent.com/fanmingming/live/main/tv/logo/fhhk.png" group-title="港澳中文",凤凰卫视香港台 HD
@@ -242,7 +242,7 @@ http://php.jdshipin.com:8880/TVOD/iptv.php?id=as
 #EXTINF:-1 tvg-id="广东珠江台 (粤语)" tvg-name="广东珠江台" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东珠江.png" group-title="港澳中文",广东珠江台 (粤语)
 http://107.150.60.122/live/gdzj.m3u8
 #EXTINF:-1 tvg-id="广东体育" tvg-name="广东体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/广东体育.png" group-title="港澳中文",广东体育
-http://107.150.60.122/live/gdty.m3u8
+https://2.fast.hidns.vip/163189/gdty
 #EXTINF:-1 tvg-id="大湾区卫视 (粤语高清)" tvg-name="大湾区卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/南方卫视.png" group-title="港澳中文",大湾区卫视 (粤语高清)
 http://107.150.60.122/live/nfws.m3u8
 #EXTINF:-1 tvg-id="深圳卫视 (高清)" tvg-name="深圳卫视" tvg-logo="https://www.xn--rgv465a.top/tvlogo/深圳卫视.png" group-title="港澳中文",深圳卫视 (高清)
