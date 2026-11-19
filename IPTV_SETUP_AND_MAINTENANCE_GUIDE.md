@@ -1,8 +1,8 @@
 # IPTV 直播源搭建与全自动化运维完整手册
 
-> **文档版本**: v2.4.0  
+> **文档版本**: v2.5.0  
 > **维护仓库**: [heme9999/iptv-live](https://github.com/heme9999/iptv-live)  
-> **更新时间**: 2026年11月8日  
+> **更新时间**: 2026年11月19日  
 > **订阅地址**:
 > - **GitHub 原生直链**: `https://raw.githubusercontent.com/heme9999/iptv-live/main/live.m3u`
 > - **jsDelivr 全球 CDN 加速**: `https://cdn.jsdelivr.net/gh/heme9999/iptv-live@main/live.m3u`
@@ -68,16 +68,19 @@ flowchart TD
 
 ## 2. 直播源精选与全分类体系
 
-整个订阅包含 111 个频道（2026年11月2日 live.m3u 实测数），全面覆盖体育、日韩、欧美、央视、卫视与港澳华语区，全面覆盖体育、日韩、欧美、央视、卫视与港澳华语区：
+整个订阅包含 94 条有效直播条目（2026年11月19日 `live.m3u` 实测数，其中双线/多线聚合频道按多条条目统计），全面覆盖体育、日本放送、国际资讯、纪实自然、影视影院、央视、卫视与港澳台华语区：
 
-| 分类分组 (`group-title`) | 频道数量 | 代表性核心频道 | 特色说明 |
+| 分类分组 (`group-title`) | 条目数量 | 代表性核心频道 | 特色说明 |
 | :--- | :---: | :--- | :--- |
-| **体育·赛事** | 16+ | CCTV-5、CCTV-5+、CCTV-16、五星体育、广东体育、F1 官方专线、欧洲足球、Eurosport 1 4K、ESPN 1/2、Red Bull TV | 满足网球大师赛/大满贯、西甲、英超、F1、NBA 全场景赛事需求 |
-| **日本放送** | 9 | NHK 综合、日本电视台 (NTV)、富士电视台 (Fuji TV)、朝日电视台 (TV Asahi)、TBS 电视台、东京电视台 (TV Tokyo)、NHK World 英文 1080P、WeatherNews Japan、QVC Japan | 完整覆盖**东京旗舰商业六大台**（六大台为 mov3.co 源，见 §7 Q4 的 Referer 说明）；Shop Channel Japan 已于 2026年11月2日从订阅中删除，不再列入 |
-| **国际资讯** | 14 | BBC News、Fox News、ABC News Live、NBC News NOW、CBS News 24/7、Bloomberg、Sky News、CNBC、CNA、CGTN、DW、France 24、EuroNews | 全球顶级财经与即时新闻官方直连专线 |
-| **央视核心** | 18 | CCTV-1 综合至 CCTV-17 农业农村、CCTV-5+ 体育赛事高清 | 完整央视高清矩阵，全频带台标与超清 1080P 信号 |
-| **主流卫视** | 20+ | 湖南卫视、浙江卫视、东方卫视、江苏卫视、北京卫视、广东卫视等 | 覆盖各省头部卫星电视综合频道，全国热播综艺/剧集首播 |
-| **港澳中文** | 8+ | 凤凰卫视中文台、凤凰资讯台、凤凰香港台、TVB 翡翠台、大湾区卫视、广东珠江台 (粤语) | 高清华语优质台，原汁原味粤语及两岸三地综合节目 |
+| **体育·赛事** | 22 | CCTV-5（双线）、CCTV-5+（双线）、CCTV-16（双线）、广东体育、Tennis Channel USA、T2 Tennis、TSN Sports、NBC Sports NOW（720P 直连）、ESPN 1/2、beIN SPORTS XTRA、Formula 1、Red Bull TV | 满足网球、F1、NBA、综合体育赛事需求，国内体育已剔除劫持源 |
+| **日本放送** | 9 | NHK 综合、日本电视台 (NTV)、富士电视台 (Fuji TV)、朝日电视台 (TV Asahi)、TBS 电视台、东京电视台 (TV Tokyo)、NHK World-Japan、WeatherNews Japan、QVC Japan | 完整覆盖**东京旗舰商业六大台**（mov3.co 源需 `Referer: https://mov3.co/`，见 §7 Q4/Q5） |
+| **国际资讯** | 14 | Sky News、LiveNOW from FOX、ABC News Live、NBC News NOW、CBS News 24/7、BBC News、Bloomberg 彭博财经（亚太东京节点）、NHK World-Japan、CNBC、CNA、CGTN、DW、France 24、EuroNews | 美英官方 720P 单码率直连 / 亚太边缘节点，消除高码率卡顿与 SSAI 会话重置循环 |
+| **纪实自然** | 4 | BBC Earth、Love Nature 4K、Nature Escape、CCTV-9 纪录 | 4K/HD 纪录片与治愈系自然频道 |
+| **影视影院** | 3 | 美亚电影 HD、Universal Action 动作大片 24H、经典电影 24H 轮播 | 华语经典电影与 24 小时免费影视轮播 |
+| **央视核心** | 21 | CCTV-1 综合至 CCTV-17 农业农村（CCTV-5、CCTV-5+、CCTV-16 配双线聚合） | 完整央视高清矩阵，骨干直连低延迟信号 |
+| **核心卫视** | 6 | 湖南卫视、浙江卫视、江苏卫视、东方卫视、北京卫视、广东卫视 | 覆盖头部省级卫视高清综合频道 |
+| **港澳中文** | 12 | TVB 翡翠台、TVB 无线新闻台、TVB 娱乐新闻台、HOY TV 77、RTHK 31/32、凤凰卫视中文台/资讯台/香港台、澳视澳门、澳门卫视、深圳卫视 | 清除了 VOD 循环源与静止断流源，凤凰中文/香港采用高清低延迟 FLV 直连 |
+| **台湾主流** | 3 | TVBS 综合台、民视新闻台、台视新闻台 | 保留稳定在线的台湾综合与新闻频道 |
 
 ---
 
@@ -119,14 +122,14 @@ flowchart TD
 graph LR
     subgraph Defense["反劫持双保险体系"]
         direction TB
-        L1["【线路 1】骨干原厂直连 (107.150.60.122)<br/>1080P 超清 / 原汁原味官方信号 / 0 广告注入"]
-        L2["【线路 2】极速高带宽备用 (38.75.136.137)<br/>低延迟热备 / 仅在骨干网络波动时备用"]
+        L1["【线路 1】纯净骨干直连 (219.147.245.238:25480 / 120.76.248.139 bfgd) - 高清原生信号 / 0 广告注入"]
+        L2["【线路 2】高可用多节点热备 (104.152.209.49:8181 / 219.147.245.238:25480) - 主节点波动时无感切换"]
     end
-    APTV_PLAYER["APTV 播放器<br/>(自动优先加载线路 1)"] --> Defense
+    APTV_PLAYER["APTV / Android 播放器 (优先加载线路 1)"] --> Defense
 ```
 
-#### 1. 骨干原厂源池置顶
-在 `scripts/sources_pool.json` 及 `live.m3u` 中，将经 Swift/OCR 视觉校验 100% 纯净的广播级骨干源 `107.150.60.122/live/cctv5hd.m3u8` 设置为 **第 1 候选源（优先调度）**。
+#### 1. 纯净源池置顶与黑名单隔离
+在 `scripts/sources_pool.json` 及 `live.m3u` 中，将经多次连测无重定向劫持的高速专线（如 `219.147.245.238:25480`、`120.76.248.139/live/bfgd/...`）设置为 **第 1 候选源（优先调度）**，以 `104.152.209.49:8181` 作为 **线路 2** 容灾备份；同时在 `HIJACK_BLOCKLIST` 中全网永久拉黑 `38.75.136.137`、`107.150.60.122`、`198.204.228.26` 等概率性 302 劫持中继。
 
 #### 2. APTV 多线路无缝聚合规范
 为了让 APTV 能够识别为同一个频道的“多条备选线路”（显示为 `1/2 线路`、`2/2 线路`），在 M3U 编写时必须遵循以下语法规则：
@@ -154,24 +157,25 @@ graph LR
 
 ---
 
-#### 4. 巡检脚本反劫持双重拦截器（HIJACK_BLOCKLIST & HIJACK_BODY_BLOCKLIST）
-`scripts/check_and_update_streams.py` 内置 URL 与播放列表 Body 双重拦截器，命中即判定为死链并触发备用切换，彻底杜绝黑产劫持：
-- **URL 拦截特征**：
-  - `38.75.136.137`（已于 2026年11月8日全量清库拉黑，该节点曾大面积 302 重定向至医疗黑产广告流）
-  - `dsdqpub` / `dsdqbv`
-  - `207.56.13.146` / `173.208.146.10`
-  - `from=zbdq` / `a=zbdq` / `a=zjstream` / `a=cdnhk`
-  - `appadhw` / `applive/mkt` / `applive/102` / `applive/yss`
-  - `/mkt/` / `mkt.m3u8` / `/102.m3u8`
-  - `400-788-3916`
-- **Body 内容体特征（深入 M3U8 文本检测）**：
-  - `mkt/segment`
-  - `mkt.m3u8`
-  - `/102/` / `102/12`
-  - `the content is not available in your area`
-  - `400-788-3916`
+#### 4. 巡检脚本反劫持、防死循环多重拦截器（`HIJACK_BLOCKLIST` & `HIJACK_BODY_BLOCKLIST`）
+`scripts/check_and_update_streams.py`（默认探活超时 `TIMEOUT_SECONDS = 8.0`）内置 URL、跳转目标、M3U8 正文与流形态多重拦截器，命中即判定为失效并自动切换：
+- **URL 与黑产中继拦截特征（`HIJACK_BLOCKLIST`）**：
+  - `38.75.136.137`、`dsdqpub` / `dsdqbv`（2026年11月8日清库拉黑）
+  - `107.150.60.122`、`198.204.228.26`、`107.150.35.234`、`69.197.181.106`、`204.12.234.154`（2026年11月19日清库拉黑，会概率性 302 跳转至医疗广告流 `applive/mkt`、`102`、`105`、`yss`、`byt`）
+  - `138.121.15.230:9002`（极慢速滑动窗口导致的循环重播中继）
+  - `207.56.13.146` / `173.208.146.10` / `a=zjstream` / `a=cdnhk`
+  - `appadhw` / `applive/mkt` / `applive/102` / `applive/yss` / `applive/byt` / `applive/105` / `/mkt/` / `mkt.m3u8` / `/102.m3u8` / `/byt.m3u8` / `/105.m3u8` / `400-788-3916`
+- **Body 内容体拦截特征（`HIJACK_BODY_BLOCKLIST`）**：
+  - `mkt/segment` / `mkt.m3u8` / `/102/` / `102/12` / `byt/segment` / `105/segment` / `byt.m3u8` / `105.m3u8`
+  - `the content is not available in your area` / `400-788-3916` / `appadhw`
+- **VOD 死循环拦截与主播单穿透验证**：
+  - 检测到 `#EXT-X-ENDLIST` 或 `#EXT-X-PLAYLIST-TYPE:VOD` 立即拒绝（`Blocked (VOD/ENDLIST Looping Stream)`），防止点播切片单曲循环冒充直播。
+  - 若上游返回多码率 Master M3U8（含 `#EXT-X-STREAM-INF`），继续跟踪校验首个子播单，并对跳转后的最终 URL (`final_url` / `v_final_url`) 执行黑名单与 VOD 复查。
+  - 支持原生 FLV 直播流识别（读取 `FLV` 文件头与首包媒体数据，覆盖凤凰中文/香港台 `.flv` 直连源）。
 
-全量清库记录：2026年11月8日对 `live.m3u`、`tv.m3u` 和 `sources_pool.json` 实施了全量清网，彻底剔除了所有 `38.75.136.137` 和 `dsdq` 劫持源，并将 CCTV-5、CCTV-5+、CCTV 全矩阵及头部卫视全面升级为电信/联通骨干网 1080P 高清原生流（延迟 <150ms）。
+**全量清库记录**：
+- `2026年11月8日`：对 `live.m3u`、`tv.m3u` 和 `sources_pool.json` 实施清库，剔除 `38.75.136.137` 和 `dsdq` 劫持源。
+- `2026年11月19日 (v2.5.0)`：全面清除会概率性 302 劫持医疗广告的 `107.150.60.122` / `198.204.228.26` 与卡顿循环中继 `138.121.15.230:9002`；欧美核心新闻与体育改用 720P 单码率官方直连与亚太边缘节点，港澳台剔除 VOD 循环与静止断流并接入 `kylintv`、`php.jdshipin.com:8880` 与 FengShows `.flv` 源。
 
 ## 5. GitHub Actions 全天候自动化监控与自动换源
 
@@ -321,3 +325,24 @@ graph LR
 > 2. **优化第二备用线路**：线路 2 统一配置为高吞吐联通专线 `219.147.245.238:25480`（实测 350–880 KB/s），并保留 `104.152.209.49` 作为多级容灾备份。
 > 3. **精准修剪巡检拦截规则**：在 `check_and_update_streams.py` 中移除 `from=zbdq` 误报词，同时保持对黑产服务器（`38.75.136.137`、`dsdqbv`、`appadhw`、`mkt.m3u8`）的百分之百严密防御。
 > 4. **客户端刷新即可**：APTV 或 Android 客户端下拉刷新即可秒级切换至全新的百兆高速流。
+
+---
+
+### Q8: 为什么部分美国电视台（ABC/NBC/CBS/Fox）和港澳台频道会出现反复播同一片段或卡顿不动？
+> **原因分析**：
+> 1. **海外多码率 Master 自适应抖动与 SSAI 会话重置**：原 `ABC News Live`、`CBS News 24/7`、`NBC News NOW`、`NBC Sports NOW` 等均指向包含高码率 1080P（3～5.3 Mbps）的自适应 Master 播放列表，跨洋单连接吞吐不足时（0.4x～0.9x 实时速率）触发播放器超时重连；叠加 Xumo SSAI 动态会话 UUID 每次重连会从头初始化广告与切片滑动窗口，表现为“反复播同一个片段”。原 `Fox News`（`138.121.15.230:9002`）下载速率仅约 0.25x 实时速率，同样频繁超时回跳重播。
+> 2. **港澳台 VOD 假直播与静止源**：此前 `TVB 无线新闻台` 返回 `#EXT-X-ENDLIST` 点播片段循环；`TVB 娱乐新闻台`（port 80）与 `纬来精采台` 切片序号完全静止；`107.150.60.122` 与 `198.204.228.26` 会概率性 302 劫持跳转至医疗黑产广告流（`applive/mkt`、`102`、`105`、`yss`、`byt`）。
+>
+> **解决现状（v2.5.0 全面优化）**：
+> 1. **欧美频道锁定 720P 单码率直连 / 亚太节点**：
+>    - `LiveNOW from FOX` 切为 `https://fox-foxnewsnow-vizio.amagi.tv/playlist720-lp.m3u8`（单码率 720P）；
+>    - `ABC News Live` 锁定 720P HEVC：`https://pb-0n3n2ej0w8pl9.akamaized.net/ABCNewsLive_Disney_2.m3u8`；
+>    - `NBC News NOW` 与 `NBC Sports NOW` 切至无动态 SSAI 的 NBCU 原厂 720P：`https://xumo-drct-nbcnn-ir8ze.fast.nbcuni.com/live/master_3.m3u8` 及 `https://lgcp-xumoent-ch1022-tv4ya.fast.nbcuni.com/live/master_3.m3u8`；
+>    - `CBS News 24/7` 锁定 720P：`https://cbsn-us-vtt.cbsnstream.cbsnews.com/out/v1/ef868690d34144509eda696884bf1619/master_7.m3u8`；
+>    - `Bloomberg 彭博财经` 换为官方亚太东京节点 `https://www.bloomberg.com/media-manifest/streams/asia.m3u8`；失效的动作电影台替换为 `Universal Action 动作大片 24H`（`https://xumo-xumoent-ch828-w6val.fast.nbcuni.com/live/master_3.m3u8`）。
+>    - *提示*：官方 FAST 频道在商业广告时段会短暂显示电视台自有的“即将回来 / 休息插播画面（ad-break bumper slate）”并伴随纯音乐，属于官方正常插播垫片，广告结束即恢复正片，并非死循环。
+> 2. **港澳台与国内体育清库加固**：
+>    - 彻底清除 `107.150.60.122`、`198.204.228.26`、`138.121.15.230:9002` 并写入 `HIJACK_BLOCKLIST`；
+>    - `CCTV-5+`、`广东卫视`、`深圳卫视` 切换至 `http://120.76.248.139/live/bfgd/...` 高速专线；`CCTV-5` 采用 `219.147.245.238:25480` 与 `104.152.209.49:8181/720p/cctv5.m3u8` 双线；`广东体育` 换用 `http://r.jdshipin.com/LiYdg`；`CCTV-16` 备用线换为 `104.152.209.49:8181/720p/cctv16.m3u8`；
+>    - `TVB 无线新闻台` 切换为 `https://h5cdn3.kylintv.tv/live/tvbnews_iphone.m3u8`，`TVB 娱乐新闻台` 与 `凤凰卫视资讯台` 切回 `php.jdshipin.com:8880`，`凤凰卫视中文台/香港台` 接入高流畅 `.flv` 直播流（`43.152.224.209/qctv.fengshows.cn/live/...`）；移除静止失效的 `纬来精采台` 及多余重复项，全表精简为 94 条高可用条目（实测 `100.0%` 在线）。
+> 3. **巡检脚本同步加固**：`scripts/check_and_update_streams.py` 新增 `#EXT-X-ENDLIST` / `VOD` 拦截、Master 子播单校验、FLV 直播检测与 `TIMEOUT_SECONDS = 8.0` 抗冷启动调优。

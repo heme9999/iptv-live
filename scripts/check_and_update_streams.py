@@ -33,12 +33,18 @@ POOL_JSON_PATH = os.path.join(BASE_DIR, "scripts", "sources_pool.json")
 REPORT_MD_PATH = os.path.join(BASE_DIR, "HEALTH_REPORT.md")
 
 USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 APTV/1.3.0"
-TIMEOUT_SECONDS = 4.0
+TIMEOUT_SECONDS = 8.0
 MAX_WORKERS = 12
 
 
 HIJACK_BLOCKLIST = [
     "38.75.136.137",
+    "107.150.60.122",
+    "198.204.228.26",
+    "107.150.35.234",
+    "69.197.181.106",
+    "204.12.234.154",
+    "138.121.15.230:9002",
     "dsdqpub",
     "dsdqbv",
     "207.56.13.146",
@@ -50,9 +56,13 @@ HIJACK_BLOCKLIST = [
     "applive/mkt",
     "applive/102",
     "applive/yss",
+    "applive/byt",
+    "applive/105",
     "/mkt/",
     "mkt.m3u8",
     "/102.m3u8",
+    "/byt.m3u8",
+    "/105.m3u8",
 ]
 
 HIJACK_BODY_BLOCKLIST = [
@@ -60,6 +70,10 @@ HIJACK_BODY_BLOCKLIST = [
     "mkt.m3u8",
     "/102/",
     "102/12",
+    "byt/segment",
+    "105/segment",
+    "byt.m3u8",
+    "105.m3u8",
     "400-788-3916",
     "appadhw",
     "the content is not available in your area",
@@ -72,6 +86,9 @@ def check_stream(url: str, timeout: float = TIMEOUT_SECONDS) -> tuple[bool, floa
     """
     if not url or not url.startswith(("http://", "https://")):
         return False, 0.0, "Invalid URL schema"
+
+    if any(b in url for b in HIJACK_BLOCKLIST):
+        return False, 0.0, "Blocked (Ad Hijacked / Pirate Relay Detected)"
 
     start_t = time.time()
     headers = {"User-Agent": USER_AGENT, "Accept": "*/*"}
@@ -89,11 +106,15 @@ def check_stream(url: str, timeout: float = TIMEOUT_SECONDS) -> tuple[bool, floa
             if any(b in final_url for b in HIJACK_BLOCKLIST) or any(b in url for b in HIJACK_BLOCKLIST):
                 return False, 0.0, "Blocked (Ad Hijacked / Pirate Relay Detected)"
 
+            read_limit = 4096 if ".flv" in url.lower() else 65536
             try:
-                content_bytes = response.read(65536)
+                content_bytes = response.read(read_limit)
             except Exception:
                 content_bytes = b""
             latency = (time.time() - start_t) * 1000.0
+
+            if content_bytes[:3] == b"FLV" or (".flv" in url.lower() and len(content_bytes) > 500):
+                return True, round(latency, 1), "OK (FLV Live Stream)"
 
             try:
                 content_str = content_bytes.decode("utf-8", errors="ignore")
@@ -103,9 +124,45 @@ def check_stream(url: str, timeout: float = TIMEOUT_SECONDS) -> tuple[bool, floa
             if any(b in content_str for b in HIJACK_BODY_BLOCKLIST):
                 return False, 0.0, "Blocked (Ad Content Detected in Body)"
 
+            # Reject looping VOD playlists
+            if "#EXT-X-ENDLIST" in content_str or "#EXT-X-PLAYLIST-TYPE:VOD" in content_str:
+                return False, round(latency, 1), "Blocked (VOD/ENDLIST Looping Stream)"
+
             # Check if it is a valid M3U8 HLS playlist
             if "#EXTM3U" in content_str:
-                # If master playlist, or media playlist
+                # If master playlist, verify first variant sub-playlist as well
+                if "#EXT-X-STREAM-INF" in content_str:
+                    lines = [l.strip() for l in content_str.splitlines() if l.strip()]
+                    variant_url = None
+                    for i, l in enumerate(lines):
+                        if l.startswith("#EXT-X-STREAM-INF"):
+                            for j in range(i + 1, len(lines)):
+                                if not lines[j].startswith("#"):
+                                    variant_url = urllib.parse.urljoin(final_url, lines[j])
+                                    break
+                            if variant_url:
+                                break
+                    if variant_url:
+                        if any(b in variant_url for b in HIJACK_BLOCKLIST):
+                            return False, round(latency, 1), "Blocked (Ad Hijacked / Pirate Relay Detected)"
+                        v_req = urllib.request.Request(variant_url, headers=headers)
+                        with urllib.request.urlopen(v_req, timeout=timeout) as v_resp:
+                            v_status = v_resp.getcode()
+                            if v_status != 200:
+                                return False, round(latency, 1), f"Sub-playlist HTTP status {v_status}"
+                            v_final_url = v_resp.geturl()
+                            if any(b in v_final_url for b in HIJACK_BLOCKLIST):
+                                return False, round(latency, 1), "Blocked (Ad Hijacked / Pirate Relay Detected)"
+                            v_bytes = v_resp.read(65536)
+                            v_str = v_bytes.decode("utf-8", errors="ignore")
+                            if any(b in v_str for b in HIJACK_BODY_BLOCKLIST):
+                                return False, round(latency, 1), "Blocked (Ad Content Detected in Body)"
+                            if "#EXT-X-ENDLIST" in v_str or "#EXT-X-PLAYLIST-TYPE:VOD" in v_str:
+                                return False, round(latency, 1), "Blocked (VOD/ENDLIST Looping Stream)"
+                            if "#EXTM3U" in v_str and ("#EXTINF" in v_str or ".ts" in v_str or ".m4s" in v_str or ".m3u8" in v_str):
+                                return True, round(latency, 1), "OK (HLS Verified)"
+                            return False, round(latency, 1), "Invalid sub-playlist"
+
                 if "#EXT-X-STREAM-INF" in content_str or "#EXTINF" in content_str or ".ts" in content_str or ".m3u8" in content_str or ".m4s" in content_str:
                     return True, round(latency, 1), "OK (HLS Verified)"
                 return True, round(latency, 1), "OK (M3U8 Header Present)"
