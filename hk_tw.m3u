@@ -10,7 +10,7 @@ https://d3pnbvng3bx2nj.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68
 #EXTINF:-1 tvg-id="T2 Tennis Channel (官方专业二台 1080P)" tvg-name="T2 Tennis" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Tennis_Channel_2016_logo.svg/800px-Tennis_Channel_2016_logo.svg.png" group-title="体育·赛事",T2 Tennis Channel (官方专业二台 1080P)
 https://ttc-tennischannelus-firetv.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="Tennis Channel USA (美国原版 1080P)" tvg-name="Tennis Channel USA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Tennis_Channel_2016_logo.svg/800px-Tennis_Channel_2016_logo.svg.png" group-title="体育·赛事",Tennis Channel USA (美国原版 1080P)
-http://23.237.104.106:8080/USA_TENNIS/index.m3u8
+https://ttc-tennischannelus-firetv.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="Tennis Channel 欧洲台 (官方 1080P/WTA赛事)" tvg-name="Tennis Channel EU" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Tennis_Channel_2016_logo.svg/800px-Tennis_Channel_2016_logo.svg.png" group-title="体育·赛事",Tennis Channel 欧洲台 (官方 1080P/WTA赛事)
 https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01444-tennischannelth-tennischannelnl-samsungnl/playlist.m3u8
 #EXTINF:-1 tvg-id="NBC Sports NOW (美国国家体育台 720P)" tvg-name="NBC Sports NOW" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/NBC_Sports_logo_2023.svg/800px-NBC_Sports_logo_2023.svg.png" group-title="体育·赛事",NBC Sports NOW (美国国家体育台 720P)
