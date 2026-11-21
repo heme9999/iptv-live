@@ -1,8 +1,8 @@
 # IPTV 直播源搭建与全自动化运维完整手册
 
-> **文档版本**: v2.5.0  
+> **文档版本**: v2.6.0  
 > **维护仓库**: [heme9999/iptv-live](https://github.com/heme9999/iptv-live)  
-> **更新时间**: 2026年11月19日  
+> **更新时间**: 2026年11月21日  
 > **订阅地址**:
 > - **GitHub 原生直链**: `https://raw.githubusercontent.com/heme9999/iptv-live/main/live.m3u`
 > - **jsDelivr 全球 CDN 加速**: `https://cdn.jsdelivr.net/gh/heme9999/iptv-live@main/live.m3u`
@@ -68,11 +68,11 @@ flowchart TD
 
 ## 2. 直播源精选与全分类体系
 
-整个订阅包含 94 条有效直播条目（2026年11月19日 `live.m3u` 实测数，其中双线/多线聚合频道按多条条目统计），全面覆盖体育、日本放送、国际资讯、纪实自然、影视影院、央视、卫视与港澳台华语区：
+整个订阅包含 103 条有效直播条目（2026年11月21日 `live.m3u` 实测数，其中双线/多线聚合频道按多条条目统计），全面覆盖体育、日本放送、国际资讯、纪实自然、影视影院、央视、卫视与港澳台华语区：
 
 | 分类分组 (`group-title`) | 条目数量 | 代表性核心频道 | 特色说明 |
 | :--- | :---: | :--- | :--- |
-| **体育·赛事** | 22 | CCTV-5（双线）、CCTV-5+（双线）、CCTV-16（双线）、广东体育、Tennis Channel USA、T2 Tennis、TSN Sports、NBC Sports NOW（720P 直连）、ESPN 1/2、beIN SPORTS XTRA、Formula 1、Red Bull TV | 满足网球、F1、NBA、综合体育赛事需求，国内体育已剔除劫持源 |
+| **体育·赛事** | 31 | **Sky Sports Premier League（双线）、Sky Sports Main Event、TNT Sports 1、Now Sports 英超1台/3台/TV/4K、Premier League TV**、CCTV-5（双线）、CCTV-5+（双线）、CCTV-16（双线）、广东体育、Tennis Channel USA、T2 Tennis、TSN Sports、NBC Sports NOW（720P 直连）、ESPN 1/2、beIN SPORTS XTRA、Formula 1、Red Bull TV | 新增完整英超直播矩阵（1080P50 / 4K 50fps）；同时覆盖网球、F1、NBA 与综合体育赛事，国内体育已剔除劫持源 |
 | **日本放送** | 9 | NHK 综合、日本电视台 (NTV)、富士电视台 (Fuji TV)、朝日电视台 (TV Asahi)、TBS 电视台、东京电视台 (TV Tokyo)、NHK World-Japan、WeatherNews Japan、QVC Japan | 完整覆盖**东京旗舰商业六大台**（mov3.co 源需 `Referer: https://mov3.co/`，见 §7 Q4/Q5） |
 | **国际资讯** | 14 | Sky News、LiveNOW from FOX、ABC News Live、NBC News NOW、CBS News 24/7、BBC News、Bloomberg 彭博财经（亚太东京节点）、NHK World-Japan、CNBC、CNA、CGTN、DW、France 24、EuroNews | 美英官方 720P 单码率直连 / 亚太边缘节点，消除高码率卡顿与 SSAI 会话重置循环 |
 | **纪实自然** | 4 | BBC Earth、Love Nature 4K、Nature Escape、CCTV-9 纪录 | 4K/HD 纪录片与治愈系自然频道 |
@@ -346,3 +346,16 @@ graph LR
 >    - `CCTV-5+`、`广东卫视`、`深圳卫视` 切换至 `http://120.76.248.139/live/bfgd/...` 高速专线；`CCTV-5` 采用 `219.147.245.238:25480` 与 `104.152.209.49:8181/720p/cctv5.m3u8` 双线；`广东体育` 换用 `http://r.jdshipin.com/LiYdg`；`CCTV-16` 备用线换为 `104.152.209.49:8181/720p/cctv16.m3u8`；
 >    - `TVB 无线新闻台` 切换为 `https://h5cdn3.kylintv.tv/live/tvbnews_iphone.m3u8`，`TVB 娱乐新闻台` 与 `凤凰卫视资讯台` 切回 `php.jdshipin.com:8880`，`凤凰卫视中文台/香港台` 接入高流畅 `.flv` 直播流（`43.152.224.209/qctv.fengshows.cn/live/...`）；移除静止失效的 `纬来精采台` 及多余重复项，全表精简为 94 条高可用条目（实测 `100.0%` 在线）。
 > 3. **巡检脚本同步加固**：`scripts/check_and_update_streams.py` 新增 `#EXT-X-ENDLIST` / `VOD` 拦截、Master 子播单校验、FLV 直播检测与 `TIMEOUT_SECONDS = 8.0` 抗冷启动调优。
+
+---
+
+### Q9: 如何收看英超直播？为什么暂时没有收录台湾“纬来体育”？
+> **英超全面接入（v2.6.0）**：
+> 1. **新增 8 个英超频道（`live.m3u` 共 9 条条目，全表增至 103 条，实测 100.0% 在线）**：
+>    - **Sky Sports Premier League（双线 1080P50）**：线路 1 `http://m3u.tvcluboficial.com/free/oct/oct/811.m3u8`，线路 2 `http://stream.bottledesk.net/p/AAxBRQEBc2c/index.m3u8`；
+>    - **Sky Sports Main Event（1080P50）** & **TNT Sports 1（1080P50）**：接入英国高清直播源；
+>    - **Now Sports 英超1台 / 3台 / TV (Goal Rush 多场连线) / 4K 1（CH 611 4K 50fps）** & **Premier League TV（官方英文 24H）**：覆盖香港 Now 英超多场次同时开球与 4K 转播。
+> 2. **共享门户单域名串行巡检锁**：在 `scripts/check_and_update_streams.py` 中新增 `_get_portal_lock(url)`，对共享 Xtream / Stalker 域名（`ifiesta.net`、`cloudcdn.me`）在并发探测时按域名串行加锁，防止同一时刻多并发握手被服务端踢断而产生误判；同时在客户端播放 Now Sports / TNT / Main Event 等共享节点时建议保持**单设备单路播放**（若需多台设备同时看英超，优先选双线独立的 `Sky Sports Premier League`）。
+>
+> **关于台湾“纬来体育台（緯來體育）”**：
+> - 纬来体育在台湾属于传统有线电视（第四台）独占频道，未上架中华电信 MOD（`modn`）、LiTV、4gTV 或 Ofiii 等公开 OTT 平台。2026年11月对公开源库进行实测排雷后，所有可连通地址均已确认系假源或失效源（`free.cnlive.club` 静止循环广告、`app.kds666.top` 302 重定向至吉林台占位数、`cqshushu` 显示 Token 失效、`45.192.97.170` 为纯音频广播、`epg.pw` 跳转 `nosignal`、`cdn.qd.je/163189/wlty` 返回 502、`rtmp://f13h.mine.nu` 超时），因此暂不纳入虚假源污染节目单。

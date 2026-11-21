@@ -20,6 +20,8 @@ import time
 import urllib.request
 import urllib.parse
 import urllib.error
+import threading
+from contextlib import nullcontext
 from datetime import datetime, timezone, timedelta
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -79,10 +81,36 @@ HIJACK_BODY_BLOCKLIST = [
     "the content is not available in your area",
 ]
 
+SHARED_PORTAL_DOMAINS = ("ifiesta.net", "cloudcdn.me")
+HOST_LOCKS: dict[str, threading.Lock] = {}
+HOST_LOCKS_GUARD = threading.Lock()
+
+
+def _get_portal_lock(url: str):
+    """Serialize checks per shared Stalker/Xtream host to avoid single-account concurrent drops."""
+    for domain in SHARED_PORTAL_DOMAINS:
+        if domain in url:
+            with HOST_LOCKS_GUARD:
+                lock = HOST_LOCKS.get(domain)
+                if lock is None:
+                    lock = threading.Lock()
+                    HOST_LOCKS[domain] = lock
+                return lock
+    return nullcontext()
+
+
 def check_stream(url: str, timeout: float = TIMEOUT_SECONDS) -> tuple[bool, float, str]:
     """
-    Test an HLS stream URL.
+    Test an HLS/TS/FLV stream URL, serializing shared Xtream/Stalker portals per domain.
     Returns: (is_valid, latency_ms, details)
+    """
+    with _get_portal_lock(url):
+        return _check_stream_impl(url, timeout)
+
+
+def _check_stream_impl(url: str, timeout: float = TIMEOUT_SECONDS) -> tuple[bool, float, str]:
+    """
+    Execute the actual network/playlist check for a stream URL.
     """
     if not url or not url.startswith(("http://", "https://")):
         return False, 0.0, "Invalid URL schema"

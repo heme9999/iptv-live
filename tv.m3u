@@ -33,6 +33,22 @@ https://stream.ads.ottera.tv/playlist.m3u8?network_id=535
 https://amg12058-c15studio-amg12058c1-lg-us-5787.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="Red Bull TV (红牛极限运动 1080P/Akamai)" tvg-name="Red Bull TV" tvg-logo="https://i.imgur.com/8t9mdg9.png" group-title="体育·赛事",Red Bull TV (红牛极限运动 1080P/Akamai)
 https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
+#EXTINF:-1 tvg-id="Sky Sports Premier League (英国天空体育英超专台 1080P50)" tvg-name="Sky Sports Premier League" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sky_Sports_logo_2020.svg/800px-Sky_Sports_logo_2020.svg.png" group-title="体育·赛事",Sky Sports Premier League (英国天空体育英超专台 1080P50)
+http://m3u.tvcluboficial.com/free/oct/oct/811.m3u8
+#EXTINF:-1 tvg-id="Sky Sports Main Event (英国天空体育主赛事台 1080P50)" tvg-name="Sky Sports Main Event" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sky_Sports_logo_2020.svg/800px-Sky_Sports_logo_2020.svg.png" group-title="体育·赛事",Sky Sports Main Event (英国天空体育主赛事台 1080P50)
+http://tv.cloudcdn.me:80/live.ts?channelId=284&uid=10223&deviceMac=00:1A:79:07:07:43&deviceSn=84F4AB37DF6E6
+#EXTINF:-1 tvg-id="TNT Sports 1 (英国 TNT 英超/欧冠 1080P50)" tvg-name="TNT Sports 1" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/TNT_Sports_2023_logo.svg/800px-TNT_Sports_2023_logo.svg.png" group-title="体育·赛事",TNT Sports 1 (英国 TNT 英超/欧冠 1080P50)
+http://tv.cloudcdn.me:80/live.ts?channelId=267&uid=19260&deviceSn=32DA037ED9210&deviceMac=00:1A:79:F2:0F:96
+#EXTINF:-1 tvg-id="Now Sports Premier League 1 (香港 Now 英超1台 1080P50)" tvg-name="Now Sports 英超1台" tvg-logo="https://i.imgur.com/8t9mdg9.png" group-title="体育·赛事",Now Sports Premier League 1 (香港 Now 英超1台 1080P50)
+http://tv-213424.ifiesta.net:80/TV-7926745948196/892281004173/199975
+#EXTINF:-1 tvg-id="Now Sports Premier League 3 (香港 Now 英超3台 1080P50)" tvg-name="Now Sports 英超3台" tvg-logo="https://i.imgur.com/8t9mdg9.png" group-title="体育·赛事",Now Sports Premier League 3 (香港 Now 英超3台 1080P50)
+http://tv-213424.ifiesta.net:80/TV-7926745948196/892281004173/199977
+#EXTINF:-1 tvg-id="Now Sports Premier League TV (英超 Goal Rush 多场连线 1080P50)" tvg-name="Now Sports 英超TV" tvg-logo="https://i.imgur.com/8t9mdg9.png" group-title="体育·赛事",Now Sports Premier League TV (英超 Goal Rush 多场连线 1080P50)
+http://tv-213424.ifiesta.net:80/TV-7926745948196/892281004173/199974
+#EXTINF:-1 tvg-id="Now Sports 4K 1 (香港 Now 611 英超 4K UHD 50fps)" tvg-name="Now Sports 4K" tvg-logo="https://i.imgur.com/8t9mdg9.png" group-title="体育·赛事",Now Sports 4K 1 (香港 Now 611 英超 4K UHD 50fps)
+http://tv-213424.ifiesta.net:80/TV-7926745948196/892281004173/199971
+#EXTINF:-1 tvg-id="Premier League TV (英超官方 24H 赛事频道 1080P)" tvg-name="Premier League TV" tvg-logo="https://i.imgur.com/8t9mdg9.png" group-title="体育·赛事",Premier League TV (英超官方 24H 赛事频道 1080P)
+http://tv-213424.ifiesta.net:80/TV-7926745948196/892281004173/221297
 #EXTINF:-1 tvg-id="CCTV-5 体育 (超清)" tvg-name="CCTV-5 体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-5.png" group-title="体育·赛事",CCTV-5 体育 (超清)
 http://219.147.245.238:25480/newlive/live/hls/5/live.m3u8
 #EXTINF:-1 tvg-id="CCTV-5+ 体育赛事 (超清)" tvg-name="CCTV-5+ 体育赛事" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-5+.png" group-title="体育·赛事",CCTV-5+ 体育赛事 (超清)

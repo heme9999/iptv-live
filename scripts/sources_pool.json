@@ -307,5 +307,34 @@
   ],
   "TVB 娱乐新闻台": [
     "http://php.jdshipin.com:8880/TVOD/iptv.php?id=tvbylxw"
+  ],
+  "Sky Sports Premier League": [
+    "http://m3u.tvcluboficial.com/free/oct/oct/811.m3u8",
+    "http://stream.bottledesk.net/p/AAxBRQEBc2c/index.m3u8",
+    "http://tv.cloudcdn.me:80/live.ts?channelId=286&uid=19260&deviceSn=32DA037ED9210&deviceMac=00:1A:79:F2:0F:96"
+  ],
+  "Sky Sports Main Event": [
+    "http://tv.cloudcdn.me:80/live.ts?channelId=284&uid=10223&deviceMac=00:1A:79:07:07:43&deviceSn=84F4AB37DF6E6",
+    "https://m3usmart4k.gojo45749.workers.dev?id=2963"
+  ],
+  "TNT Sports 1": [
+    "http://tv.cloudcdn.me:80/live.ts?channelId=267&uid=19260&deviceSn=32DA037ED9210&deviceMac=00:1A:79:F2:0F:96",
+    "http://tv.cloudcdn.me:80/live.ts?channelId=268&uid=10223&deviceMac=00:1A:79:07:07:43&deviceSn=84F4AB37DF6E6"
+  ],
+  "Now Sports 英超1台": [
+    "http://tv-213424.ifiesta.net:80/TV-7926745948196/892281004173/199975"
+  ],
+  "Now Sports 英超3台": [
+    "http://tv-213424.ifiesta.net:80/TV-7926745948196/892281004173/199977"
+  ],
+  "Now Sports 英超TV": [
+    "http://tv-213424.ifiesta.net:80/TV-7926745948196/892281004173/199974"
+  ],
+  "Now Sports 4K": [
+    "http://tv-213424.ifiesta.net:80/TV-7926745948196/892281004173/199971",
+    "http://tv.cloudcdn.me:80/live.ts?channelId=132134&uid=10223&deviceMac=00:1A:79:07:07:43&deviceSn=84F4AB37DF6E6"
+  ],
+  "Premier League TV": [
+    "http://tv-213424.ifiesta.net:80/TV-7926745948196/892281004173/221297"
   ]
 }
