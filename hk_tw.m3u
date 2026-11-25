@@ -40,7 +40,7 @@ http://tv-213424.ifiesta.net:80/TV-7926745948196/892281004173/199977
 #EXTINF:-1 tvg-id="Now Sports Premier League TV (英超 Goal Rush 多场连线 1080P50)" tvg-name="Now Sports 英超TV" tvg-logo="https://i.imgur.com/8t9mdg9.png" group-title="体育·赛事",Now Sports Premier League TV (英超 Goal Rush 多场连线 1080P50)
 http://tv-213424.ifiesta.net:80/TV-7926745948196/892281004173/199974
 #EXTINF:-1 tvg-id="Now Sports 4K 1 (香港 Now 611 英超 4K UHD 50fps)" tvg-name="Now Sports 4K" tvg-logo="https://i.imgur.com/8t9mdg9.png" group-title="体育·赛事",Now Sports 4K 1 (香港 Now 611 英超 4K UHD 50fps)
-http://tv-213424.ifiesta.net:80/TV-7926745948196/892281004173/199971
+http://tv.cloudcdn.me:80/live.ts?channelId=132134&uid=10223&deviceMac=00:1A:79:07:07:43&deviceSn=84F4AB37DF6E6
 #EXTINF:-1 tvg-id="Premier League TV (英超官方 24H 赛事频道 1080P)" tvg-name="Premier League TV" tvg-logo="https://i.imgur.com/8t9mdg9.png" group-title="体育·赛事",Premier League TV (英超官方 24H 赛事频道 1080P)
 http://tv-213424.ifiesta.net:80/TV-7926745948196/892281004173/221297
 #EXTINF:-1 tvg-id="CCTV-5 体育 (超清)" tvg-name="CCTV-5 体育" tvg-logo="https://www.xn--rgv465a.top/tvlogo/CCTV-5.png" group-title="体育·赛事",CCTV-5 体育 (超清)
